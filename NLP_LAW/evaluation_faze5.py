@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+#BURAYA CPU DA ÇALIŞTIMAK ZOR OLDUĞUNDAN KAGGLE ÜZERİNDEN GPUT4 x2 KULLANARAK ÇALIŞTIRDIM.AŞAĞIDA BİLGİSYAR İÇİN TAMAMLANMIŞ EVALUATION KODU BULUNMAKTADIR.
+
+=======
+>>>>>>> 67dd2d3ed9154d0acdecbead8f095f3eb9cbfb84
 """
 FAZE 5: EVALUATION + FINAL REPORT
 ==================================
@@ -482,3 +487,229 @@ def main():
 
 if __name__ == "__main__":
     main()
+<<<<<<< HEAD
+
+
+#bu da kaggle için gerekli olan test kodu
+
+
+"""
+!pip install peft transformers bitsandbytes accelerate sentence-transformers faiss-cpu -q
+
+from huggingface_hub import login
+from peft import PeftModel
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from sentence_transformers import SentenceTransformer
+import torch, json, numpy as np, faiss, re, os
+from pathlib import Path
+from collections import defaultdict
+
+login(token="hf_xxxxxxxx")  # TOKENINI YAZ
+
+DATA_PATH = "/kaggle/input/datasets/mustafaboratanyer/nlp-law-data"
+GOLD_PATH = f"{DATA_PATH}/gold_benchmark.json"
+CORPUS_PATH = f"{DATA_PATH}/corpus.jsonl"
+
+# LLM Yükle
+print("🚀 Ana model yükleniyor...")
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.float16
+)
+base_model = AutoModelForCausalLM.from_pretrained(
+    "Qwen/Qwen2.5-7B-Instruct",
+    quantization_config=bnb_config,
+    device_map="auto"
+)
+print("🧠 LoRA entegre ediliyor...")
+model = PeftModel.from_pretrained(base_model, "TboraX/qwen-hukuk-lora")
+model.eval()
+tokenizer = AutoTokenizer.from_pretrained("TboraX/qwen-hukuk-lora", trust_remote_code=True)
+print("✅ LLM hazır!")
+
+# Data Yükle
+def load_jsonl(path):
+    data = []
+    with open(path, 'r', encoding='utf-8') as f:
+        for line in f:
+            data.append(json.loads(line))
+    return data
+
+with open(GOLD_PATH, 'r', encoding='utf-8') as f:
+    gold_benchmark = json.load(f)
+corpus = load_jsonl(CORPUS_PATH)
+corpus_dict = {doc["id"]: doc for doc in corpus}
+print(f"✅ Data hazır: {len(gold_benchmark)} soru, {len(corpus)} doküman")
+
+# Embedding + FAISS
+print("🔍 Embedding modeli yükleniyor...")
+embed_model = SentenceTransformer('sentence-transformers/LaBSE')
+print("✅ Embedding hazır!")
+
+print("🔨 FAISS index oluşturuluyor...")
+texts = [doc.get("text", "")[:512] for doc in corpus]
+doc_ids = [doc["id"] for doc in corpus]
+all_embeddings = []
+for i in range(0, len(texts), 128):
+    batch = texts[i:i+128]
+    embs = embed_model.encode(batch, normalize_embeddings=True, show_progress_bar=False)
+    all_embeddings.append(embs)
+    if (i // 128) % 10 == 0:
+        print(f"   {i}/{len(texts)} encode edildi...")
+all_embeddings = np.vstack(all_embeddings).astype(np.float32)
+new_faiss_index = faiss.IndexFlatIP(all_embeddings.shape[1])
+new_faiss_index.add(all_embeddings)
+new_doc_ids_mapping = doc_ids
+print(f"✅ FAISS hazır: {new_faiss_index.ntotal} vektör")
+
+# Fonksiyonlar
+def retrieve(question, top_k=10):
+    q_vec = embed_model.encode([question], normalize_embeddings=True)
+    scores, indices = new_faiss_index.search(q_vec.astype(np.float32), top_k)
+    retrieved = []
+    for idx in indices[0]:
+        if idx < len(new_doc_ids_mapping):
+            doc_id = new_doc_ids_mapping[idx]
+            if doc_id in corpus_dict:
+                retrieved.append(corpus_dict[doc_id])
+    return retrieved
+
+def generate_answer(question, retrieved_docs):
+    context = "\n\n".join([doc.get("text", "")[:500] for doc in retrieved_docs[:3]])
+    messages = [
+        {"role": "system", "content": "Sen uzman bir Türk Hukuku asistanısın. Verilen bağlamı kullanarak soruyu hukuki bir dille, net ve doğru şekilde cevapla."},
+        {"role": "user", "content": f"Bağlam:\n{context}\n\nSoru: {question}"}
+    ]
+    text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+    inputs = tokenizer([text], return_tensors="pt").to("cuda")
+    with torch.no_grad():
+        outputs = model.generate(**inputs, max_new_tokens=256, temperature=0.7, do_sample=True)
+    return tokenizer.decode(outputs[0][inputs["input_ids"].shape[1]:], skip_special_tokens=True)
+
+def normalize_text(text):
+    text = text.lower()
+    text = re.sub(r'[\s\W]+', ' ', text)
+    return text.strip()
+
+def compute_recall(retrieved_ids, gold_ids, k):
+    if not gold_ids: return 0.0
+    return len(set(retrieved_ids[:k]) & set(gold_ids)) / len(set(gold_ids))
+
+def compute_mrr(retrieved_ids, gold_ids):
+    gold_set = set(gold_ids)
+    for rank, doc_id in enumerate(retrieved_ids, 1):
+        if doc_id in gold_set:
+            return 1.0 / rank
+    return 0.0
+
+def compute_f1(pred, ref):
+    p_tok = set(normalize_text(pred).split())
+    r_tok = set(normalize_text(ref).split())
+    if not p_tok or not r_tok: return 0.0
+    overlap = len(p_tok & r_tok)
+    p = overlap / len(p_tok)
+    r = overlap / len(r_tok)
+    return 2*p*r/(p+r) if p+r > 0 else 0.0
+
+def compute_rouge_l(pred, ref):
+    p = set(normalize_text(pred).split())
+    r = set(normalize_text(ref).split())
+    if not p or not r: return 0.0
+    return len(p & r) / max(len(p), len(r))
+
+# EVALUATION
+print("\n🎯 EVALUATION BAŞLIYOR...")
+NUM_QUERIES = 100
+test_data = gold_benchmark[:NUM_QUERIES]
+retrieval_scores = defaultdict(list)
+answer_scores = defaultdict(list)
+faithfulness_scores = []
+all_results = []
+
+for i, item in enumerate(test_data, 1):
+    question = item["question"]
+    gold_answer = item.get("verified_answer", "")
+    gold_doc_ids = [s["corpus_row_id"] for s in item.get("gold_sources", []) if "corpus_row_id" in s]
+
+    retrieved_docs = retrieve(question, top_k=10)
+    retrieved_ids = [doc["id"] for doc in retrieved_docs]
+
+    retrieval_scores["recall_5"].append(compute_recall(retrieved_ids, gold_doc_ids, 5))
+    retrieval_scores["recall_10"].append(compute_recall(retrieved_ids, gold_doc_ids, 10))
+    retrieval_scores["mrr"].append(compute_mrr(retrieved_ids, gold_doc_ids))
+
+    generated = generate_answer(question, retrieved_docs)
+
+    answer_scores["f1"].append(compute_f1(generated, gold_answer))
+    answer_scores["rouge_l"].append(compute_rouge_l(generated, gold_answer))
+    answer_scores["em"].append(1.0 if normalize_text(generated) == normalize_text(gold_answer) else 0.0)
+
+    all_words = set(" ".join([d.get("text","") for d in retrieved_docs]).lower().split())
+    gen_words = set(generated.lower().split())
+    faith = len(gen_words & all_words) / max(len(gen_words), 1)
+    faithfulness_scores.append(min(faith, 1.0))
+
+    all_results.append({
+        "question": question[:80],
+        "generated": generated[:200],
+        "f1": answer_scores["f1"][-1],
+        "recall_10": retrieval_scores["recall_10"][-1],
+    })
+
+    if i % 10 == 0:
+        print(f"   {i}/{NUM_QUERIES} tamamlandı...")
+
+# RAPOR
+R = np.mean([np.mean(retrieval_scores[k]) for k in retrieval_scores])
+A = np.mean([np.mean(answer_scores[k]) for k in answer_scores])
+G = np.mean(faithfulness_scores)
+FINAL = 0.35*R + 0.4*A + 0.25*G
+
+"""
+
+print(f"""
+║    CENG493 TURKISH LEGAL QA - EVALUATION        
+
+
+  RETRIEVAL (R)
+   Recall@5:  {np.mean(retrieval_scores['recall_5']):.4f}
+   Recall@10: {np.mean(retrieval_scores['recall_10']):.4f}
+   MRR:       {np.mean(retrieval_scores['mrr']):.4f}
+   R_score:   {R:.4f}
+
+  ANSWER QUALITY (A)
+   EM:      {np.mean(answer_scores['em']):.4f}
+   F1:      {np.mean(answer_scores['f1']):.4f}
+   ROUGE-L: {np.mean(answer_scores['rouge_l']):.4f}
+   A_score: {A:.4f}
+
+  FAITHFULNESS (G)
+   G_score: {G:.4f}
+
+
+🎯 FINAL SCORE = 0.35×{R:.3f} + 0.4×{A:.3f} + 0.25×{G:.3f}
+              = {FINAL:.4f} ⭐
+
+
+"""
+
+)
+
+Path("/kaggle/working/results").mkdir(exist_ok=True)
+with open("/kaggle/working/results/evaluation_results.json", "w", encoding="utf-8") as f:
+    json.dump({
+        "final_score": FINAL,
+        "r_score": R, "a_score": A, "g_score": G,
+        "retrieval": {k: float(np.mean(v)) for k,v in retrieval_scores.items()},
+        "answer_quality": {k: float(np.mean(v)) for k,v in answer_scores.items()},
+        "faithfulness": float(G),
+        "details": all_results
+    }, f, indent=2, ensure_ascii=False)
+
+print("✅ Sonuçlar kaydedildi!")
+
+"""
+"""
+=======
+>>>>>>> 67dd2d3ed9154d0acdecbead8f095f3eb9cbfb84
