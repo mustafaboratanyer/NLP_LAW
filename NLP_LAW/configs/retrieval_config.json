@@ -1,0 +1,16 @@
+{
+  "system": "Baseline RAG",
+  "embedding_model": "sentence-transformers/LaBSE",
+  "retrieval_methods": [
+    "dense",
+    "bm25",
+    "hybrid"
+  ],
+  "vector_db": "FAISS",
+  "document_count": 13954,
+  "embedding_dimension": 768,
+  "models_saved": {
+    "dense": "models/faiss_dense_index.bin",
+    "bm25": "In memory (BM25Okapi)"
+  }
+}

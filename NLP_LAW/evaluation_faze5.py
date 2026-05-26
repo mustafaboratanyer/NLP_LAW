@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 #BURAYA CPU DA ÇALIŞTIMAK ZOR OLDUĞUNDAN KAGGLE ÜZERİNDEN GPUT4 x2 KULLANARAK ÇALIŞTIRDIM.AŞAĞIDA BİLGİSYAR İÇİN TAMAMLANMIŞ EVALUATION KODU BULUNMAKTADIR.
 
+=======
+>>>>>>> 67dd2d3ed9154d0acdecbead8f095f3eb9cbfb84
 """
 FAZE 5: EVALUATION + FINAL REPORT
 ==================================
@@ -484,6 +487,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+<<<<<<< HEAD
 
 
 #bu da kaggle için gerekli olan test kodu
@@ -707,3 +711,5 @@ print("✅ Sonuçlar kaydedildi!")
 
 """
 """
+=======
+>>>>>>> 67dd2d3ed9154d0acdecbead8f095f3eb9cbfb84
