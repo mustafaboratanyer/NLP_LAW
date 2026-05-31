@@ -1,0 +1,84 @@
+{
+  "benchmark": "qa_benchmark_gold.csv",
+  "coverage": {
+    "total_rows": 290,
+    "skipped_inactive": 24,
+    "skipped_unresolved_law": 22,
+    "resolved_examples": 244
+  },
+  "systems": [
+    {
+      "name": "Dense FAISS baseline",
+      "recall@5": 0.5533,
+      "recall@10": 0.6230,
+      "top1_accuracy": 0.4016,
+      "mrr": 0.4685,
+      "ndcg@10": 0.5052
+    },
+    {
+      "name": "Hybrid retrieval",
+      "recall@5": 0.6311,
+      "recall@10": 0.6680,
+      "top1_accuracy": 0.4631,
+      "mrr": 0.5348,
+      "ndcg@10": 0.5674
+    },
+    {
+      "name": "Hybrid retrieval, grid-optimized",
+      "recall@5": 0.6311,
+      "recall@10": 0.6762,
+      "top1_accuracy": 0.4795,
+      "mrr": 0.5456,
+      "ndcg@10": 0.5772,
+      "selected_final_retriever": true
+    },
+    {
+      "name": "Fine-tuned embedding dense",
+      "recall@5": 0.1066,
+      "recall@10": 0.1270,
+      "top1_accuracy": 0.0574,
+      "mrr": 0.0801,
+      "ndcg@10": 0.0914
+    },
+    {
+      "name": "Fine-tuned embedding hybrid",
+      "recall@5": 0.2459,
+      "recall@10": 0.2459,
+      "top1_accuracy": 0.2131,
+      "mrr": 0.2275,
+      "ndcg@10": 0.2322
+    },
+    {
+      "name": "Qwen3-Embedding-0.6B dense",
+      "recall@5": 0.5287,
+      "recall@10": 0.5820,
+      "top1_accuracy": 0.3689,
+      "mrr": 0.4388,
+      "ndcg@10": 0.4732
+    },
+    {
+      "name": "Qwen3-Embedding-0.6B hybrid",
+      "recall@5": 0.6148,
+      "recall@10": 0.6434,
+      "top1_accuracy": 0.4754,
+      "mrr": 0.5369,
+      "ndcg@10": 0.5630
+    },
+    {
+      "name": "Hybrid + fine-tuned reranker V2",
+      "recall@5": 0.4877,
+      "recall@10": 0.5697,
+      "top1_accuracy": 0.3402,
+      "mrr": 0.4046,
+      "ndcg@10": 0.4437
+    },
+    {
+      "name": "Hybrid + reranker score fusion",
+      "recall@5": 0.6148,
+      "recall@10": 0.6516,
+      "top1_accuracy": 0.4467,
+      "mrr": 0.5175,
+      "ndcg@10": 0.5502
+    }
+  ]
+}

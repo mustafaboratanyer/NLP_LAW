@@ -1,0 +1,28 @@
+{
+  "system": "Grid-optimized BGE-M3 hybrid retrieval",
+  "embedding_model": "BAAI/bge-m3",
+  "retrieval_methods": [
+    "dense_faiss",
+    "bm25",
+    "hybrid"
+  ],
+  "vector_db": "FAISS",
+  "index_type": "faiss.IndexFlatIP",
+  "similarity": "cosine_via_normalized_inner_product",
+  "alpha_dense_weight": 0.70,
+  "bm25_weight": 0.30,
+  "dense_candidates": 300,
+  "bm25_candidates": 100,
+  "preliminary_top_k": 50,
+  "final_context_top_k": 5,
+  "query_expansion_default": false,
+  "corpus_level": "chunk search with parent article citation",
+  "large_artifacts_external": [
+    "retrieval_corpus.json",
+    "retrieval_chunks.json",
+    "faiss_bge_m3.index",
+    "metadata_bge_m3.json",
+    "index_config_bge_m3.json",
+    "LoRA adapter model files"
+  ]
+}

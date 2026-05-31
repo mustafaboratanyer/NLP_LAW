@@ -1,5 +1,4 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-__pycache__/
+﻿__pycache__/
 *.py[cod]
 *$py.class
 *.so
@@ -13,9 +12,31 @@ build/
 .vscode/
 *.log
 
-# Large files - use Git LFS for these if needed
-*.csv
-*.bin
-*.json
+# Large generated retrieval/data artifacts should be provided via Kaggle/Hugging Face.
 data/
-models/
+*.bin
+*.index
+*.zip
+
+# Ignore large ad-hoc data by default.
+*.csv
+*.json
+*.jsonl
+*.safetensors
+
+# Track small reproducibility files.
+!configs/*.json
+!results/*.json
+!examples/*.json
+!examples/*.csv
+
+# Track the final LoRA adapter used by the fine-tuned RAG demo.
+!models/
+!models/qwen_7b_lora_v2/
+!models/qwen_7b_lora_v2/final_600/
+!models/qwen_7b_lora_v2/final_600/adapter_config.json
+!models/qwen_7b_lora_v2/final_600/adapter_model.safetensors
+!models/qwen_7b_lora_v2/final_600/chat_template.jinja
+!models/qwen_7b_lora_v2/final_600/README.md
+!models/qwen_7b_lora_v2/final_600/tokenizer.json
+!models/qwen_7b_lora_v2/final_600/tokenizer_config.json
