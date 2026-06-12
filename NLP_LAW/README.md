@@ -46,6 +46,57 @@ be supplied through the Kaggle dataset or Hugging Face:
 - `notebooks/reranker_finetune_kaggle_law.ipynb`: reranker fine-tuning experiment.
 - `notebooks/embedding_finetune_kaggle.ipynb`: embedding fine-tuning experiment.
 
+## Local Demo UI
+
+The Streamlit UI in `app.py` initializes one `LegalRAG` instance and reuses the
+same retriever and language model for every question. It supports:
+
+- Fine-tuned RAG with the bundled LoRA adapter
+- Base RAG by temporarily disabling that adapter
+- Side-by-side Base/Fine-tuned comparison over the exact same retrieved sources
+- Answer and source display with hybrid, dense, and BM25 scores
+
+Place the external retrieval artifacts in these default locations:
+
+```text
+data/processed/retrieval_corpus.json
+data/index/faiss_bge_m3.index
+data/index/metadata_bge_m3.json
+data/index/index_config_bge_m3.json
+```
+
+Then install the dependencies and start the UI:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+The paths can also be changed from the UI sidebar or with:
+
+```text
+RAG_INDEX_PATH
+RAG_METADATA_PATH
+RAG_CONFIG_PATH
+RAG_CORPUS_PATH
+RAG_ADAPTER_PATH
+```
+
+For practical 7B inference, use an NVIDIA GPU and 4-bit loading. CPU inference
+falls back to full precision and will generally be too slow for a live demo.
+
+On low-VRAM Windows laptops, the UI defaults to the local Ollama backend. It
+expects these local model names:
+
+```text
+qwen2.5:7b-instruct-q4_K_M
+nlp-law-finetuned
+```
+
+The fine-tuned Ollama model uses the converted GGUF adapter defined in
+`ollama/Modelfile.finetuned`. Ollama keeps the active model in memory between
+questions; the retriever remains cached by Streamlit.
+
 ## Final Retrieval Configuration
 
 The best benchmark retrieval configuration is:

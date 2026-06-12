@@ -1,9 +1,14 @@
 import argparse
+import hashlib
 import json
 import os
+import shutil
 import sys
+from contextlib import nullcontext
 from pathlib import Path
 from typing import Any
+from urllib.error import URLError
+from urllib.request import Request, urlopen
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -56,6 +61,45 @@ def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def faiss_readable_path(path: Path) -> Path:
+    """Stage a FAISS index at an ASCII path on Windows when needed."""
+    resolved = path.resolve()
+    if os.name != "nt" or str(resolved).isascii():
+        return resolved
+
+    public_dir = Path(os.environ.get("PUBLIC", r"C:\Users\Public"))
+    cache_dir = public_dir / "NLP_LAW_CACHE"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    source_stat = resolved.stat()
+    fingerprint = hashlib.sha256(str(resolved).encode("utf-8")).hexdigest()[:16]
+    cached_path = cache_dir / f"{fingerprint}_{resolved.name}"
+    cache_is_current = (
+        cached_path.exists()
+        and cached_path.stat().st_size == source_stat.st_size
+        and cached_path.stat().st_mtime_ns >= source_stat.st_mtime_ns
+    )
+    if not cache_is_current:
+        print(f"Copying FAISS index to ASCII cache path: {cached_path}")
+        shutil.copy2(resolved, cached_path)
+    return cached_path
+
+
+def model_readable_path(path: str | Path) -> str:
+    """Stage a local model directory at an ASCII path on Windows when needed."""
+    candidate = Path(path)
+    if not candidate.exists() or os.name != "nt" or str(candidate.resolve()).isascii():
+        return str(path)
+
+    resolved = candidate.resolve()
+    public_dir = Path(os.environ.get("PUBLIC", r"C:\Users\Public"))
+    fingerprint = hashlib.sha256(str(resolved).encode("utf-8")).hexdigest()[:16]
+    cached_path = public_dir / "NLP_LAW_MODEL_CACHE" / f"{fingerprint}_{resolved.name}"
+    cached_path.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copytree(resolved, cached_path, dirs_exist_ok=True)
+    return str(cached_path)
+
+
 def article_lookup(path: Path) -> dict[str, dict]:
     articles = load_json(path)
     return {row["id"]: row for row in articles}
@@ -98,6 +142,11 @@ class LegalRAG:
         self.bm25_index = None
         self.tokenizer = None
         self.model = None
+        self.adapter_loaded = False
+        self.generation_backend = "transformers"
+        self.ollama_host = ""
+        self.ollama_base_model = ""
+        self.ollama_fine_tuned_model = ""
 
     def load_retriever(self, embedding_device: str = "cpu") -> None:
         import faiss
@@ -108,14 +157,20 @@ class LegalRAG:
         self.config = load_json(self.config_path)
         self.articles = article_lookup(self.corpus_path)
 
-        model_name = self.config["model"]
+        model_name = self.config.get("model") or self.config.get("embedding_model")
+        if not model_name:
+            raise ValueError(
+                f"Embedding model is missing from config: {self.config_path}. "
+                "Expected 'model' or 'embedding_model'."
+            )
         print(f"Loading embedding model: {model_name} on {embedding_device}")
         self.embedding_model = SentenceTransformer(model_name, device=embedding_device)
         if self.config.get("max_seq_length"):
             self.embedding_model.max_seq_length = int(self.config["max_seq_length"])
 
-        print(f"Loading FAISS index: {self.index_path}")
-        self.index = faiss.read_index(str(self.index_path))
+        readable_index_path = faiss_readable_path(self.index_path)
+        print(f"Loading FAISS index: {readable_index_path}")
+        self.index = faiss.read_index(str(readable_index_path))
 
         print("Building BM25 index...")
         self.bm25_index = BM25Index([row["text"] for row in self.metadata])
@@ -130,7 +185,12 @@ class LegalRAG:
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
-        tokenizer_path = str(adapter_path) if adapter_path else base_model
+        if load_in_4bit and not torch.cuda.is_available():
+            print("CUDA is not available; loading the LLM without 4-bit quantization.")
+            load_in_4bit = False
+
+        readable_adapter_path = model_readable_path(adapter_path) if adapter_path else None
+        tokenizer_path = base_model
         print(f"Loading tokenizer: {tokenizer_path}")
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_path, trust_remote_code=True)
         if self.tokenizer.pad_token is None:
@@ -143,25 +203,73 @@ class LegalRAG:
                 bnb_4bit_quant_type="nf4",
                 bnb_4bit_use_double_quant=True,
                 bnb_4bit_compute_dtype=torch.float16,
+                llm_int8_enable_fp32_cpu_offload=True,
             )
 
         print(f"Loading base LLM: {base_model}")
-        self.model = AutoModelForCausalLM.from_pretrained(
-            base_model,
-            quantization_config=quantization_config,
-            device_map="auto",
-            torch_dtype=torch.float16,
-            trust_remote_code=True,
-        )
+        model_kwargs = {
+            "device_map": "auto",
+            "trust_remote_code": True,
+        }
+        if quantization_config is not None:
+            model_kwargs["quantization_config"] = quantization_config
+            model_kwargs["torch_dtype"] = torch.float16
+            model_kwargs["max_memory"] = {
+                0: "3200MiB",
+                "cpu": "24GiB",
+            }
+        elif torch.cuda.is_available():
+            model_kwargs["torch_dtype"] = torch.float16
+        else:
+            model_kwargs["torch_dtype"] = torch.float32
+
+        self.model = AutoModelForCausalLM.from_pretrained(base_model, **model_kwargs)
 
         if adapter_path:
             from peft import PeftModel
 
-            print(f"Loading LoRA adapter: {adapter_path}")
-            self.model = PeftModel.from_pretrained(self.model, str(adapter_path))
+            print(f"Loading LoRA adapter: {readable_adapter_path}")
+            self.model = PeftModel.from_pretrained(self.model, readable_adapter_path)
+            self.adapter_loaded = True
+        else:
+            self.adapter_loaded = False
 
         self.model.eval()
         print("LLM ready.")
+
+    def load_ollama(
+        self,
+        base_model: str = "qwen2.5:7b-instruct-q4_K_M",
+        fine_tuned_model: str = "nlp-law-finetuned",
+        host: str = "http://127.0.0.1:11434",
+    ) -> None:
+        self.ollama_host = host.rstrip("/")
+        self.ollama_base_model = base_model
+        self.ollama_fine_tuned_model = fine_tuned_model
+
+        try:
+            with urlopen(f"{self.ollama_host}/api/tags", timeout=5) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+        except (OSError, URLError) as exc:
+            raise RuntimeError(
+                f"Ollama is not reachable at {self.ollama_host}. Start Ollama first."
+            ) from exc
+
+        installed_models = {
+            item.get("name", "").removesuffix(":latest")
+            for item in payload.get("models", [])
+        }
+        missing = [
+            model
+            for model in [base_model, fine_tuned_model]
+            if model.removesuffix(":latest") not in installed_models
+        ]
+        if missing:
+            raise RuntimeError(f"Missing Ollama model(s): {', '.join(missing)}")
+
+        self.generation_backend = "ollama"
+        self.adapter_loaded = True
+        print(f"Ollama ready: base={base_model}, fine_tuned={fine_tuned_model}")
 
     def _encode_query(self, question: str):
         if self.embedding_model is None or self.config is None:
@@ -264,11 +372,23 @@ class LegalRAG:
         self,
         question: str,
         contexts: list[dict],
+        use_adapter: bool = True,
         max_new_tokens: int = 384,
         do_sample: bool = False,
         temperature: float = 0.2,
         repetition_penalty: float = 1.1,
     ) -> str:
+        if self.generation_backend == "ollama":
+            return self._generate_ollama(
+                question=question,
+                contexts=contexts,
+                use_adapter=use_adapter,
+                max_new_tokens=max_new_tokens,
+                do_sample=do_sample,
+                temperature=temperature,
+                repetition_penalty=repetition_penalty,
+            )
+
         if self.model is None or self.tokenizer is None:
             raise RuntimeError("LLM is not loaded. Call load_llm() first.")
 
@@ -297,19 +417,106 @@ class LegalRAG:
         if do_sample:
             generation_kwargs["temperature"] = temperature
 
-        with torch.no_grad():
-            outputs = self.model.generate(**inputs, **generation_kwargs)
+        adapter_context = nullcontext()
+        if self.adapter_loaded and not use_adapter:
+            adapter_context = self.model.disable_adapter()
+
+        with adapter_context:
+            with torch.no_grad():
+                outputs = self.model.generate(**inputs, **generation_kwargs)
 
         answer_ids = outputs[0][inputs["input_ids"].shape[1] :]
         return self.tokenizer.decode(answer_ids, skip_special_tokens=True).strip()
 
-    def answer(self, question: str, top_k: int = 5, **generation_kwargs) -> dict:
+    def _generate_ollama(
+        self,
+        question: str,
+        contexts: list[dict],
+        use_adapter: bool,
+        max_new_tokens: int,
+        do_sample: bool,
+        temperature: float,
+        repetition_penalty: float,
+    ) -> str:
+        model_name = (
+            self.ollama_fine_tuned_model if use_adapter else self.ollama_base_model
+        )
+        payload = {
+            "model": model_name,
+            "messages": self.build_prompt(question, contexts),
+            "stream": False,
+            "keep_alive": "30m",
+            "options": {
+                "num_predict": max_new_tokens,
+                "num_ctx": 4096,
+                "temperature": temperature if do_sample else 0,
+                "repeat_penalty": repetition_penalty,
+            },
+        }
+        request = Request(
+            f"{self.ollama_host}/api/chat",
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        try:
+            with urlopen(request, timeout=900) as response:
+                result = json.loads(response.read().decode("utf-8"))
+        except (OSError, URLError) as exc:
+            raise RuntimeError(f"Ollama generation failed for model: {model_name}") from exc
+        return str(result.get("message", {}).get("content", "")).strip()
+
+    def answer(
+        self,
+        question: str,
+        top_k: int = 5,
+        mode: str | None = None,
+        **generation_kwargs,
+    ) -> dict:
+        mode = mode or ("fine_tuned" if self.adapter_loaded else "base")
+        if mode not in {"base", "fine_tuned"}:
+            raise ValueError("mode must be 'base' or 'fine_tuned'.")
+        if mode == "fine_tuned" and not self.adapter_loaded:
+            raise RuntimeError("Fine-tuned mode requires a loaded LoRA adapter.")
+
         contexts = self.retrieve(question, top_k=top_k)
-        answer = self.generate(question, contexts, **generation_kwargs)
+        answer = self.generate(
+            question,
+            contexts,
+            use_adapter=mode == "fine_tuned",
+            **generation_kwargs,
+        )
         return {
             "question": question,
             "answer": answer,
             "contexts": contexts,
+            "mode": mode,
+        }
+
+    def compare(self, question: str, top_k: int = 5, **generation_kwargs) -> dict:
+        """Generate base and fine-tuned answers from the exact same retrieval result."""
+        if not self.adapter_loaded:
+            raise RuntimeError("Comparison mode requires a loaded LoRA adapter.")
+
+        contexts = self.retrieve(question, top_k=top_k)
+        base_answer = self.generate(
+            question,
+            contexts,
+            use_adapter=False,
+            **generation_kwargs,
+        )
+        fine_tuned_answer = self.generate(
+            question,
+            contexts,
+            use_adapter=True,
+            **generation_kwargs,
+        )
+        return {
+            "question": question,
+            "base_answer": base_answer,
+            "fine_tuned_answer": fine_tuned_answer,
+            "contexts": contexts,
+            "mode": "compare",
         }
 
 
