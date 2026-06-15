@@ -56,6 +56,28 @@ same retriever and language model for every question. It supports:
 - Side-by-side Base/Fine-tuned comparison over the exact same retrieved sources
 - Answer and source display with hybrid, dense, and BM25 scores
 
+### Running on another Windows computer
+
+Copy or clone the repository to the evaluation computer, then run:
+
+```powershell
+.\setup_demo.ps1
+.\start_demo.ps1
+```
+
+`setup_demo.ps1` installs Python dependencies, downloads the quantized Qwen2.5
+base model with Ollama, and creates the local fine-tuned model from the GGUF
+LoRA adapter included under `ollama/`.
+
+Uploaded documents and generated custom FAISS indexes are created on the
+computer running the interface. By default they are stored under:
+
+```text
+%PUBLIC%\NLP_LAW\custom
+```
+
+This location can be changed with `RAG_LOCAL_STORAGE` or `RAG_CUSTOM_ROOT`.
+
 Place the external retrieval artifacts in these default locations:
 
 ```text
@@ -150,6 +172,19 @@ notebooks/custom_data_rag_kaggle.ipynb
 
 The notebook converts the custom collection into a retrieval corpus, builds a
 new FAISS index, and runs the same RAG pipeline on the supplied documents.
+
+The Streamlit UI also exposes this workflow directly:
+
+1. Open the `Custom Dokümanlar` tab.
+2. Upload one or more JSON, JSONL, CSV, TXT, MD, or PDF files.
+3. Select `Custom corpus ve index oluştur`.
+4. Ask questions from the `Soru-Cevap` tab using the generated custom index.
+
+The `Benchmark` tab accepts CSV, JSON, or JSONL files. Question fields may be
+named `question`, `soru`, or `query`. Optional reference-answer fields enable
+EM/F1/ROUGE-L evaluation, while optional document IDs enable Hit@5 and MRR@5.
+Fine-tuned-only evaluation is the default; Base/Fine-tuned comparison can be
+enabled and uses identical retrieved contexts for both models.
 
 ## Typical Kaggle Workflow
 

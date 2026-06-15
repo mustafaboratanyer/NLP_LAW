@@ -16,6 +16,12 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 
+def portable_cache_root(name: str) -> Path:
+    if os.environ.get("PUBLIC"):
+        return Path(os.environ["PUBLIC"]) / "NLP_LAW" / name
+    return Path.home() / ".cache" / "nlp_law" / name
+
+
 def normalize_text(text: str) -> str:
     return (
         text.casefold()
@@ -67,8 +73,7 @@ def faiss_readable_path(path: Path) -> Path:
     if os.name != "nt" or str(resolved).isascii():
         return resolved
 
-    public_dir = Path(os.environ.get("PUBLIC", r"C:\Users\Public"))
-    cache_dir = public_dir / "NLP_LAW_CACHE"
+    cache_dir = portable_cache_root("faiss_cache")
     cache_dir.mkdir(parents=True, exist_ok=True)
 
     source_stat = resolved.stat()
@@ -92,9 +97,8 @@ def model_readable_path(path: str | Path) -> str:
         return str(path)
 
     resolved = candidate.resolve()
-    public_dir = Path(os.environ.get("PUBLIC", r"C:\Users\Public"))
     fingerprint = hashlib.sha256(str(resolved).encode("utf-8")).hexdigest()[:16]
-    cached_path = public_dir / "NLP_LAW_MODEL_CACHE" / f"{fingerprint}_{resolved.name}"
+    cached_path = portable_cache_root("model_cache") / f"{fingerprint}_{resolved.name}"
     cached_path.parent.mkdir(parents=True, exist_ok=True)
     shutil.copytree(resolved, cached_path, dirs_exist_ok=True)
     return str(cached_path)

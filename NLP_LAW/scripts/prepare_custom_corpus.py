@@ -74,15 +74,15 @@ def read_text_file(path: Path) -> dict:
 
 def read_pdf_file(path: Path) -> dict:
     try:
-        import pypdf
+        import fitz
     except ImportError as exc:
         raise ImportError(
-            "PDF input requires pypdf. Install it with `pip install pypdf`, "
+            "PDF input requires PyMuPDF. Install dependencies from requirements.txt, "
             "or convert PDFs to .txt first."
         ) from exc
 
-    reader = pypdf.PdfReader(str(path))
-    text = "\n\n".join(page.extract_text() or "" for page in reader.pages)
+    with fitz.open(path) as document:
+        text = "\n\n".join(page.get_text("text") or "" for page in document)
     return {
         "id": stable_id(str(path), prefix="custom"),
         "title": path.stem,
