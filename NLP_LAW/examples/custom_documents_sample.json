@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sample_doc_001",
+    "law_name": "Ornek Kanun",
+    "law_no": "0001",
+    "article_no": "Madde 1",
+    "article_title": "Amaç",
+    "text": "Bu örnek madde, custom document pipeline testleri için hazırlanmıştır. Sistem bu metni corpus olarak işler, chunklara böler ve FAISS index oluşturur.",
+    "source_url": "local://custom_documents_sample.json"
+  },
+  {
+    "id": "sample_doc_002",
+    "law_name": "Ornek Kanun",
+    "law_no": "0001",
+    "article_no": "Madde 2",
+    "article_title": "Başvuru süresi",
+    "text": "Başvurular, ilgili kişiye kararın bildirilmesinden itibaren otuz gün içinde yapılır. Süresi içinde yapılmayan başvurular reddedilebilir.",
+    "source_url": "local://custom_documents_sample.json"
+  }
+]

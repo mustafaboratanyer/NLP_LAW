@@ -1,0 +1,2423 @@
+{
+  "final_score": 0.6653433189524597,
+  "r_score": 0.8314434523809524,
+  "a_score": 0.5324128729310166,
+  "g_score": 0.6454918457868789,
+  "retrieval": {
+    "recall_5": 0.85,
+    "recall_10": 0.9041666666666667,
+    "mrr": 0.7401636904761906
+  },
+  "answer_quality": {
+    "f1": 0.6730905023850923,
+    "rouge_l": 0.653314783074624,
+    "em": 0.2708333333333333
+  },
+  "faithfulness": 0.8034836915737579,
+  "grounding": {
+    "faithfulness": 0.8034836915737579,
+    "citation_accuracy": 0.4875
+  },
+  "details": [
+    {
+      "question": "Ceza Muhakemesi Kanunu m.225 kapsamında “Hükmün konusu ve suçu değerlendirmede mahkemenin yetkisi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 225 – (1) Hüküm, ancak iddianamede unsurları gösterilen suça ilişkin fiil ve faili hakkında verilir.\n(2) Mahkeme, fiilin nitelendirilmesinde iddia ve savunmalarla bağlı değildir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Ceza Muhakemesi Kanunu m.225 - turkish_law_eski_5271_ceza_muhakemesi_kanunu_m225",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8125
+    },
+    {
+      "question": "Türk Medenî Kanunu m.307 kapsamında “III. Tek başına evlât edinme” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 307- Evli olmayan kişi otuz yaşını doldurmuş ise tek başına evlât edinebilir.\nOtuz yaşını doldurmuş olan eş, diğer eşin ayırt etme gücünden sürekli olarak yoksunluğu.\nveya iki yılı aşkın süreden beri nerede olduğunun bilinmemesi ya da mahkeme kararıyla iki yılı.\naşkın süreden beri eşinden ayrı yaşamakta olması yüzünden birlikte evlât edinmesinin mümkün.\nolmadığını ispat etmesi hâlinde, tek başına evlât edinebilir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Medenî Kanunu m",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8771929824561403
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.17 kapsamında “Ülkenin ekonomik çıkarlarına ilişkin bilgi veya belgeler” nasıl düzenlenmişti",
+      "generated": "Kaynağa göre: Madde 17- Açıklanması ya da zamanından önce açıklanması hâlinde, ülkenin ekonomik çıkarlarına zarar verecek veya haksız rekabet ve kazanca sebep olacak bilgi veya belgeler, bu Kanun kapsamı dışındadır.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Bilgi Edinme Hakkı Kanunu m.17 - turkish_law_eski_4982_bilgi_edinme_hakki_kanunu_m17",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.29 kapsamında “Flandra” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 29 – Flandra, boyu eninin 18 katı olan bayraktır. Bu bayraklar, savaş gemileriyle yardımcı gemilerde, tanıtma işareti olmak üzere, yalnız denizde kullanılır.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Bayrağı Tüzüğü m.29 - turkish_law_eski_85_9034_turk_bayragi_tuzugu_m29",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8387096774193549
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.314 kapsamında “2. İfa zamanı” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 314- Kiracı, aksine sözleşme ve yerel âdet olmadıkça, kira bedelini ve. gerekiyorsa yan giderleri, her ayın sonunda ve en geç kira süresinin bitiminde ödemekle.\nyükümlüdür.\n\nKaynak: Türk Borçlar Kanunu m.314 - turkish_law_eski_6098_turk_borclar_kanunu_m314",
+      "f1": 0.9859154929577464,
+      "rouge_l": 0.9859154929577464,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8709677419354839
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.54 kapsamında “B. Grev hakkı ve lokavt” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 54 – Toplu iş sözleşmesinin yapılması sırasında, uyuşmazlık çıkması halinde işçiler grev hakkına sahiptirler. Bu hakkın kullanılmasının ve işverenin lokavta başvurmasının usul ve şartları ile kapsam ve istisnaları kanunla düzenlenir.\nGrev hakkı ve lokavt iyiniyet kurallarına aykırı tarzda, toplum zararına ve milli serveti tahrip edecek şekilde kullanılamaz.\n(Mülga üçüncü fıkra: 7/5/2010-5982/7 md.)\nGrev ve lokavtın yasaklanabileceği veya ertelenebileceği haller ve işyerleri k",
+      "f1": 0.7914893617021277,
+      "rouge_l": 0.7914893617021277,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.948051948051948
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.2 kapsamında “Tanımlar” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 2 – (1) Bu Kanunun uygulanmasında\na) Şüpheli: Soruşturma evresinde, suç şüphesi altında bulunan kişiyi,\nb) Sanık: Kovuşturmanın başlamasından itibaren hükmün kesinleşmesine kadar, suç şüphesi altında bulunan kişiyi,\nc) Müdafi: Şüpheli veya sanığın ceza muhakemesinde savunmasını yapan avukatı,\nd) Vekil: Katılan, suçtan zarar gören veya malen sorumlu kişiyi ceza muhakemesinde temsil eden avukatı,\ne) Soruşturma: Kanuna göre yetkili mercilerce suç şüphesinin öğrenilmesinden iddia",
+      "f1": 0.5405405405405406,
+      "rouge_l": 0.5405405405405406,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9852941176470589
+    },
+    {
+      "question": "Türk Medenî Kanunu m.86 kapsamında “IV. Denetim kurulu” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 86- Denetim kurulu, üç asıl ve üç yedek üyeden az olmamak üzere dernek tüzüğünde. belirtilen sayıda üyeden oluşur.\nDenetim kurulu, denetleme görevini, dernek tüzüğünde belirtilen esas ve usullere göre. yapar; denetleme sonuçlarını bir raporla yönetim kuruluna ve genel kurula sunar.\nD. Sona erme\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Medenî Kanunu m.86 - turkish_law_eski_4721_turk_medeni_kanunu_m86",
+      "f1": 0.9714285714285714,
+      "rouge_l": 0.9714285714285714,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8809523809523809
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.31 kapsamında “Yönetmelik” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 31- Bu Kanunun uygulanması ile ilgili esas ve usullerin belirlenmesine ilişkin yönetmelik, Kanunun yayımını takip eden altı ay içinde Cumhurbaşkanlığı tarafından hazırlanarak (...)4 yürürlüğe konulur.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Bilgi Edinme Hakkı Kanunu m.31 - turkish_law_eski_4982_bilgi_edinme_hakki_kanunu_m31",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8285714285714286
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.14 kapsamında “Hava araçları” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 14 – Hava araçlarına Bayrak çekilmez. Sivil hava araçlarına, yön dümeninin her iki yanına boyayla al zemin üzerine Bayraktaki oranlara uygun, beyaz renkte ay yıldız resmolunur.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Bayrağı Tüzüğü m.14 - turkish_law_eski_85_9034_turk_bayragi_tuzugu_m14",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8181818181818182
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.71 kapsamında “III. Tehlike sorumluluğu ve denkleştirme” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 71- Önemli ölçüde tehlike arzeden bir işletmenin faaliyetinden zarar doğduğu.\ntakdirde, bu zarardan işletme sahibi ve varsa işleten müteselsilen sorumludur.\nBir işletmenin, mahiyeti veya faaliyette kullanılan malzeme, araçlar ya da güçler göz.\nönünde tutulduğunda, bu işlerde uzman bir kişiden beklenen tüm özenin gösterilmesi.\ndurumunda bile sıkça veya ağır zararlar doğurmaya elverişli olduğu sonucuna varılırsa, bunun.\nönemli ölçüde tehlike arzeden bir işletme olduğu kabul edi",
+      "f1": 0.8403361344537814,
+      "rouge_l": 0.8403361344537814,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.922077922077922
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.70 kapsamında “A. Hizmete girme” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 70 – Her Türk, kamu hizmetlerine girme hakkına sahiptir.\nHizmete alınmada, görevin gerektirdiği niteliklerden başka hiçbir ayırım gözetilemez.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türkiye Cumhuriyeti Anayasası m.70 - turkish_law_eski_2709_turkiye_cumhuriyeti_anayasasi_m70",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8518518518518519
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.257 kapsamında “Duruşma ve karar” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 257 – (1) 256 ncı maddeye göre verilmesi gereken kararlar, duruşmalı olarak verilir.\n(2) Müsadere veya iade olunacak eşya veya diğer malvarlığı değerleri üzerinde hakkı olan kimseler de duruşmaya çağrılır. Bu kişiler, sanığın sahip olduğu hakları kullanabilirler.\n(3) Çağrıya uymamaları, işlemin ertelenmesine neden olmaz ve hükmün verilmesini engellemez.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Ceza Muhakemesi Kanunu m.257 - turkish_law_eski_5271_ceza_muhakemesi_kanunu_m257",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9090909090909091
+    },
+    {
+      "question": "Türk Medenî Kanunu m.363 kapsamında “II. Ana ve babanın sorumluluğu” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Türk Medenî Kanunu / Medenî Hukuk. Madde 363- Ana ve baba, çocuk mallarının geri verilmesinde vekil gibi sorumludurlar.\nDürüstlük kuralına uygun olarak başkasına devrettikleri malların yerine sadece aldıkları.\nkarşılığı geri vermekle yükümlüdürler.\nKanuna uygun olarak çocuk veya aile için yaptıkları harcamalardan dolayı tazminatla.\nyükümlü tutulmazlar.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Medenî Kanunu m.363 - turkish_law_eski_4721_turk_medeni_kanunu_m363\nDosya ID: turkis",
+      "f1": 0.8596491228070176,
+      "rouge_l": 0.8596491228070176,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8163265306122449
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.28 kapsamında “Gizliliği kaldırılan bilgi veya belgeler” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 28- Gizliliği kaldırılmış olan bilgi veya belgeler, bu Kanunda belirtilen diğer istisnalar kapsamına girmiyor ise, bilgi edinme başvurularına açık hâle gelir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Bilgi Edinme Hakkı Kanunu m.28 - turkish_law_eski_4982_bilgi_edinme_hakki_kanunu_m28",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7586206896551724
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.9 kapsamında “Sürekli Bayrak çekilecek yerler” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 9 – (Değişik: 22/2/2001 - 2001/2130 K.)\nBayrağın sürekli çekili kalacağı kuruluşlar aşağıda gösterilmiştir.\nA) Cumhurbaşkanlığı,\nB) Türkiye Büyük Millet Meclisi,\nC) Anıtkabir,\nD) Hükümet konakları,\nE) Polis, Jandarma, hudut, gümrük muhafaza karakollarıyla hudut kapıları.\nF) Bağımsız takım ve bölükler ile daha üst askeri birlik veya karargahlar,\nG) Eğitim ve öğretim kurumları,\nİ) Yukarıda gösterilenler dışındaki kamu kurum ve kuruluşları,\nJ) Kamu kurum ve kuruluşlarına ait fab",
+      "f1": 0.9717514124293786,
+      "rouge_l": 0.9717514124293786,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.935064935064935
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.331 kapsamında “1. Önemli sebepler2” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 331- Taraflardan her biri, kira ilişkisinin devamını kendisi için çekilmez hâle.\ngetiren önemli sebeplerin varlığı durumunda, sözleşmeyi yasal fesih bildirim süresine uyarak.\nher zaman feshedebilir.\nHâkim, durum ve koşulları göz önünde tutarak, olağanüstü fesih bildiriminin parasal.\nsonuçlarını karara bağlar.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Borçlar Kanunu m.331 - turkish_law_eski_6098_turk_borclar_kanunu_m331",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8723404255319149
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.69 kapsamında “B. Siyasi partilerin uyacakları esaslar” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Türkiye Cumhuriyeti Anayasası Madde 69 - B. Siyasi partilerin uyacakları esaslar (devam)\n(Değişik fıkra: 3/10/2001-4709/25 md.) Siyasî partilerin kuruluş ve çalışmaları, denetlenmeleri, kapatılmaları ya da Devlet yardımından kısmen veya tamamen yoksun bırakılmaları ile siyasî partilerin ve adayların seçim harcamaları ve usulleri yukarıdaki esaslar çerçevesinde kanunla düzenlenir.\nİKİNCİ KISIM\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türkiye Cumhuriyeti Anayasası m.69 - turkish_law",
+      "f1": 0.9545454545454545,
+      "rouge_l": 0.9545454545454545,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.875
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.156 kapsamında “Müdafiin görevlendirilmesinde usul” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 156 – (1) 150 nci maddede yazılı olan hâllerde, müdafi\na) Soruşturma evresinde, ifadeyi alan merciin veya sorguyu yapan hâkimin istemi üzerine,\nb) Kovuşturma evresinde, mahkemenin istemi üzerine,\nBaro tarafından görevlendirilir.\n(2) Yukarıda belirtilen hâllerde müdafi soruşturmanın veya kovuşturmanın yapıldığı yer barosunca görevlendirilir.\n(3) Şüpheli veya sanığın kendisinin sonradan müdafi seçmesi halinde, baro tarafından görevlendirilen avukatın görevi sona erer.\n\nKaynak: ",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8947368421052632
+    },
+    {
+      "question": "Türk Medenî Kanunu m.317 kapsamında “1. Rızanın bulunmaması” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 317- Yasal sebep bulunmaksızın rıza alınmamışsa, rızası alınması gereken kişiler,\nküçüğün menfaati bunun sonucunda ağır biçimde zedelenmeyecekse, hâkimden evlâtlık ilişkisinin.\nkaldırılmasını isteyebilirler.\n\nKaynak: ORICON - Türk Medenî Kanunu m.317 - turkish_law_eski_4721_turk_medeni_kanunu_m317",
+      "f1": 0.9696969696969697,
+      "rouge_l": 0.9696969696969697,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.78125
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.1 kapsamında “Amaç” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 1- Bu Kanunun amacı; demokratik ve şeffaf yönetimin gereği olan eşitlik, tarafsızlık ve açıklık ilkelerine uygun olarak kişilerin bilgi edinme hakkını kullanmalarına ilişkin esas ve usulleri düzenlemektir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Bilgi Edinme Hakkı Kanunu m.1 - turkish_law_eski_4982_bilgi_edinme_hakki_kanunu_m1",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8235294117647058
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.12 kapsamında “Müsaade ile Bayrak çekilmesi veya konulması” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 12 – 11 inci maddede sayılan günler, kurtuluş ve Atatürk'ü anma günleri dışında, Bayrak çekilmesi veya konulması mahalli mülki amirinin müsaadesine bağlıdır.\nAncak, milli spor karşılaşmalarında ve milli gelenekler gerektiriyorsa törenlerde ve düğünlerde Bayrak kullanılabilir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Bayrağı Tüzüğü m.12 - turkish_law_eski_85_9034_turk_bayragi_tuzugu_m12",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8780487804878049
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.187 kapsamında “2. İfadan kaçınma ve tevdi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 187- Kime ait olduğu çekişmeli bulunan bir alacağın borçlusu, ifadan.\nkaçınabilir ve alacağın konusunu hâkim tarafından belirlenen yere tevdi etmekle borçtan kurtulur.\nBorçlu, alacağın çekişmeli olduğunu bildiği hâlde ifada bulunursa, bundan doğacak.\nsonuçlardan sorumlu olur.\nDava konusu olan çekişme mahkemece henüz sonuca bağlanmamış ve borç da muaccel.\nise, taraflardan her biri borçluyu, edimi tevdi etmeye zorlayabilir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Borçlar",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9180327868852459
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.135 kapsamında “H. Kamu kurumu niteliğindeki meslek kuruluşları” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 135 – Kamu kurumu niteliğindeki meslek kuruluşları ve üst kuruluşları; belli bir mesleğe mensup olanların müşterek ihtiyaçlarını karşılamak, mesleki faaliyetlerini kolaylaştırmak, meslek mensuplarının birbirleri ile ve halk ile olan ilişkilerinde dürüstüğünü hakim kılmak üzere meslek disiplini ve ahlakını korumak maksadı ile kanunla kurulan ve organları kendi üyeleri tarafından kanunda gösterilen usullere göre yargı gözetimi altında, gizli oyla seçilen kamu tüzelkişilikleridi",
+      "f1": 0.4756446991404011,
+      "rouge_l": 0.4641833810888252,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.782051282051282
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.80 kapsamında “Genetik inceleme sonuçlarının gizliliği” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 80 – (Değişik: 25/5/2005 – 5353/4 md.)\n(1) 75, 76 ve 78 inci madde hükümlerine göre alınan örnekler üzerinde yapılan inceleme sonuçları, kişisel veri niteliğinde olup, başka bir amaçla kullanılamaz; dosya içeriğini öğrenme yetkisine sahip bulunan kişiler tarafından bir başkasına verilemez.\n(2) Bu bilgiler, kovuşturmaya yer olmadığı kararına itiraz süresinin dolması, itirazın reddi, beraat veya ceza verilmesine yer olmadığı kararı verilip kesinleşmesi hâllerinde Cumhuriyet sav",
+      "f1": 0.9888888888888889,
+      "rouge_l": 0.9888888888888889,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9382716049382716
+    },
+    {
+      "question": "Türk Medenî Kanunu m.400 kapsamında “3. Aile meclisi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 400- Aile meclisi, vesayet altındaki kişinin vasi olmaya ehil, denetim makamınca.\ndört yıl için atanacak en az üç hısımından oluşur.\nVesayet altına alınanın eşi de aile meclisine üye olabilir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Medenî Kanunu m.400 - turkish_law_eski_4721_turk_medeni_kanunu_m400",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8378378378378378
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.19 kapsamında “İdarî soruşturmaya ilişkin bilgi veya belgeler” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 19- Kurum ve kuruluşların yetkili birimlerince yürütülen idarî soruşturmalarla ilgili olup, açıklanması veya zamanından önce açıklanması hâlinde.\na) Kişilerin özel hayatına açıkça haksız müdahale sonucunu doğuracak,\nb) Kişilerin veya soruşturmayı yürüten görevlilerin hayatını ya da güvenliğini tehlikeye sokacak,\nc) Soruşturmanın güvenliğini tehlikeye düşürecek,\nd) Gizli kalması gereken bilgi kaynağının açığa çıkmasına neden olacak veya soruşturma ile ilgili benzeri bilgi ve b",
+      "f1": 0.8817204301075269,
+      "rouge_l": 0.8817204301075269,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.7411764705882353
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.17 kapsamında “Konut ve işyerlerine Bayrak asılması” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 17 – İşyeri, konut vb. özel yerlere, Milli Bayramda, resmi bayramlarda, kurtuluş ve Atatürk'ü anma günlerinde 7 nci maddenin A bendi hükümlerine bağlı olmaksızın Bayrak asılabilir.\nVerilen kaynak tek bilgi kaynağıdır. Bu kaynak, 'Türk Bayrağı Tüzüğü' konusunu madde bazında incelişmiş olup, istenen bildirim için yeterlidir.",
+      "f1": 0.7727272727272728,
+      "rouge_l": 0.7727272727272728,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.723404255319149
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.224 kapsamında “bilirkişi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 224- Hayvan satışında satıcının sorumlu olacağı süre yazılı olarak. belirlenmemiş ve ayıp da hayvanın gebeliğine ilişkin değilse satıcı, ancak ayıbın devrin. yapıldığı veya alıcının devralmada temerrüdünün gerçekleştiği günden başlayarak dokuz gün. içine kendisine bildirilmesi ve ayrıca, hayvanın bilirkişilerce gözden geçirilmesinin aynı süre. içinde yetkili makamdan istenmesi hâlinde sorumlu olur.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Borçlar Kanunu m.224 - turkish_",
+      "f1": 0.9833333333333333,
+      "rouge_l": 0.9833333333333333,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8909090909090909
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.138 kapsamında “A. Mahkemelerin bağımsızlığı” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 138 – Hakimler, görevlerinde bağımsızdırlar; Anayasaya, kanuna ve hukuka uygun olarak vicdanı kanaatlerine göre hüküm verirler.\nHiçbir organ, makam, merci veya kişi, yargı yetkisinin kullanılmasında mahkemelere ve hakimlere emir ve talimat veremez; Anayasa ve yasalarla güvence altına alınmış özel organlar dışında, genelge gönderemez; tavsiye ve telkinde bulunamaz.\nGörülmekte olan bir dava hakkında Yasama Meclisinde yargı yetkisinin kullanılması ile ilgili soru sorulamaz, görü",
+      "f1": 0.9100529100529101,
+      "rouge_l": 0.9100529100529101,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9230769230769231
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.100 kapsamında “Tutuklama nedenleri” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Ceza Muhakemesi Kanunu Madde 100 - Tutuklama nedenleri (devam)\n(4) (Değişik: 2/7/2012-6352/96 md.) Sadece adlî para cezasını gerektiren suçlarda veya vücut dokunulmazlığına karşı kasten işlenenler hariç olmak üzere hapis cezasının üst sınırı iki yıldan fazla olmayan suçlarda tutuklama kararı verilemez.[16].\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Ceza Muhakemesi Kanunu m.100 - turkish_law_eski_5271_ceza_muhakemesi_kanunu_m100_p003\nDosya ID: turkish_law_eski_5271_ceza_muhakemesi_k",
+      "f1": 0.1344902386117137,
+      "rouge_l": 0.10412147505422994,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7924528301886793
+    },
+    {
+      "question": "Türk Medenî Kanunu m.4 kapsamında “III. Hâkimin takdir yetkisi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 4 - Kanunun takdir yetkisi tanıdığı veya durumun gereklerini ya da haklı sebepleri. göz önünde tutmayı emrettiği konularda hâkim, hukuka ve hakkaniyete göre karar verir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Medenî Kanunu m.4 - turkish_law_eski_4721_turk_medeni_kanunu_m4",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8484848484848485
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.18 kapsamında “İstihbarata ilişkin bilgi veya belgeler” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 18- Sivil ve askerî istihbarat birimlerinin görev ve faaliyetlerine ilişkin bilgi veya belgeler, bu Kanun kapsamı dışındadır.\nAncak, bu bilgi ve belgeler kişilerin çalışma hayatını ve meslek onurunu etkileyecek nitelikte ise, istihbarata ilişkin bilgi ve belgeler bilgi edinme hakkı kapsamı içindedir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Bilgi Edinme Hakkı Kanunu m.18 - turkish_law_eski_4982_bilgi_edinme_hakki_kanunu_m18",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8108108108108109
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.16 kapsamında “Bayrağın yabancı devlet bayraklarıyla birlikte çekilmesi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 16 – Milletlerarası toplantılarda, fuarlarda ve yabancı turistlerin konakladıkları yerlerde, yabancı devlet bayrakları, ancak, Bayrakla birlikte çekilebilir. Bu takdirde 12 nci maddenin birinci fıkrası hükmü uygulanmaz.\nBu durumlarda, Bayrak, bina ön yüzüne göre sağdaki ilk direğe çekilir.\nYabancı devlet bayraklarının ebadı, Bayrak ebadından büyük, direkleri Bayrak direğinden yüksek olamaz.\nYabancıların karşılıklı olmak şartıyla uyruğunda bulundukları devletin bayrağını konut",
+      "f1": 0.8994708994708996,
+      "rouge_l": 0.8994708994708996,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9459459459459459
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.50 kapsamında “II. Zararın ve kusurun ispatı” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 50- Zarar gören, zararını ve zarar verenin kusurunu ispat yükü altındadır.\nUğranılan zararın miktarı tam olarak ispat edilemiyorsa hâkim, olayların olağan.\nakışını ve zarar görenin aldığı önlemleri göz önünde tutarak, zararın miktarını hakkaniyete.\nuygun olarak belirler.\nIII. Tazminat\n\nKaynak: Türk Borçlar Kanunu m.50 - turkish_law_eski_6098_turk_borclar_kanunu_m50",
+      "f1": 0.968421052631579,
+      "rouge_l": 0.968421052631579,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9024390243902439
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.101 kapsamında “A. Adaylık ve seçimi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 101 – (Değişik: 21/1/2017-6771/7 md.)\nCumhurbaşkanı, kırk yaşını doldurmuş, yükseköğrenim yapmış, milletvekili seçilme yeterliliğine sahip Türk vatandaşları arasından, doğrudan halk tarafından seçilir.\nCumhurbaşkanı, kırk yaşını doldurmuş, yükseköğrenim yapmış, milletvekili seçilme yeterliliğine sahip Türk vatandaşları arasından, doğrudan halk tarafından seçilir.\nCumhurbaşkanı, kırk yaşını doldurmuş, yükseköğrenim yapmış, milletvekili seçilme yeterliliğine sahip Türk vatandaş",
+      "f1": 0.231023102310231,
+      "rouge_l": 0.231023102310231,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9310344827586207
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.148 kapsamında “İfade alma ve sorguda yasak usuller” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Ceza Muhakemesi Kanunu Madde 148 - İfade alma ve sorguda yasak usuller açıklama notları\n* **Kötü davranma:** Şüpheliye veya sanığa hakaret, küçümseme, aşağılama veya kötü davranışlarda bulunmak yasaktır.\n* **İşkence:** Şüpheliye veya sanığa fiziksel veya psikolojik işkence uygulamak yasaktır.\n* **İlàç verme:** Şüpheliye veya sanığa, bilinci veya iradesini etkileyecek ilaçlar vermek yasaktır.\n* **Yorma:** Şüpheliyi veya sanığı, fiziksel veya psikolojik olarak yoraracak şekilde sorgu",
+      "f1": 0.2459893048128342,
+      "rouge_l": 0.1711229946524064,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9310344827586207
+    },
+    {
+      "question": "Türk Medenî Kanunu m.651 kapsamında “III. Bazı malların özgülenmesi veya satılması” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 651- Değerinde önemli azalma olmadan bölünemeyen tereke malı, bütün olarak. mirasçılardan birine özgülenir.\nMirasçılar bir tereke malının bölünmesi veya özgülenmesi konusunda anlaşamazlarsa, o.\nmal satılır ve bedeli bölüştürülür.\nMirasçılardan biri istemde bulunursa satış artırma yoluyla yapılır. Mirasçılar artırmanın.\nşekli konusunda anlaşamazlarsa sulh hâkimi, artırmanın mirasçılar arasında veya herkese açık.\nyapılmasına karar verir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY ",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9074074074074074
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.12 kapsamında “Başvuruların cevaplandırılması” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 12- Kurum ve kuruluşlar, bilgi edinme başvurularıyla ilgili cevaplarını yazılı olarak veya elektronik ortamda başvuru sahibine bildirirler. Başvurunun reddedilmesi hâlinde bu kararın gerekçesi ve buna karşı başvuru yolları belirtilir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Bilgi Edinme Hakkı Kanunu m.12 - turkish_law_eski_4982_bilgi_edinme_hakki_kanunu_m12",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7777777777777778
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.3 kapsamında “Bayrağın kumaşı” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 1 – (Değişik: 22/2/2001 - 2001/2130 K.)\nBu Tüzük : Türk Bayrağının ve özel bayrakların standartlarını bayrağın hangi kumaşlardan yapılacağını, hangi kapalı yerlere konulacağını, nerelere fon olarak takılacağı veya asılacağını, kamu kurum ve kuruluşlarında ve bunlar dışındaki yerlerde ne zaman ve nasıl çekileceğini, nasıl katlanacağını, Türk Silahlı Kuvvetleri yüzer birliklerinde ve Türk bandıralı ticaret gemilerinde Bayrak çekme ve indirme zamanlarını, Bayrak çekilirken ve in",
+      "f1": 0.194331983805668,
+      "rouge_l": 0.12955465587044535,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9466666666666667
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.365 kapsamında “III. Bakım borcu” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 365- Kiracı, kiralananın bakımını gereği gibi sağlamakla yükümlüdür. Kiracı, yerel âdete uygun olarak küçük onarımları yapmak, bozulan veya kullanılmayla. yok olan düşük değerli araç ve gereçlerin yerine yenilerini koymak zorundadır.\n\nKaynak: Türk Borçlar Kanunu m.365 - turkish_law_eski_6098_turk_borclar_kanunu_m365",
+      "f1": 0.9876543209876543,
+      "rouge_l": 0.9876543209876543,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8947368421052632
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.80 kapsamında “1. Milletin temsili” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 80 – Türkiye Büyük Millet Meclisi üyeleri, seçildikleri bölgeyi veya kendilerini seçenleri değil, bütün Milleti temsil ederler.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türkiye Cumhuriyeti Anayasası m.80 - turkish_law_eski_2709_turkiye_cumhuriyeti_anayasasi_m80",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8
+    },
+    {
+      "question": "Türk Medenî Kanunu m.688 kapsamında “1. Genel kurallar” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Türk Medeni Kanunu'nun 688. Maddesi'nde paylı mülkiyet, birden çok kişinin maddî olarak bölünmemiş bir şeyin tamamına belli paylarla malik olması olarak tanımlanmıştır.\n\nKaynak: ORICON - Medeni Hukuk - Miras/Aile/Eşya/Kişiler - oricon_medeni_000781\nCitation: ORICON - Medeni Hukuk - Miras/Aile/Eşya/Kişiler - oricon_medeni_000781\nDocument ID: oricon_medeni_000781\nLaw: Türk Medeni Kanunu\nArticle Number: 688\nContent: Türk Medeni Kanunu'nun 688. Maddesi'nde paylı mülkiyet, birden çok ki",
+      "f1": 0.25333333333333335,
+      "rouge_l": 0.24000000000000002,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.43859649122807015
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.13 kapsamında “İtiraz usulü” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Yasa teklifinin 'Yalan Haber ve Dezenformasyon ile Mücadele' kapsamında, dezenformasyonla ilgili haberlerin 'organize, örgütlü, belli amaca yönelik olması' halinde yaptırıma tabi tutulacağı öngörülmektedir.\n\nBu kaynak, sorudan beklenen bilgi bakımından yeterli değil. Kaynak kesin resmî karar metni değil, aynı konuda daha fazla bilgi aranması gerekir. Verilen kaynaklarda bu sorunun cevabı yok.",
+      "f1": 0.11764705882352941,
+      "rouge_l": 0.10084033613445378,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.5625
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.2 kapsamında “Deyimler” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Bu Tüzük : Türk Bayrağının ve özel bayrakların standartlarını bayrağın hangi kumaşlardan yapılacağını, hangi kapalı yerlere konulacağını, nerelere fon olarak takılacağı veya asılacağını, kamu kurum ve kuruluşlarında ve bunlar dışındaki yerlerde ne zaman ve nasıl çekileceğini, nasıl katlanacağını, Türk Silahlı Kuvvetleri yüzer birliklerinde ve Türk bandıralı ticaret gemilerinde Bayrak çekme ve indirme zamanlarını, Bayrak çekilirken ve indirilirken yapılacak törenlere dair hususları,",
+      "f1": 0.1932367149758454,
+      "rouge_l": 0.16425120772946858,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9154929577464789
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.371 kapsamında “c. Kiracının ölümü” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 371- Kiracının ölümü hâlinde, onun mirasçıları ve kiraya veren, altı aylık.\nyasal fesih bildirim sürelerine uymak koşuluyla, sözleşmeyi feshedebilirler.\nII. Sona ermenin sonuçları\n\nKaynak: Türk Borçlar Kanunu m.371 - turkish_law_eski_6098_turk_borclar_kanunu_m371\nDosya ID: turkish_law_eski_6098_turk_borclar_kanunu_m371\nLuksus hakları: Bu kaynak, istenen konuda çok sayıda luksus hakkını kapsamaktadır.\n\nVerilen kaynaklarda bu sorunun cevabı: Türk Borçlar Kanunu m.371 - turkish_",
+      "f1": 0.5742574257425742,
+      "rouge_l": 0.5742574257425742,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.5384615384615384
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.142 kapsamında “E. Mahkemelerin kuruluşu” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 142 – Mahkemelerin kuruluşu, görev ve yetkileri, işleyişi ve yargılama usulleri kanunla düzenlenir.\n(Ek fıkra: 21/1/2017-6771/13 md.) Disiplin mahkemeleri dışında askerî mahkemeler kurulamaz. Ancak savaş halinde, asker kişilerin görevleriyle ilgili olarak işledikleri suçlara ait davalara bakmakla görevli askerî mahkemeler kurulabilir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türkiye Cumhuriyeti Anayasası m.142 - turkish_law_eski_2709_turkiye_cumhuriyeti_anayasasi_m142",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.105 kapsamında “Usul” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 105 – (Değişik: 25/5/2005 – 5353/13 md.)\n(1) 103 ve 104 üncü maddeler uyarınca yapılan istem üzerine, merciince Cumhuriyet savcısı, şüpheli, sanık veya müdafiin görüşü alındıktan sonra, üç gün içinde istemin kabulüne, reddine veya adlî kontrol uygulanmasına karar verilir. (Ek cümle: 24/11/2016-6763/23 md.) 103 üncü maddenin birinci fıkrasının birinci cümlesi uyarınca yapılan istemler hariç olmak üzere örgüt faaliyeti çerçevesinde işlenen suçlar bakımından bu süre yedi gün ola",
+      "f1": 0.9261083743842364,
+      "rouge_l": 0.9261083743842364,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9866666666666667
+    },
+    {
+      "question": "Türk Medenî Kanunu m.359 kapsamında “III. Meslek veya sanat için verilen mal ve kişisel kazanç” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 359- Ana ve baba tarafından bir meslek veya sanat ile uğraşması için çocuğa.\nkendi malından verilen kısmın veya kendi kişisel kazancının yönetimi ve bunlardan yararlanma.\nhakkı çocuğa aittir.\nÇocuğun evde ana ve babasıyla birlikte yaşaması hâlinde, ana ve baba ondan kendisinin.\nbakımı için uygun bir katkıda bulunmasını isteyebilirler.\nF. Çocuk mallarının korunması\n\nKaynak: Türk Medenî Kanunu m.359 - turkish_law_eski_4721_turk_medeni_kanunu_m359\nDosya: turkish_law_eski_4721_tu",
+      "f1": 0.9354838709677421,
+      "rouge_l": 0.9354838709677421,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8653846153846154
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.26 kapsamında “Kurum içi görüş, bilgi notu ve tavsiyeler” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 26- Kurum ve kuruluşların faaliyetlerini yürütmek üzere, elde ettikleri görüş, bilgi notu, teklif ve tavsiye niteliğindeki bilgi veya belgeler, kurum ve kuruluş tarafından aksi kararlaştırılmadıkça bilgi edinme hakkı kapsamındadır.\nBilimsel, kültürel, istatistik, teknik, tıbbî, malî, hukukî ve benzeri uzmanlık alanlarında yasal olarak görüş verme yükümlülüğü bulunan kişi, birim ya da kurumların görüşleri, kurum ve kuruluşların alacakları kararlara esas teşkil etmesi kaydıyla ",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8852459016393442
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.11 kapsamında “Türk Bayrağı Tüzüğü” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 1 – (Değişik: 22/2/2001 - 2001/2130 K.)\nBu Tüzük : Türk Bayrağının ve özel bayrakların standartlarını bayrağın hangi kumaşlardan yapılacağını, hangi kapalı yerlere konulacağını, nerelere fon olarak takılacağı veya asılacağını, kamu kurum ve kuruluşlarında ve bunlar dışındaki yerlerde ne zaman ve nasıl çekileceğini, nasıl katlanacağını, Türk Silahlı Kuvvetleri yüzer birliklerinde ve Türk bandıralı ticaret gemilerinde Bayrak çekme ve indirme zamanlarını, Bayrak çekilirken ve in",
+      "f1": 0.2564102564102564,
+      "rouge_l": 0.20512820512820512,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9466666666666667
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.208 kapsamında “B. Yarar ve hasar” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 208- Kanundan, durumun gereğinden veya sözleşmede öngörülen özel. koşullardan doğan ayrık hâller dışında, satılanın yarar ve hasarı; taşınır satışlarında zilyetliğin. devri, taşınmaz satışlarında ise tescil anına kadar satıcıya aittir.\nTaşınır satışlarında, alıcının satılanın zilyetliğini devralmada temerrüde düşmesi. durumunda zilyetliğin devri gerçekleşmişçesine satılanın yarar ve. hasar, satılanın taşıyıcıya teslim edildiği anda alıcıya geçer.\nİKİNCİ AYIRIM\nTaşınır Satışı\n",
+      "f1": 0.8513513513513514,
+      "rouge_l": 0.8513513513513514,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9122807017543859
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.96 kapsamında “D. Toplantı ve karar yeter sayısı” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 96 – (Değişik birinci fıkra: 31/5/2007-5678/3 md.) Türkiye Büyük Millet Meclisi, yapacağı seçimler dahil bütün işlerinde üye tamsayısının en az üçte biri ile toplanır. Türkiye Büyük Millet Meclisi, Anayasada başkaca bir hüküm yoksa toplantıya katılanların salt çoğunluğu ile karar verir; ancak karar yeter sayısı hiçbir şekilde üye tamsayısının dörtte birinin bir fazlasından az olamaz.\n(Mülga ikinci fıkra: 21/1/2017-6771/16 md.)\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türkiye",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9365079365079365
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.223 kapsamında “Duruşmanın Sona Ermesi ve Hüküm” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Ceza Muhakemesi Kanunu Madde 223 - Duruşmanın Sona Ermesi ve Hüküm (devam)\n(6) Yüklenen suçu işlediğinin sabit olması halinde, belli bir cezaya mahkûmiyet yerine veya mahkûmiyetin yanı sıra güvenlik tedbirine hükmolunur.\n(7) Aynı fiil nedeniyle, aynı sanık için önceden verilmiş bir hüküm veya açılmış bir dava varsa davanın reddine karar verilir.\n(8) Türk Ceza Kanununda öngörülen düşme sebeplerinin varlığı ya da soruşturma veya kovuşturma şartının gerçekleşmeyeceğinin anlaşılması ha",
+      "f1": 0.2709677419354839,
+      "rouge_l": 0.14838709677419357,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9285714285714286
+    },
+    {
+      "question": "Türk Medenî Kanunu m.878 kapsamında “2. Borcun ödenmesi ve rehnin sona ermesi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Aile konutunun korunması Türk Medeni Kanunu 194. Madde kapsamında sağlanmaktadır ve bu koruma, eşlerin evlilik birliğinin resmi olarak sona ermesi, aile konutundan taşınılıp aile konutu niteliğine son verilmesi halinde sona ermektedir.\n\nBu kaynak, 'Türk Medeni Kanunu m.878' konusunu doğrudan kapsamaktadır. Bu kaynak, sorduğunuz konuda şu kadar bilgi içeriyor: Aile konutunun korunması Türk Medeni Kanunu 194. Madde kapsamında sağlanmaktadır ve bu koruma, eşlerin evlilik birliğinin re",
+      "f1": 0.136986301369863,
+      "rouge_l": 0.1232876712328767,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6122448979591837
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.25 kapsamında “Kurum içi düzenlemeler” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 25- Kurum ve kuruluşların, kamuoyunu ilgilendirmeyen ve sadece kendi personeli ile kurum içi uygulamalarına ilişkin düzenlemeler hakkındaki bilgi veya belgeler, bilgi edinme hakkının kapsamı dışındadır. Ancak, söz konusu düzenleme denetiminden etkilenen kurum çalışanlarının bilgi edinme hakları saklıdır.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Bilgi Edinme Hakkı Kanunu m.25 - turkish_law_eski_4982_bilgi_edinme_hakki_kanunu_m25",
+      "f1": 0.9690721649484536,
+      "rouge_l": 0.9690721649484536,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.22 kapsamında “Bayrak töreni ve Bayrağın katlanması (1)” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Türk Bayrağı Tüzüğü Madde 22 - Bayrak töreni ve Bayrağın katlanması (1) (devam)\nE) Emrinde üniformalı personel bulunmayan kurumlarla yabancı ülkelerdeki resmi ve milli binalardaki törenlerde, Bayrağı çeken veya indiren kişi başı açık olarak bulunur, çekilmesinden sonra veya indirilmesinden önce Bayrağı selamlar.\nF) (Değişik :\n28/5/2001 - 2001/2574 K.) Okullardaki Bayrak töreninde Bayrağı çeken veya indiren kişi çekilmesinden sonra veya indirilmesinden önce Bayrağı selamlar.\nÖğretme",
+      "f1": 0.2311111111111111,
+      "rouge_l": 0.1777777777777778,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9473684210526315
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.336 kapsamında “I. Konusu” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 336- Taşınmaz kiralarında kiraya veren, işlemiş bir yıllık ve işlemekte olan.\naltı aylık kira bedelinin güvencesi olmak üzere, kiralananda bulunan ve kiralananın.\ndöşenmesine veya kullanılmasına yarayan taşınırlar üzerinde hapis hakkına sahiptir.\nKiraya verenin hapis hakkı, alt kiracının asıl kiracıya olan kira borcunu aşmamak.\nüzere, alt kiracının kiralanana getirdiği aynı nitelikteki taşınırları da kapsar.\nHapis hakkı, kiracının haczedilemeyen malları üzerinde kullanılamaz.",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.896551724137931
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.160 kapsamında “IV. Sayıştay” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 160 – Sayıştay, merkezî yönetim bütçesi kapsamındaki kamu idareleri ile sosyal güvenlik kurumlarının bütün gelir ve giderleri ile mallarını Türkiye Büyük Millet Meclisi adına denetlemek ve sorumluların hesap ve işlemlerini kesin hükme bağlamak ve kanunlarla verilen inceleme, denetleme ve hükme bağlama işlerini yapmakla görevlidir. Sayıştayın kesin hükümleri hakkında ilgililer yazılı bildirim tarihinden itibaren onbeş gün içinde bir kereye mahsus olmak üzere karar düzeltilmesi",
+      "f1": 0.7569721115537849,
+      "rouge_l": 0.7569721115537849,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.927710843373494
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.176 kapsamında “İddianamenin sanığa tebliği ve sanığın çağrılması” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 176 – (1) İddianame, çağrı kâğıdı ile birlikte sanığa tebliğ olunur. (Ek cümle:8/7/2021-7331/20 md.) Ayrıca, iddianameye ilişkin bilgiler ve duruşma tarihi; telefon, telgraf, faks, elektronik posta gibi iletişim bilgilerinin dosyada bulunması hâlinde bu araçlardan yararlanılmak suretiyle de bildirilir, ancak çağrı kâğıdına bağlanan sonuçlar bu durumda uygulanmaz.\n(2) Tutuklu olmayan sanığa tebliğ olunacak çağrı kâğıdına mazereti olmaksızın gelmediğinde zorla getirileceği yazı",
+      "f1": 0.7796610169491525,
+      "rouge_l": 0.7796610169491525,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9878048780487805
+    },
+    {
+      "question": "Türk Medenî Kanunu m.694 kapsamında “4. Giderler ve yükümlülükler” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 694- Paylı mülkiyetten doğan veya paylı malı ilgilendiren yönetim giderleri,\nvergiler ve diğer yükümlülükler, aksine bir hüküm bulunmadıkça, paydaşlar tarafından payları.\noranında karşılanır.\nPayına düşenden fazlasını ödemiş bulunan paydaş, diğerlerine payları oranında rücu.\nedebilir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Medenî Kanunu m.694 - turkish_law_eski_4721_turk_medeni_kanunu_m694",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8536585365853658
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.4 kapsamında “Bilgi edinme hakkı” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 4- Herkes bilgi edinme hakkına sahiptir.\nTürkiye'de ikamet eden yabancılar ile Türkiye'de faaliyette bulunan yabancı tüzel kişiler, isteyecekleri bilgi kendileriyle veya faaliyet alanlarıyla ilgili olmak kaydıyla ve karşılıklılık ilkesi çerçevesinde, bu Kanun hükümlerinden yararlanırlar.\nTürkiye'nin taraf olduğu uluslararası sözleşmelerden doğan hak ve yükümlülükleri saklıdır.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Bilgi Edinme Hakkı Kanunu m.4 - turkish_law_eski_4982_bilg",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8627450980392157
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.35 kapsamında “Bayrağın tanıtıcı bayraklarla birlikte çekilmesi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 35 – Tanıtıcı bayrak çeken kuruluşlarda en az iki direk bulunur. Bina ön yüzüne göre sağdaki direğe Bayrak, soldaki direğe tanıtıcı bayrak çekilir.\nBu durumlarda, tanıtıcı bayrakların ebadı Bayrak ebadından büyük, direkleri Bayrak direğinden yüksek olamaz.\nBu gibi yerlere, ancak, Milli Bayram, genel tatil, hafta tatili, kurtuluş ve Atatürk'ü anma günlerinde Bayrak çekilebilir.\nÜç direk bulunan yerlerde Bayrak, ortadaki direğe, üçten çok direk varsa, bina ön yüzüne göre sağdak",
+      "f1": 0.989247311827957,
+      "rouge_l": 0.989247311827957,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9253731343283582
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.39 kapsamında “IV. İrade bozukluğunun giderilmesi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 39- Yanılma veya aldatma sebebiyle ya da korkutulma sonucunda sözleşme.\nyapan taraf, yanılma veya aldatmayı öğrendiği ya da korkutmanın etkisinin ortadan kalktığı.\nandan başlayarak bir yıl içinde sözleşme ile bağlı olmadığını bildirmez veya verdiği şeyi geri.\nistemezse, sözleşmeyi onamış sayılır.\nAldatma veya korkutmadan dolayı bağlayıcılığı olmayan bir sözleşmenin onanmış.\nsayılması, tazminat hakkını ortadan kaldırmaz.\nH. Temsil\nI. Yetkili temsil\n\nBu kaynak, istenen esas üze",
+      "f1": 0.7218934911242604,
+      "rouge_l": 0.7218934911242604,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.7777777777777778
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.136 kapsamında “İ. Diyanet İşleri Başkanlığı” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 136 – Genel idare içinde yer alan Diyanet İşleri Başkanlığı, laiklik ilkesi doğrultusunda, bütün siyasi görüş ve düşünüşlerin dışında kalarak ve milletçe dayanışma ve bütünleşmeyi amaç edinerek, özel kanununda gösterilen görevleri yerine getirir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türkiye Cumhuriyeti Anayasası m.136 - turkish_law_eski_2709_turkiye_cumhuriyeti_anayasasi_m136",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8536585365853658
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.268 kapsamında “İtiraz usulü ve inceleme mercileri” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Ceza Muhakemesi Kanunu Madde 268 - İtiraz usulü ve inceleme mercileri (devam)\n(3) İtirazı incelemeye yetkili merciler aşağıda gösterilmiştir:\na) (Değişik: 18/6/2014-6545/74 md.) Sulh ceza hâkimliği kararlarına yapılan itirazların incelenmesi, o yerde birden fazla sulh ceza hâkimliğinin bulunması hâlinde, numara olarak kendisini izleyen hâkimliğe; son numaralı hâkimlik için bir numaralı hâkimliğe; ağır ceza mahkemesinin bulunmadığı yerlerde tek sulh ceza hâkimliği varsa, yargı çevre",
+      "f1": 0.4197530864197531,
+      "rouge_l": 0.4197530864197531,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9130434782608695
+    },
+    {
+      "question": "Türk Medenî Kanunu m.84 kapsamında “1. Oluşumu” nasıl düzenlenmiştir?",
+      "generated": "Bu kaynaklar doğrultusunda 'Türk Medenî Kanunu m.84' konusuna göre verilen kaynaklar hakkında nextgen system tarafından oluşturulan özet şudur: Fikir ve Sanat Eserleri Kanunu (FSEK) kapsamında, hangi fikir ve sanat mahsullerinin 'eser' olarak kabul edileceği ve eser sahibine tanınan haklar düzenlenmiştir.\n\nKaynak: ORICON - Genel hukuk / sınıflandırma bekliyor - oricon_genel_000795\n\nEksiksiz bir cevap için kaynakta yapılan 'Türk Medenî Kanunu m.84' gibi daha spesifik bir araştırma yapılmamıştır. ",
+      "f1": 0.16867469879518074,
+      "rouge_l": 0.13253012048192772,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.36363636363636365
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.3 kapsamında “Tanımlar” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 3- Bu Kanunda geçen\na) Kurum ve kuruluş: Bu Kanunun 2 nci maddesinde geçen ve kapsama dahil olan bilgi edinme başvurusu yapılacak bütün makam ve mercileri,\nb) Başvuru sahibi: Bu Kanun kapsamında bilgi edinme hakkını kullanarak kurum ve kuruluşlara başvuran gerçek ve tüzel kişileri,\nc) Bilgi: Kurum ve kuruluşların sahip oldukları kayıtlarda yer alan bu Kanun kapsamındaki her türlü veriyi,\nd) Belge: Kurum ve kuruluşların sahip oldukları bu Kanun kapsamındaki yazılı, basılı veya",
+      "f1": 0.7412587412587412,
+      "rouge_l": 0.7412587412587412,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8850574712643678
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.63 kapsamında “1. Genel olarak” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 63- Kanunun verdiği yetkiye dayanan ve bu yetkinin sınırları içinde kalan. bir fiil, zarara yol açsa bile, hukuka aykırı sayılmaz.\nZarar görenin rızası, daha üstün nitelikte özel veya kamusal yarar, zarar verenin. dava hakkı, yetkili kamu makamlarının müdahale kararı, hukuka aykırı sayılmaz.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Borçlar Kanunu m.63 - turkish_law_eski_6098_turk_borclar_kanunu_m63",
+      "f1": 0.8032786885245902,
+      "rouge_l": 0.8032786885245902,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7916666666666666
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.20 kapsamında “A. Özel hayatın gizliliği” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 20 – Herkes, özel hayatına ve aile hayatına saygı gösterilmesini isteme hakkına sahiptir. Özel hayatın ve aile hayatının gizliliğine dokunulamaz. (Mülga üçüncü cümle: 3/10/2001-4709/5 md.).\n(Kaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türkiye Cumhuriyeti Anayasası m.20 - turkish_law_eski_2709_turkiye_cumhuriyeti_anayasasi_m20)\n\nBu kaynak, kesinlikle eksiksiz değil ve sorudaki tüm detayları içermiyor. Soruda ekstra bilgi istenen \"B. Özel hayatın gizliliği\" konusu, kaynakta mevcut",
+      "f1": 0.3294117647058824,
+      "rouge_l": 0.3058823529411765,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6153846153846154
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.78 kapsamında “Moleküler genetik incelemeler” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 78 – (1) 75 ve 76 ncı maddelerde öngörülen işlemlerle elde edilen örnekler üzerinde, soybağının veya elde edilen bulgunun şüpheli veya sanığa ya da mağdura ait olup olmadığının tespiti için zorunlu olması hâlinde moleküler genetik incelemeler yapılabilir. Alınan örnekler üzerinde bu amaçlar dışında tespitler yapılmasına yönelik incelemeler yasaktır.\n(2) Birinci fıkra uyarınca yapılabilen incelemeler, bulunan ve kime ait olduğu belli olmayan beden parçaları üzerinde de yapılab",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9130434782608695
+    },
+    {
+      "question": "Türk Medenî Kanunu m.320 kapsamında “F. Evlâtlık işlemlerinde aracılık24” nasıl düzenlenmiştir?",
+      "generated": "Bu kaynaklar doğrultusunda 'Türk Medenî Kanunu m.320 kapsamında “F. Evlâtlık işlemlerinde aracılık24” nasıl düzenlenmiştir?' konusunu açıklarken: Bu kaynaklar, istenen esaslı bir konu üzerinde çok fazla bilgi içermemektedir. Bu nedenle verilen kaynaklar şu an için yeterli değil; bu nedenle verilen kaynaklar, eksiklikleriyle 'Türk Medenî Kanunu m.320' konusunu tam olarak ifade etmemektedir. Verilen kaynaklarda bu sorunun cevabı yoktur.",
+      "f1": 0.15053763440860216,
+      "rouge_l": 0.15053763440860216,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.21428571428571427
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.15 kapsamında “Yargı denetimi dışında kalan işlemler” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 15- Yargı denetimi dışında kalan idarî işlemlerden kişinin çalışma hayatını ve mesleki onurunu etkileyecek nitelikte olanlar, bu Kanun kapsamına dahildir. Bu şekilde sağlanan bilgi edinme hakkı işlemin yargı denetimine açılması sonucunu doğurmaz.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Bilgi Edinme Hakkı Kanunu m.15 - turkish_law_eski_4982_bilgi_edinme_hakki_kanunu_m15",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8157894736842105
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.8 kapsamında “Çekilme ve indirilme (1)” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 8 – (22/2/2001 - 2001/2130 K.)\nBayrağın çekilmesi ve indirilmesine ilişkin esaslar aşağıda gösterilmiştir.\nA) Sürekli çekili kaldığı yerlerde Bayrak, bakım, onarım ve yenisiyle değiştirilmesi için sabah veya akşam alacakaranlık zamanında törensiz olarak indirilir ve çekilir.\nB) Her gün Bayrak çekilen yerlerde Bayrak, saat 08.00'de, günün bu saatte ağarmadığı hallerde ise gün batımında çekilir ve gün batımında indirilir.\nC) Milli Bayram, genel tatil ve hafta tatilinde Bayrak ç",
+      "f1": 0.7829457364341086,
+      "rouge_l": 0.7829457364341086,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.958904109589041
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.207 kapsamında “A. Tanımı ve hükümleri” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 207- Satış sözleşmesi, satıcının, satılanın zilyetlik ve mülkiyetini alıcıya.\ndevretme, alıcının ise buna karşılık bir bedel ödeme borcunu üstlendiği sözleşmedir.\nSözleşme ile aksi kararlaştırılmadıkça veya aksine bir âdet bulunmadıkça, satıcı ve.\nalıcı borçlarını aynı anda ifa etmekle yükümlüdürler.\nDurum ve koşullara göre belirlenmesi mümkün olan bedel, kararlaştırılmış bedel.\nhükmündedir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Borçlar Kanunu m.207 - turkish_law_esk",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9245283018867925
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.90 kapsamında “D. Milletlerarası andlaşmaları uygun bulma” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 90 – Türkiye Cumhuriyeti adına yabancı devletlerle ve milletlerarası kuruluşlarla yapılacak andlaşmaların onaylanması, Türkiye Büyük Millet Meclisinin onaylamayı bir kanunla uygun bulmasına bağlıdır.\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türkiye Cumhuriyeti Anayasası m.90 - turkish_law_eski_2709_turkiye_cumhuriyeti_anayasasi_m90\nDosya ID: turkish_law_eski_2709_turkiye_cumhuriyeti_anayasasi_m90\nSoru: Türkiye Cumhuriyeti Anayasası m.90 kapsamında “D. Milletlerarası andlaşmal",
+      "f1": 0.3162393162393162,
+      "rouge_l": 0.28205128205128205,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6578947368421053
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.153 kapsamında “Müdafiin dosyayı inceleme yetkisi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Ceza Muhakemesi Kanunu Madde 153 - Müdafiin dosyayı inceleme yetkisi (devam)\n(3) Yakalanan kişinin veya şüphelinin ifadesini içeren tutanak ile bilirkişi raporları ve adı geçenlerin hazır bulunmaya yetkili oldukları diğer adli işlemlere ilişkin tutanaklar hakkında, ikinci fıkra hükmü uygulanmaz.\n(4) Müdafi, iddianamenin mahkeme tarafından kabul edildiği tarihten itibaren dosya içeriğini ve muhafaza altına alınmış delilleri inceleyebilir; bütün tutanak ve belgelerin örneklerini harç",
+      "f1": 0.2376237623762376,
+      "rouge_l": 0.1452145214521452,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.922077922077922
+    },
+    {
+      "question": "Türk Medenî Kanunu m.770 kapsamında “2. Koruma ve satma” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Türk Medenî Kanunu / Medenî Hukuk + Türk Borçlar Kanunu / Borçlar Hukuku. Dernek kurma hürriyetinin ihlali durumunda bireyler yargı mercilerine başvurabilir, tazminat talep edebilir ve ihlalin durdurulmasını talep edebilirler. Uluslararası belgeler, özellikle birleşmiş milletler ve avrupa insan hakları sözleşmesi, dernek kurma hürriyetini güvence altına alır ve üye devletlerin bu hakkı korumasını zorunlu kılar. Bu varlıkların korunması, unesco dünya mirası sözleşmesi ve avrupa kült",
+      "f1": 0.11538461538461538,
+      "rouge_l": 0.10256410256410256,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8873239436619719
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.10 kapsamında “Bilgi veya belgeye erişim” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 11- Kurum ve kuruluşlar, başvuru üzerine istenen bilgi veya belgeye erişimi onbeş iş günü içinde sağlarlar. Ancak istenen bilgi veya belgenin, başvurulan kurum ve kuruluş içindeki başka bir birimden sağlanması; başvuru ile ilgili olarak bir başka kurum ve kuruluşun görüşünün alınmasının gerekmesi veya başvuru içeriğinin birden fazla kurum ve kuruluşu ilgilendirmesi durumlarında bilgi veya belgeye erişim otuz iş günü içinde sağlanır. Bu durumda, sürenin uzatılması ve bunun ger",
+      "f1": 0.34285714285714286,
+      "rouge_l": 0.236734693877551,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8313253012048193
+    },
+    {
+      "question": "Türk Bayrağı Tüzüğü m.28 kapsamında “Cumhurbaşkanlığı forsu” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 28 – Cumhurbaşkanlığı forsu, (Ek: 4) te gösterilen ölçülere uygun olarak yapılır. Forsun sol üst köşesinde yer alan güneş ve yıldızlar sarı renktedir.Cumhurbaşkanının ikametgahında, ziyareti süresince bulunduğu yerde, bayrak direğine çekilir, gece ve gündüz çekili kalır, makam odasında çalışma masasının sol gerisine konur, içinde bulunduğu arabanın sol önünde, tepesinde ay yıldız bulunan kromajlı direğe çekilir.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Türk Bayrağı Tüzüğü m.",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9166666666666666
+    },
+    {
+      "question": "Türk Borçlar Kanunu m.176 kapsamında “III. Yasak koşullar” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: MADDE 176- Bir koşul, hukuka veya ahlaka aykırı bir yapma veya yapmama fiilini.\nsağlamak amacıyla konulmuşsa, bu koşula bağlı hukuki işlem kesin olarak hükümsüzdür.\nBİRİNCİ KISIM\nÜÇÜNCÜ AYIRIM\nBağlanma Parası, Cayma Parası ve Ceza Koşulu\n\nBu kaynak, 'Türk Borçlar Kanunu m.176' konusundaki açıklamaları içeriyor ancak \"III. Yasak koşullar\" başlıklı bir bölüm içermemektedir. Bu kaynak, 'MADDE 176- Bir koşul, hukuka veya ahlaka aykırı bir yapma veya yapmama fiilini.'\nsağlamak amacıyla ",
+      "f1": 0.5294117647058824,
+      "rouge_l": 0.5294117647058824,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.7735849056603774
+    },
+    {
+      "question": "Türkiye Cumhuriyeti Anayasası m.19 kapsamında “III. Kişi hürriyeti ve güvenliği” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Türkiye Cumhuriyeti Anayasası Madde 19 - III. Kişi hürriyeti ve güvenliği (devam)\n3/10/2001-4709/4 md.) Yakalanan veya tutuklanan kişi, tutulma yerine en yakın mahkemeye gönderilmesi için gerekli süre hariç en geç kırksekiz saat ve toplu olarak işlenen suçlarda en çok dört gün içinde hâkim önüne çıkarılır.\nKimse, bu süreler geçtikten sonra hakim kararı olmaksızın hürriyetinden yoksun bırakılamaz.\nBu süreler olağanüstü hal (...)[14] ve savaş hallerinde uzatılabilir.\n(Değişik fıkra:\n",
+      "f1": 0.7021276595744681,
+      "rouge_l": 0.7021276595744681,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9753086419753086
+    },
+    {
+      "question": "Ceza Muhakemesi Kanunu m.151 kapsamında “ceza muhakemesi” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre aktif olan bilgi şudur: Kaynağa göre 'Ceza Muhakemesi Kanunu Madde 151 (devam)' başlıklı içerik mevcuttur. Bu içerik, 'sorun' konusunda tek bir bilgi parçası sunmaktadır: Ceza Muhakemesi Kanunu Madde 151 (devam)\n(4) (Ek:25/5/2005 - 5353/22 md.) Cumhuriyet savcısının yasaklamaya ilişkin talebi hakkında, hâkim veya mahkeme tarafından gecikmeksizin karar verilir. Bu kararlara karşı itiraz edilebilir. İtiraz sonucunda yasaklama kararının kaldırılması halinde avukat görevini devam ettiri",
+      "f1": 0.5725190839694657,
+      "rouge_l": 0.5267175572519083,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8157894736842105
+    },
+    {
+      "question": "Türk Medenî Kanunu m.892 kapsamında “I. Tescile tâbi olmayan kanunî ipotek” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 892- Kanunî ipotek haklarının doğumu, aksi kanunda öngörülmüş olmadıkça,\ntapu kütüğüne tescil edilmelerine bağlı değildir.\nII. Tescile tâbi kanunî ipotekler\n\nBu kaynak, istenen esas üzerinde çok fazla bilgi sunmaktadır; ancak verilen kaynak içeriği doğrultusunda basit bir açıklama şöyledir: Türk Medenî Kanunu m.892 uyarınca, Kanunî ipotek haklarının doğumu, aksi kanunda öngörülmüş olmadıkça,\ntapu kütüğüne tescil edilmelerine bağlı değildir.\nII. Tescile tâbi kanunî ipotekler\n\n",
+      "f1": 0.52,
+      "rouge_l": 0.52,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.5217391304347826
+    },
+    {
+      "question": "Bilgi Edinme Hakkı Kanunu m.29 kapsamında “Ceza hükümleri” nasıl düzenlenmiştir?",
+      "generated": "Kaynağa göre: Madde 29- Bu Kanunun uygulanmasında ihmâli, kusuru veya kastı bulunan memurlar ve diğer kamu görevlileri hakkında, işledikleri fiillerin genel hükümler çerçevesinde ceza kovuşturması gerektirmesi hususu saklı kalmak kaydıyla, tâbi oldukları mevzuatta yer alan disiplin cezaları uygulanır.\nBu Kanunla erişilen bilgi ve belgeler ticarî amaçla çoğaltılamaz ve kullanılamaz.\n\nKaynak: TURKISH_LAW_ESKI_LOW_RISK_ONLY - Bilgi Edinme Hakkı Kanunu m.29 - turkish_law_eski_4982_bilgi_edinme_hakki",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9056603773584906
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2024/265 E., 2024/249 K. sayılı Yargıtay HGK kararında “Mirasçılık Belgesinin İptali Davası; Temyiz İ",
+      "generated": "Kaynağa göre: Bu metinden hareketle şu sonuc öngörülmektedir: Karar sonucu göstergesi: Gönderme\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0036 - Hukuk Genel Kurulu 2024/265 E., 2024/249 K. - Miras Hukuku - yargitay_0036_miras_hukuku_001\nDosya ID: yargitay_0036_miras_hukuku_001\nHukuk alanı: Miras Hukuku\nKonu başlıkları: Mirasçılık Belgesinin İptali Davası; Temyiz İnceleme Görevi\nUyuşmazlık özeti: Hukuk Genel Kurulunun bozma kararına uyularak verilen yeni hükme yönelik temyiz itirazlar",
+      "f1": 0.6391752577319588,
+      "rouge_l": 0.577319587628866,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.75
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2169 E., 2015/1463 K. sayılı Yargıtay HGK kararında “Haczedilmezlik Şikayeti; Önceden Tesis Edil",
+      "generated": "Bu kaynaklar doğrultusunda 'Haczedilmezlik Şikayeti; Önceden Tesis Edilen İpoteğin Meskeniyet İddiasına Etkisi' konusunu açıklarken following noktalara dayanmalıyız: Bu kaynaklar doğrultusunda genel olarak next points ifade edilmektedir: • Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\n• Emsal karar: Hukuk Genel Kurulu 2013/2169 E., 2015/1463 K.\n• Hukuk alanı: İcra ve İflas Hukuku\n• Konu başlıkları: Haczedilmezlik Şikayeti; Önceden Tesis Edilen İpoteğin Meskeniyet İddiasına Etkisi\n• İlgili mevz",
+      "f1": 0.543103448275862,
+      "rouge_l": 0.5172413793103449,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.7966101694915254
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1524 E., 2015/1041 K. sayılı Yargıtay HGK kararında “İrtifak Hakları; Komşuluk Hukuku” uyuşmazlı",
+      "generated": "Kaynağa göre: Bu kaynak, istenen konuda çok fazla detay sağlıyor. Kaynak metindeki esas içerik, hukuk alanı: Eşya Hukuku ve karar sonucu: Bozma dir. Bu kaynak, sorudaki özet uyuşmazlık konusunu kapsamıyor; sorunun daha geniş bir perspektife bakmasını istiyorsanız bu kaynak üzerinden beklenmemektedir.\n\nVerilen kaynaklarda bu sorunun cevabı yoktur.",
+      "f1": 0.14857142857142858,
+      "rouge_l": 0.1257142857142857,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.275
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1571 E., 2015/1000 K. sayılı Yargıtay HGK kararında “Kullanım Kadastrosuna İtiraz; Temsilcide Ha",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'Kullanım Kadastrosuna İtiraz; Temsilcide Hata' konusunda şu bilgiler mevcuttur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/1571 E., 2015/1000 K.\nHukuk alanı: Kadastro Hukuku\nKonu başlıkları: Kullanım Kadastrosuna İtiraz; Temsilcide Hata\nİlgili mevzuat atıfları: 3402 s. Kadastro Kanunu Ek m. 4; 6100 s. HMK m. 124\nUyuşmazlık özeti: Kullanım kadastrosuna itiraz davasında, tespit maliki Hazine yerine Kadastro Müdürlüğünün",
+      "f1": 0.6752136752136753,
+      "rouge_l": 0.6666666666666667,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8714285714285714
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2024/474 E., 2024/396 K. sayılı Yargıtay HGK kararında “Tapu Siciline Şerh; 6831 sayılı Orman Kanunu ",
+      "generated": "Bu kaynaklar doğrultusunda 'Hukuk Genel Kurulu 2024/474 E., 2024/396 K. | Tapu Siciline Şerh; 6831 sayılı Orman Kanunu m. 2/B' konusunda bulunan bilgi şu şekildedir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı Emsal karar: Hukuk Genel Kurulu 2024/474 E., 2024/396 K. Hukuk alanı: Taşınmaz Hukuku Konu başlıkları: Tapu Siciline Şerh; 6831 sayılı Orman Kanunu m. 2/B Uyuşmazlık özeti: Direnme kararının bozulmasına uyan mahkemenin yeni hükmüne yönelik temyiz itirazlarını inceleme görevinin Özel Da",
+      "f1": 0.7253886010362695,
+      "rouge_l": 0.6010362694300518,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8095238095238095
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2015/912 E., 2015/1460 K. sayılı Yargıtay HGK kararında “İmar Kısıtlamasından Kaynaklanan Hukuki El A",
+      "generated": "Kaynağa göre: Bu metinden hareketle şu sonuc öngörülmüştür: Karar sonucu göstergesi: Bozma\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 1294 - Hukuk Genel Kurulu 2015/912 E., 2015/1460 K. - İdare Hukuku - yargitay_1294_idare_hukuku_001\nDosya ID: yargitay_1294_idare_hukuku_001\nHukuk alanı: İdare Hukuku\nKonu başlıkları: İmar Kısıtlamasından Kaynaklanan Hukuki El Atma; Görevli Yargı Yeri\nMevzuat atıfları: 2942 s. Kamulaştırma Kanunu Geçici m. 6/10\nSoru: Hukuk Genel Kurulu 2015/912 E., 2015",
+      "f1": 0.6170212765957447,
+      "rouge_l": 0.5319148936170212,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6964285714285714
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/38 E., 2015/1657 K. sayılı Yargıtay HGK kararında “Ortaklığın Giderilmesi; Kat Mülkiyetine Geçiş",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'Ortaklığın Giderilmesi; Kat Mülkiyetine Geçiş Suretiyle Aynen Taksim' konusunda şu bilgi mevcuttur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2014/38 E., 2015/1657 K.\nHukuk alanı: Kat Mülkiyeti Hukuku\nKonu başlıkları: Ortaklığın Giderilmesi; Kat Mülkiyetine Geçiş Suretiyle Aynen Taksim\nİlgili mevzuat atıfları: 634 s. Kat Mülkiyeti Kanunu m. 10, m. 12, m. 50\nUyuşmazlık özeti: Kat mülkiyetine elverişli taşınmazda paydaşlard",
+      "f1": 0.6042553191489362,
+      "rouge_l": 0.5957446808510638,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8709677419354839
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1430 E., 2015/1021 K. sayılı Yargıtay HGK kararında “İtirazın İptali; Görevli Mahkeme” uyuşmazlı",
+      "generated": "Kaynağa göre: Bu kaynak, kesin olarak istenen tematik içeriği kapsamaktadır. Kaynak metindeki esas içerik şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/1430 E., 2015/1021 K.\nHukuk alanı: Tüketici Hukuku\nKonu başlıkları: İtirazın İptali; Görevli Mahkeme\nİlgili mevzuat atıfları: 4077 s. Tüketicinin Korunması Hakkında Kanun m. 23\nUyuşmazlık özeti: Kömür satım sözleşmesinden kaynaklanan uyuşmazlıkta Tüketici Mahkemesinin görevli olduğu ve görev hususunun",
+      "f1": 0.6976744186046512,
+      "rouge_l": 0.6883720930232559,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8311688311688312
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2024/382 E., 2024/264 K. sayılı Yargıtay HGK kararında “Yargılama Usulü; Direnme Kararının Hukuk Gene",
+      "generated": "Kaynağa göre: Bu metinden hareketle ve sınırlı veri ondası doğrultusunda prosedür hakkında verilen kaynak içerikleri şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2024/382 E., 2024/264 K.\nHukuk alanı: İş Hukuku\nKonu başlıkları: Yargılama Usulü; Direnme Kararının Hukuk Genel Kurulunca Bozulması ve Bozmaya Uyma\nİlgili mevzuat atıfları: 6100 s. HMK m. 373\nUyuşmazlık özeti: Hukuk Genel Kurulunun bozma kararına uyularak verilen yeni hükme yönelik temyiz itiraz",
+      "f1": 0.72636815920398,
+      "rouge_l": 0.72636815920398,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8055555555555556
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1734 E., 2015/1252 K. sayılı Yargıtay HGK kararında “Kooperatif Üyeliğine Dayalı Tapu İptali ve ",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'Kooperatif Üyeliğine Dayalı Tapu İptali ve Tescil' konusunu açıklarken şunları göz önünde bulundurmalıyız: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı Emsal karar: Hukuk Genel Kurulu 2013/1734 E., 2015/1252 K. Karar sonucu göstergesi: Bozma Bu kaynak, kesin hüküm doğurmamaktadır.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0996 - Hukuk Genel Kurulu 2013/1734 E., 2015/1252 K. - Kooperatif Hukuku - yargitay_0996_kooperatif_hukuku_001",
+      "f1": 0.4947368421052631,
+      "rouge_l": 0.42105263157894735,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6222222222222222
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/2459 E., 2015/1521 K. sayılı Yargıtay HGK kararında “Kentsel Dönüşüm” uyuşmazlığı bakımından kar",
+      "generated": "Kaynağa göre: Bu kaynak, taraflar arasındaki sözleşme ve ilgili mevzuat uyarınca enkaz bedelinin mi yoksa yapı bedelinin mi ödenmesi gerektiği hususunun tespiti ile ilgili Hukuk Genel Kurulu 2014/2459 E., 2015/1521 K. sayılı kararını açıklamaktadır.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 1265 - Hukuk Genel Kurulu 2014/2459 E., 2015/1521 K. - Gayrimenkul Hukuku - yargitay_1265_gayrimenkul_hukuku_001\nCitation: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 1265 - Hukuk Genel Kurulu 20",
+      "f1": 0.5128205128205129,
+      "rouge_l": 0.47179487179487184,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7073170731707317
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/1644 E., 2015/1316 K. sayılı Yargıtay HGK kararında “Komşu Parseldeki İnşaat Kazısı Nedeniyle Ol",
+      "generated": "Kaynağa göre: Bu metinden hareketle şu bilgi elde edilebilir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2014/1644 E., 2015/1316 K.\nHukuk alanı: Tazminat Hukuku\nKonu başlıkları: Komşu Parseldeki İnşaat Kazısı Nedeniyle Oluşan Bina Zararı\nİlgili mevzuat atıfları: 6100 s. HMK m. 266, 281, 282\nUyuşmazlık özeti: Uyuşmazlığın çözümü özel ve teknik bilgiyi gerektirdiğinden, bilirkişi heyetinde zemin kayması konusunda uzman jeoloji mühendisi bulunmadan hazırlanan ra",
+      "f1": 0.7192118226600984,
+      "rouge_l": 0.7192118226600984,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.881578947368421
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1618 E., 2015/1034 K. sayılı Yargıtay HGK kararında “Kamulaştırmasız El Atma Nedeniyle Tazminat;",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili konu başlıkları: Kamulaştırmasız El Atma Nedeniyle Tazminat; Husumet. Karar sonucu göstergesi: Bozma. Bu kaynak, kesin olarak istenen doğrultudaki bir karar sonucu veya tasfiye edilmiş bir uyuşmazlığın açıklamasını içermez.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0847 - Hukuk Genel Kurulu 2013/1618 E., 2015/1034 K. - Kamulaştırma Hukuku - yargitay_0847_kamulastirma_hukuku_001",
+      "f1": 0.34285714285714286,
+      "rouge_l": 0.3085714285714286,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.5555555555555556
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/221 E., 2015/1752 K. sayılı Yargıtay HGK kararında “Boşanma; Evlilik Birliğinin Temelinden Sarsı",
+      "generated": "Kaynağa göre: Bu kaynak, kesinleşmeden sonra yapılan ilam ile bozulmuş olan hükme yönelik temyiz itirazlarını incelemekle yükümlü olduğu için, önceki kararını açıkladığından beri \"bozma\" sonucuna varmıştır.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0003 - Hukuk Genel Kurulu 2014/221 E., 2015/1752 K. - Aile Hukuku - yargitay_0003_aile_hukuku_001\nDosya ID: yargitay_0003_aile_hukuku_001\nHukuk alanı: Aile Hukuku\nCitation: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0003 - Hukuk Genel Ku",
+      "f1": 0.3163265306122449,
+      "rouge_l": 0.2959183673469388,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.30434782608695654
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2155 E., 2015/1306 K. sayılı Yargıtay HGK kararında “Marka Hakkına Tecavüz; Garanti Markası; 132",
+      "generated": "Kaynağa göre: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2155 E., 2015/1306 K.\nHukuk alanı: Fikri ve Sınai Mülkiyet Hukuku\nKonu başlıkları: Marka Hakkına Tecavüz; Garanti Markası; 132 sayılı TSE Kuruluş Kanunu m. 14; 556 sayılı KHK m. 66\nUyuşmazlık özeti: Garanti markasının sözleşme sona erdikten sonra haksız kullanılması halinde maddi tazminat miktarının, davacı kurumun kanuni yetkiye dayanarak çıkardığı yönergede belirtilen 'emsal belge kullanma tavan ",
+      "f1": 0.7217391304347827,
+      "rouge_l": 0.7217391304347827,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9230769230769231
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/2102 E., 2015/808 K. sayılı Yargıtay HGK kararında “Görev Alanı” uyuşmazlığı bakımından karar so",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili konu başlıkları: Görev Alanı. Karar sonucu göstergesi: Bozma.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0673 - Hukuk Genel Kurulu 2014/2102 E., 2015/808 K. - Yargıtay İçtihadı - yargitay_0673_yargitay_ictihadi_001\nDosya ID: yargitay_0673_yargitay_ictihadi_001\nUyuşmazlık özeti: Yargıtay dairelerinin onama kararlarına karşı yapılan başvuru hakkında Hukuk Genel Kurulu’nca yapılacak bir işlem bulunup bulunmadığı\nKarar sonucu göstergesi: Bozma",
+      "f1": 0.5714285714285714,
+      "rouge_l": 0.4720496894409938,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7708333333333334
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1884 E., 2015/1059 K. sayılı Yargıtay HGK kararında “Kıymetli Evrak Hukuku; Çek İptali Davası” u",
+      "generated": "Bu kaynak parçasına göre müvekkilin sorusu üzerine verilecek bilgi şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/1884 E., 2015/1059 K.\nHukuk alanı: Ticaret Hukuku\nKonu başlıkları: Kıymetli Evrak Hukuku; Çek İptali Davası\nİlgili mevzuat atıfları: 6102 s. Türk Ticaret Kanunu m. 757, 763, 764\nUyuşmazlık özeti: Tahsil amacıyla ibraz edilen çeki zayi eden muhatap bankanın, vekil hamil sıfatıyla çek iptali davası açmakta hukuki yararının bulunup bulunmadığ",
+      "f1": 0.7414634146341464,
+      "rouge_l": 0.7414634146341464,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8493150684931506
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2226 E., 2015/1363 K. sayılı Yargıtay HGK kararında “Görev ve Yargı Yolu Uyuşmazlığı” uyuşmazlığ",
+      "generated": "Kaynağa göre: Bu kaynak, tespit edilen uyuşmazlık alanı 'Görev ve Yargı Yolu Uyuşmazlığı' olarak sınırlıdır. Kaynak, bozmada kalır ve davacının hak düşürücü sürelerde dava açılmamış olduğu gerekçesiyle reddedilmiş sayılır.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 1303 - Hukuk Genel Kurulu 2013/2226 E., 2015/1363 K. - Medeni Usul Hukuku - yargitay_1303_medeni_usul_hukuku_001\nDosya ID: yargitay_1303_medeni_usul_hukuku_001\nHukuk alanı: Medeni Usul Hukuku\nCitation: YARGITAY_HGK_RETRIEVA",
+      "f1": 0.3470319634703196,
+      "rouge_l": 0.2557077625570776,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.48936170212765956
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2231 E., 2015/1233 K. sayılı Yargıtay HGK kararında “Yersiz Ödenen Muhtaçlık Aylığının İadesi; A",
+      "generated": "Kaynağa göre: Bu kaynak, taraflar arasındaki uyuşmazlığın 'Yersiz Ödenen Muhtaçlık Aylığının İadesi; Aktif Dava Ehliyeti' konusundaki görüş ayrılığı ile ilgilidir. Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı Emsal karar: Hukuk Genel Kurulu 2013/2231 E., 2015/1233 K. Hukuk alanı: Sosyal Güvenlik Hukuku Konu başlıkları: Yersiz Ödenen Muhtaçlık Aylığının İadesi; Aktif Dava Ehliyeti İlgili mevzuat atıfları: 2022 s. Kanun; 6100 s. HMK m. 114, 115; 633 s. KHK m. 35 Uyuşmazlık özeti: Yetim aylığı a",
+      "f1": 0.6113537117903931,
+      "rouge_l": 0.593886462882096,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.84375
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2024/560 E., 2024/407 K. sayılı Yargıtay HGK kararında “Orman Kadastrosu” uyuşmazlığı bakımından kara",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili konu başlıkları: Orman Kadastrosu. Karar sonucu göstergesi: Gönderme. Bu kaynak, kesin olarak ihmal edilemez bir kaydın varlığını ifade eder. Bu kaynak, 'Hukuk Genel Kurulu 2024/560 E., 2024/407 K. | Orman Kadastrosu' konusunu içermektedir.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0124 - Hukuk Genel Kurulu 2024/560 E., 2024/407 K. - Medeni Hukuk - yargitay_0124_medeni_hukuk_001",
+      "f1": 0.4161849710982659,
+      "rouge_l": 0.3815028901734104,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.46153846153846156
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2419 E., 2015/1358 K. sayılı Yargıtay HGK kararında “Kira Sözleşmesi; İşyeri İhtiyacı Nedeniyle ",
+      "generated": "Bu kaynaklar doğrultusunda 'Hukuk Genel Kurulu 2013/2419 E., 2015/1358 K. | Kira Sözleşmesi; İşyeri İhtiyacı Nedeniyle Tahliye Davası' konusunda bulunan içeriğe göre:\n\nKaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2419 E., 2015/1358 K.\nHukuk alanı: Borçlar Hukuku\nKonu başlıkları: Kira Sözleşmesi; İşyeri İhtiyacı Nedeniyle Tahliye Davası\nİlgili mevzuat atıfları: 6570 s. GKHK m. 7/b-c, 6098 s. TBK m. 350, 2004 s. İİK m. 272\nUyuşmazlık özeti: Kira sözleşmesini",
+      "f1": 0.6727272727272727,
+      "rouge_l": 0.5818181818181818,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8928571428571429
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2047 E., 2015/1199 K. sayılı Yargıtay HGK kararında “Meskeniyet Sebebiyle Haczedilmezlik Şikayet",
+      "generated": "Kaynağa göre: Bu kaynak, taraflar arasındaki uyuşmazlığın 'Meskeniyet Sebebiyle Haczedilmezlik Şikayeti' konusundaki değerlendirilmesini içermektedir. Kaynağa göre karar sonucu bozma olarak gösterilmektedir.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0950 - Hukuk Genel Kurulu 2013/2047 E., 2015/1199 K. - İcra ve İflas Hukuku - yargitay_0950_icra_ve_iflas_hukuku_001\nDosya: yargitay_0950_icra_ve_iflas_hukuku_001\nHukuk alanı: İcra ve İflas Hukuku\nKonu başlıkları: Meskeniyet Sebebiyle Hac",
+      "f1": 0.40343347639484983,
+      "rouge_l": 0.3004291845493562,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.68
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/44 E., 2015/1535 K. sayılı Yargıtay HGK kararında “Kamulaştırmasız El Atma; Taşınmaz Bedelinin T",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'Kamulaştırmasız El Atma; Taşınmaz Bedelinin Tahsili' konusunu açıklarken şunları göz önünde bulundurmalıyız: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı Emsal karar: Hukuk Genel Kurulu 2014/44 E., 2015/1535 K. Hukuk alanı: Eşya Hukuku Konu başlıkları: Kamulaştırmasız El Atma; Taşınmaz Bedelinin Tahsili İlgili mevzuat atıfları: 2942 s. Kamulaştırma Kanunu Uyuşmazlık özeti: Aynı emsali esas almalarına rağmen farklı kıyaslamalar yaparak çelişkili sonuçlara u",
+      "f1": 0.6565656565656567,
+      "rouge_l": 0.6464646464646464,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.7866666666666666
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2404 E., 2015/1461 K. sayılı Yargıtay HGK kararında “Kadastro Tespitine İtiraz Davasında Husumet",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'Kadastro Tespitine İtiraz Davasında Husumet' konusunu açıklarken şunlar söylenebilir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2404 E., 2015/1461 K.\nHukuk alanı: Kadastro Hukuku\nKonu başlıkları: Kadastro Tespitine İtiraz Davasında Husumet\nİlgili mevzuat atıfları: 3402 s. Kadastro Kanunu m. 31\nUyuşmazlık özeti: Kadastro tespitine itiraz davasının hakları çatışanlar yerine Kadastro Müdürlüğüne yöneltilmesi halinde dav",
+      "f1": 0.7196261682242991,
+      "rouge_l": 0.7102803738317757,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8857142857142857
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1415 E., 2015/555 K. sayılı Yargıtay HGK kararında “Kadastro; Görevli Mahkeme” uyuşmazlığı bakım",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili konu başlıkları: Kadastro; Görevli Mahkeme. Karar sonucu göstergesi: Bozma. Bu kaynak, kesinleşmeden esas olan kararın bozmaya tabi olduğu için usulden sorun bulunmamaktadır.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0596 - Hukuk Genel Kurulu 2013/1415 E., 2015/555 K. - Taşınmaz Hukuku - yargitay_0596_tasinmaz_hukuku_001",
+      "f1": 0.30409356725146197,
+      "rouge_l": 0.2923976608187135,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6190476190476191
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2333 E., 2015/1496 K. sayılı Yargıtay HGK kararında “Menfi Tespit Davası; Kanal Katılım ve Şebek",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili konu başlıkları: Menfi Tespit Davası; Kanal Katılım ve Şebeke Bedeli; ASKİ Tarifeler Yönetmeliği m. 39. Karar sonucu göstergesi: Bozma. Bu kaynak, kesin hüküm doğurmadan uzlaşma, karar verme sürecinde temyiz hakkı, yargılama usulü ve sınırları gibi hukuki unsurları açısından incelenerek, esasen 'bozma' kararının tespitiyle sonuçlanmıştır.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 1221 - Hukuk Genel Kurulu 2013/2333 E., 2015/1496 K. - Tüketic",
+      "f1": 0.41489361702127664,
+      "rouge_l": 0.3723404255319149,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.5573770491803278
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1997 E., 2015/1077 K. sayılı Yargıtay HGK kararında “İşçilik Alacakları; Ücret Alacağı” uyuşmazl",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'İşçilik Alacakları; Ücret Alacağı' konusunu açıklarken şunlar söylenebilir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/1997 E., 2015/1077 K.\nHukuk alanı: İş Hukuku\nKonu başlıkları: İşçilik Alacakları; Ücret Alacağı\nİlgili mevzuat atıfları: 4857 s. İş Kanunu m. 32\nUyuşmazlık özeti: İşverenin ücret ödemelerini banka hesabına yatırdığını savunması halinde, ilgili banka kayıtları araştırılmaksızın eksik inceleme ile karar",
+      "f1": 0.7254901960784315,
+      "rouge_l": 0.7254901960784315,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8333333333333334
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2440 E., 2015/1543 K. sayılı Yargıtay HGK kararında “Zilyetlik Şerhinin İptali; 2B Alanları” uyu",
+      "generated": "Bu kaynaklar doğrultusunda 'Hukuk Genel Kurulu 2013/2440 E., 2015/1543 K. | Zilyetlik Şerhinin İptali; 2B Alanları' konusuna ilişkin olarak verilen bilgi şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2440 E., 2015/1543 K.\nHukuk alanı: Gayrimenkul Hukuku\nKonu başlıkları: Zilyetlik Şerhinin İptali; 2B Alanları\nİlgili mevzuat atıfları: 6831 s. Orman Kanunu m. 2/B; 6292 s. Kanun m. 9/2\nUyuşmazlık özeti: Hazine tarafından 2B niteliğindeki taşınmazın tapu ",
+      "f1": 0.6883720930232559,
+      "rouge_l": 0.5953488372093023,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8666666666666667
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2023/1024 E., 2024/600 K. sayılı Yargıtay HGK kararında “Kamulaştırma Bedelinin Tespiti” uyuşmazlığı ",
+      "generated": "Kaynağa göre: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2023/1024 E., 2024/600 K.\nHukuk alanı: Kamulaştırma Hukuku\nKonu başlıkları: Kamulaştırma Bedelinin Tespiti\nİlgili mevzuat atıfları: 2942 s. Kamulaştırma Kanunu m. 11/1-f\nUyuşmazlık özeti: Kapama meyve bahçesi niteliğindeki taşınmazın değerinin net gelir esasına göre belirlenmesinde, üretim masraflarının brüt gelirin 1/3'ünden az olarak kabul edilip edilemeyeceği\nKarar sonucu göstergesi: Bozma\n\nKaynak: Y",
+      "f1": 0.8080808080808081,
+      "rouge_l": 0.8080808080808081,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9375
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2015/167 E., 2015/1328 K. sayılı Yargıtay HGK kararında “Evliliğin Mutlak Butlan Sebebiyle İptali; Ak",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili içerik şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2015/167 E., 2015/1328 K.\nHukuk alanı: Aile Hukuku\nKonu başlıkları: Evliliğin Mutlak Butlan Sebebiyle İptali; Akıl Hastalığı\nİlgili mevzuat atıfları: 4721 s. Türk Medeni Kanunu m. 133, 145/2-3\nUyuşmazlık özeti: Eşin evlenmeye engel derecede akıl hastası olup olmadığının tespitinde evlenme tarihinden önce alınan bir rapora dayanılamayacağı, mahkemece evlenme akd",
+      "f1": 0.7174887892376681,
+      "rouge_l": 0.7174887892376681,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1686 E., 2015/1301 K. sayılı Yargıtay HGK kararında “Kambiyo Senetleri; Bono; Protestodan Sonra ",
+      "generated": "Kaynağa göre: Bu kaynak, tespit edilen uyuşmazlık konusu 'Kambiyo Senetleri; Bono; Protestodan Sonra Yapılan Ciro'dır. Kaynak metindeki esas içerik, taraflar arasındaki anlaşmazlığın açıklanmasından ileri gelmektedir. Karar sonucu göstergesi 'Bozma' olarak gösterilmektedir. Bu kaynak, kesinleşmeden kullanılamayacak (hukuki işlev görmeyecektir) bir karardır.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 1302 - Hukuk Genel Kurulu 2013/1686 E., 2015/1301 K. - Ticaret Hukuku - yargitay_1302_",
+      "f1": 0.3350253807106599,
+      "rouge_l": 0.29441624365482233,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.49056603773584906
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2024/161 E., 2024/143 K. sayılı Yargıtay HGK kararında “Temyiz Usulü; Hukuk Genel Kurulunun Bozma Kar",
+      "generated": "Kaynağa göre: Bu metinden hareketle tespit edilen konu açısıyla ilgili esaslı bir infoziyon mevcut değildir. Kaynaktaeruleşen bilgi, kesin bir karar sonucu veya uyuşmazlık çözümü sunmamaktadır. Verilen kaynaklarda bu sorunun cevabı yoktur.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0032 - Hukuk Genel Kurulu 2024/161 E., 2024/143 K. - Medeni Usul Hukuku - yargitay_0032_medeni_usul_hukuku_001",
+      "f1": 0.2619047619047619,
+      "rouge_l": 0.24999999999999994,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.4
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2336 E., 2015/1734 K. sayılı Yargıtay HGK kararında “Bağ-Kur Sigortalılığı; Sigortalılık Süresin",
+      "generated": "Kaynağa göre: Bu kaynak, taraflar arasındaki uyuşmazlığın 'Bağ-Kur Sigortalılığı; Sigortalılık Süresinin Tespiti' konusundaki bozmaya ilişkindir.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 1232 - Hukuk Genel Kurulu 2013/2336 E., 2015/1734 K. - Sosyal Güvenlik Hukuku - yargitay_1232_sosyal_guvenlik_hukuku_001\nDosya ID: yargitay_1232_sosyal_guvenlik_hukuku_001\nHukuk alanı: Sosyal Güvenlik Hukuku\nKonu başlıkları: Bağ-Kur Sigortalılığı; Sigortalılık Süresinin Tespiti\nMevzuat atıfları: 147",
+      "f1": 0.44976076555023925,
+      "rouge_l": 0.37320574162679426,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.75
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2024/625 E., 2025/369 K. sayılı Yargıtay HGK kararında “Fiil Ehliyeti” uyuşmazlığı bakımından karar s",
+      "generated": "Kaynağa göre: Bu metinden hareketle tam bir yargı işlemi gerçekleştirilememektedir. Kaynakta yer alan esasları ifade eden kaynak sözdizimi şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2024/625 E., 2025/369 K.\nHukuk alanı: Medeni Hukuk\nKonu başlıkları: Fiil Ehliyeti\nİlgili mevzuat atıfları: 4721 s. Türk Medeni Kanunu m. 9, 10, 13, 14, 15\nUyuşmazlık özeti: Kredi sözleşmesi tarihinde ayırt etme gücünün bulunmadığı iddia edilen kişi hakkında sözleşmeden sonr",
+      "f1": 0.6585365853658536,
+      "rouge_l": 0.6585365853658536,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.7954545454545454
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/1500 E., 2015/1519 K. sayılı Yargıtay HGK kararında “Kentsel Dönüşüm Sözleşmesinden Kaynaklanan ",
+      "generated": "Bu kaynaklar doğrultusunda 'Hukuk Genel Kurulu 2014/1500 E., 2015/1519 K. | Kentsel Dönüşüm Sözleşmesinden Kaynaklanan Alacak; Tapu Tahsis Belgeli Taşınmaz' konusuna göre next sentence şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı Emsal karar: Hukuk Genel Kurulu 2014/1500 E., 2015/1519 K. Hukuk alanı: Borçlar Hukuku Konu başlıkları: Kentsel Dönüşüm Sözleşmesinden Kaynaklanan Alacak; Tapu Tahsis Belgeli Taşınmaz Ilgili mevzuat atıfları: 2981 s. Kanun m. 13/b Uyuşmazlık özeti: Tarafların ",
+      "f1": 0.6470588235294117,
+      "rouge_l": 0.5588235294117647,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8620689655172413
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1623 E., 2015/1239 K. sayılı Yargıtay HGK kararında “İpoteğin Paraya Çevrilmesi Yoluyla Takip; İ",
+      "generated": "Kaynağa göre: Bu kaynak, taraflar arasındaki uyuşmazlığın 'İpoteğin Paraya Çevrilmesi Yoluyla Takip; İtirazın İptali' konusundaki olayları içermektedir.\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0981 - Hukuk Genel Kurulu 2013/1623 E., 2015/1239 K. - İcra ve İflas Hukuku - yargitay_0981_icra_ve_iflas_hukuku_001\nDosya ID: yargitay_0981_icra_ve_iflas_hukuku_001\nHukuk alanı: İcra ve İflas Hukuku\nKonu başlıkları: İpoteğin Paraya Çevrilmesi Yoluyla Takip; İtirazın İptali\nMevzuat atıfları: ",
+      "f1": 0.48484848484848486,
+      "rouge_l": 0.38095238095238093,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7346938775510204
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2196 E., 2015/1742 K. sayılı Yargıtay HGK kararında “Tapu İptali ve Tescil; Kazandırıcı Zamanaşı",
+      "generated": "Kaynağa göre: Bu kaynak, kesinleşmeden sonra bozmaya tabi olan bir kararın özetidir. Olaylar ve partiler hakkında detaylı bilgi, kaynak provided metindeki uyuşmazlık özeti ve Karar sonucu göstergesi bölümleri üzerinden öğrenilmelidir.\n\nKaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2196 E., 2015/1742 K.\nHukuk alanı: Eşya Hukuku\nKonu başlıkları: Tapu İptali ve Tescil; Kazandırıcı Zamanaşımı Zilyetliği\nİlgili mevzuat atıfları: 4721 s. TMK m. 713\nKarar sonucu g",
+      "f1": 0.5767441860465117,
+      "rouge_l": 0.5209302325581395,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.6818181818181818
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1917 E., 2015/1258 K. sayılı Yargıtay HGK kararında “Arsa Satışı Karşılığı Gelir Paylaşımı Sözle",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'Arsa Satışı Karşılığı Gelir Paylaşımı Sözleşmesi' konusuna ilişkin hukuki açıklamada şunlar belirtilmiştir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı Emsal karar: Hukuk Genel Kurulu 2013/1917 E., 2015/1258 K. Hukuk alanı: Tüketici Hukuku Konu başlıkları: Arsa Satışı Karşılığı Gelir Paylaşımı Sözleşmesi İlgili mevzuat atıfları: 4077 s. Tüketicinin Korunması Hakkında Kanun Uyuşmazlık özeti: Yükleniciden konut satın alan tüketicinin, aralarında doğrudan ak",
+      "f1": 0.6696428571428572,
+      "rouge_l": 0.6696428571428572,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8571428571428571
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2224 E., 2015/1350 K. sayılı Yargıtay HGK kararında “Davaların Bağlantısı ve Görev” uyuşmazlığı ",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili müsbet ve nafsi nitelikli veriler şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2224 E., 2015/1350 K.\nHukuk alanı: İş Hukuku\nKonu başlıkları: Davaların Bağlantısı ve Görev\nİlgili mevzuat atıfları: 6100 s. HMK m. 166\nUyuşmazlık özeti: Farklı hukuki sebeplere (sözleşmeye ve iş akdine aykırılık) dayanan davalar arasında bağlantı bulunduğu gözetilerek, davanın özel yetkili iş mahkemesinde birlikte görülmesi gere",
+      "f1": 0.6751054852320675,
+      "rouge_l": 0.6751054852320675,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8641975308641975
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2300 E., 2015/1029 K. sayılı Yargıtay HGK kararında “Kamulaştırma Bedelinin Tespiti; Kısmi Kamul",
+      "generated": "Bu kaynaklar doğrultusunda 'Hukuk Genel Kurulu 2013/2300 E., 2015/1029 K. | Kamulaştırma Bedelinin Tespiti; Kısmi Kamulaştırma' konusunu incelersek:\n\n• **Kaynak 1:** Bu kaynak, 'Kamulaştırma Bedelinin Tespiti; Kısmi Kamulaştırma' konusunu içeriyor. Kaynağa göre, bozmaya yer olmadığına dair karar verildiği anlaşılmaktadır.\n\n• **Kaynak 2:** Bu kaynak da 'Kamulaştırma Bedelinin Tespiti; Kısmi Kamulaştırma' konusunu içeriyor. Kaynağa göre, bozmaya yer olmadığına dair karar verildiği anlaşılmaktadır.",
+      "f1": 0.25806451612903225,
+      "rouge_l": 0.1935483870967742,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.5675675675675675
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1833 E., 2015/1053 K. sayılı Yargıtay HGK kararında “Boşanma; Evlilik Birliğinin Temelinden Sars",
+      "generated": "Bu kaynaklar doğrultusunda 'Hukuk Genel Kurulu 2013/1833 E., 2015/1053 K. | Boşanma; Evlilik Birliğinin Temelinden Sarsılması' konusuna göre verilen bilgi şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/1833 E., 2015/1053 K.\nHukuk alanı: Aile Hukuku\nKonu başlıkları: Boşanma; Evlilik Birliğinin Temelinden Sarsılması\nİlgili mevzuat atıfları: 4721 s. TMK m. 166/1\nUyuşmazlık özeti: Davalı eşin hakaret içeren mesajlar göndermesinin boşanma sebebi teşkil ett",
+      "f1": 0.7053140096618358,
+      "rouge_l": 0.6183574879227053,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8656716417910447
+    },
+    {
+      "question": "Çıkarılamadı sayılı Yargıtay HGK kararında “Anonim Şirketler; Genel Kurul Kararının İptali” uyuşmazlığı bakımından karar",
+      "generated": "Kaynağa göre: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Çıkarılamadı\nHukuk alanı: Ticaret Hukuku\nKonu başlıkları: Anonim Şirketler; Genel Kurul Kararının İptali\nİlgili mevzuat atıfları: 6762 s. TTK m. 381\nUyuşmazlık özeti: Ayni sermaye taahhüdüne ilişkin ortaklar arası protokolden kaynaklanan sözleşmesel hakkın, sonradan alınan bir genel kurul kararıyla ortadan kaldırılıp kaldırılamayacağı ve bu durumun genel kurul kararının iptalini gerektirip gerektirmediği\nKarar sonucu göst",
+      "f1": 0.7765957446808511,
+      "rouge_l": 0.7765957446808511,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9047619047619048
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2024/803 E., 2024/587 K. sayılı Yargıtay HGK kararında “Temyiz Usulü; Direnme Kararının Bozulmasına U",
+      "generated": "Kaynağa göre: Bu metinden hareketle şu bilgi elde edilebilir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2024/803 E., 2024/587 K.\nHukuk alanı: Medeni Usul Hukuku\nKonu başlıkları: Temyiz Usulü; Direnme Kararının Bozulmasına Uyularak Verilen Yeni Hükmün Temyizi\nİlgili mevzuat atıfları: 6100 s. HMK m. 373\nUyuşmazlık özeti: Bozmaya uyma sonrası verilen yeni hükme yönelik temyiz itirazlarının incelenmesi için dosyanın Hukuk Genel Kurulu yerine ilgili Özel Daireye ",
+      "f1": 0.6822429906542056,
+      "rouge_l": 0.6822429906542056,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.759493670886076
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1857 E., 2015/1031 K. sayılı Yargıtay HGK kararında “Kurum İşleminin İptali” uyuşmazlığı bakımın",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili içerik şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/1857 E., 2015/1031 K.\nHukuk alanı: Sosyal Güvenlik Hukuku\nKonu başlıkları: Kurum İşleminin İptali\nİlgili mevzuat atıfları: 506 s. Sosyal Sigortalar Kanunu m. 79, 130; 2803 s. Jandarma Teşkilat, Görev ve Yetkileri Kanunu m. 7\nUyuşmazlık özeti: Jandarma tarafından sigortasız işçi çalıştırıldığına ilişkin düzenlenen ve işveren imzasını içermeyen tutanağa daya",
+      "f1": 0.7155172413793104,
+      "rouge_l": 0.7155172413793104,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9102564102564102
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1854 E., 2015/1310 K. sayılı Yargıtay HGK kararında “Ortaklığın Giderilmesi” uyuşmazlığı bakımın",
+      "generated": "Bu kaynak, istenen konuda çok fazla detay sunmamaktadır. Kaynağa göre ilgili karar metni şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/1854 E., 2015/1310 K.\nHukuk alanı: Medeni Hukuk\nKonu başlıkları: Ortaklığın Giderilmesi\nİlgili mevzuat atıfları: 4721 s. TMK m. 699\nUyuşmazlık özeti: Aynen taksimin mümkün olmadığının anlaşıldığı durumlarda, paydaşların rızası olmaksızın bazı payların diğerlerine ivaz karşılığı eklenmesi suretiyle aynen taksime karar ",
+      "f1": 0.6976744186046513,
+      "rouge_l": 0.6883720930232559,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8611111111111112
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1850 E., 2015/1180 K. sayılı Yargıtay HGK kararında “Kira Sözleşmesi; Akde Aykırılık Nedeniyle T",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili içerik şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/1850 E., 2015/1180 K.\nHukuk alanı: Borçlar Hukuku\nKonu başlıkları: Kira Sözleşmesi; Akde Aykırılık Nedeniyle Tahliye; Konusuz Kalan Davada Yargılama Giderleri\nİlgili mevzuat atıfları: 6098 s. TBK m. 316; 6100 s. HMK m. 331\nUyuşmazlık özeti: Kiraya verenin, akde aykırılığı gidermesi için kiracıya usulüne uygun süreli ihtar göndermeden tahliye davası açması ",
+      "f1": 0.6751054852320675,
+      "rouge_l": 0.6751054852320675,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9102564102564102
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1284 E., 2015/890 K. sayılı Yargıtay HGK kararında “İhalenin Feshi; Süresiz Şikayet” uyuşmazlığı",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'İhalenin Feshi; Süresiz Şikayet' konusunu açıklarken şunları göz önünde bulundurmalıyız: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı Emsal karar: Hukuk Genel Kurulu 2013/1284 E., 2015/890 K. Hukuk alanı: İcra ve İflas Hukuku Konu başlıkları: İhalenin Feshi; Süresiz Şikayet İlgili mevzuat atıfları: 2004 s. İİK m. 106/1, m. 110, m. 134 Uyuşmazlık özeti: Menkul haczinde kanuni satış isteme süresinin geçmesiyle haczin kalkmış olması nedeniyle, geçerli bir hac",
+      "f1": 0.7096774193548386,
+      "rouge_l": 0.7096774193548386,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.863013698630137
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/39 E., 2015/1718 K. sayılı Yargıtay HGK kararında “İdarenin Taşınmaza El Atması Nedeniyle Ecrimi",
+      "generated": "Kaynağa göre: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2014/39 E., 2015/1718 K.\nHukuk alanı: Eşya Hukuku\nKonu başlıkları: İdarenin Taşınmaza El Atması Nedeniyle Ecrimisil Talebi; 25.05.1938 tarihli ve 29/10 sayılı İBK\nKarar sonucu göstergesi: Bozma\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 1203 - Hukuk Genel Kurulu 2014/39 E., 2015/1718 K. - Eşya Hukuku - yargitay_1203_esya_hukuku_001\nDosya: yargitay_1203_esya_hukuku_001\nUyuşmazlık özeti: Acele ",
+      "f1": 0.6153846153846154,
+      "rouge_l": 0.5701357466063348,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9019607843137255
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2002 E., 2015/1082 K. sayılı Yargıtay HGK kararında “İşçilik Alacakları; Ücretin İspatı” uyuşmaz",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'İşçilik Alacakları; Ücretin İspatı' konusunda şu noktalar ortaya çıkabilir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2002 E., 2015/1082 K.\nHukuk alanı: İş Hukuku\nKonu başlıkları: İşçilik Alacakları; Ücretin İspatı\nİlgili mevzuat atıfları: 4857 s. İş Kanunu m. 32\nUyuşmazlık özeti: Ücretlerin banka kanalıyla ödenmesi zorunluluğu bulunan hallerde, işverenin ödeme savunması üzerine banka kayıtları araştırılmadan eksik i",
+      "f1": 0.7042253521126761,
+      "rouge_l": 0.6948356807511736,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8450704225352113
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2298 E., 2015/1028 K. sayılı Yargıtay HGK kararında “Kamulaştırma Bedelinin Tespiti; Kısmi Kamul",
+      "generated": "Kaynağa göre: Bu metinde yer alan ilgili madde atıfları: 2942 s. Kamulaştırma Kanunu m. 10, m. 11/f ve m. 12/1-b\nKarar sonucu göstergesi: Bozma\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 0833 - Hukuk Genel Kurulu 2013/2298 E., 2015/1028 K. - Kamulaştırma Hukuku - yargitay_0833_kamulastirma_hukuku_001\nDosya ID: yargitay_0833_kamulastirma_hukuku_001\nHukuk alanı: Kamulaştırma Hukuku\nKonu başlıkları: Kamulaştırma Bedelinin Tespiti; Kısmi Kamulaştırma\nUyuşmazlık özeti: Kamulaştırmadan arta",
+      "f1": 0.6483516483516483,
+      "rouge_l": 0.41758241758241754,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7580645161290323
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/175 E., 2015/1760 K. sayılı Yargıtay HGK kararında “Boşanma; Eşit Kusur” uyuşmazlığı bakımından ",
+      "generated": "Kaynağa göre: Bu kaynak, taraflar arasındaki uyuşmazlığın 'Boşanma; Eşit Kusur' konusundaki评价：\n根据上述材料，该案例的最终结果是：被推翻（Bozma）。\n\n相关法律依据包括：《土耳其刑法典》第4721条、《土耳其民法典》第174/1-2条和第166/1条。\n\n案例中涉及的主要法律概念有：婚姻无效、过错评估、离婚、财产分割等。这些概念在原文中主要通过相关的法律条款和案件描述体现出来。",
+      "f1": 0.08759124087591241,
+      "rouge_l": 0.07299270072992702,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.2413793103448276
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2204 E., 2015/1312 K. sayılı Yargıtay HGK kararında “Görevli Mahkeme; Haksız Şikayete Dayalı Taz",
+      "generated": "Kaynağa göre: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2204 E., 2015/1312 K.\nHukuk alanı: Ticaret Hukuku\nKonu başlıkları: Görevli Mahkeme; Haksız Şikayete Dayalı Tazminat Davası\nİlgili mevzuat atıfları: 556 s. KHK m. 71\nUyuşmazlık özeti: Marka hakkına tecavüz iddiasıyla yapılan şikayet nedeniyle uğranılan zararın tazmini istemiyle açılan davanın, Fikri ve Sınai Haklar Hukuk Mahkemesi yerine genel hükümlere göre Ticaret Mahkemesinde görülmesi gerekip ge",
+      "f1": 0.7348837209302326,
+      "rouge_l": 0.7069767441860465,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9444444444444444
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2024/424 E., 2024/303 K. sayılı Yargıtay HGK kararında “Direnme Kararının Hukuk Genel Kurulunca Bozul",
+      "generated": "Kaynağa göre: Bu metinden hareketle şu sonucun oluşması mümkün mü? Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2024/424 E., 2024/303 K.\nHukuk alanı: Medeni Usul Hukuku\nKonu başlıkları: Direnme Kararının Hukuk Genel Kurulunca Bozulması ve Mahkemenin Bozmaya Uyması\nİlgili mevzuat atıfları: 6100 s. HMK m. 373\nUyuşmazlık özeti: Bozmaya Uyma Sonrası Verilen Yeni Hükme Yönelik Temyiz İtirazlarının İncelenmesi Görevinin Özel Daireye Ait Olduğu ve Dosyanın İlgili Dair",
+      "f1": 0.7004608294930876,
+      "rouge_l": 0.6912442396313364,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.7972972972972973
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1869 E., 2015/1317 K. sayılı Yargıtay HGK kararında “Tarım Bağ-Kur Sigortalılığı Kapsamında Hizm",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili beklenen sonuç 'Bozma' olmalıdır. Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı Emsal karar: Hukuk Genel Kurulu 2013/1869 E., 2015/1317 K. Hukuk alanı: Sosyal Güvenlik Hukuku Konu başlıkları: Tarım Bağ-Kur Sigortalılığı Kapsamında Hizmet Tespiti İlgili mevzuat atıfları: 5510 s. Kanun Geçici m. 7 yollamasıyla 2926 s. Kanun m. 2, 3, 6, 9, 10 Uyuşmazlık özeti: Tescil, prim ödemesi veya tevkifat bulunmayan dönemlerde kesintisiz tarımsal faaliyetin varlığı",
+      "f1": 0.6752136752136751,
+      "rouge_l": 0.6752136752136751,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8765432098765432
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2461 E., 2015/1660 K. sayılı Yargıtay HGK kararında “İnançlı İşlem; Mülkiyetin Tespiti Davasında",
+      "generated": "Kaynağa göre: Bu kaynak, istenen esas üzerinde çok fazla bilgi içermez. Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı Emsal karar: Hukuk Genel Kurulu 2013/2461 E., 2015/1660 K. Konu başlıkları: İnançlı İşlem; Mülkiyetin Tespiti Davasında Hukuki Yarar İlgili mevzuat atıfları: 6100 s. HMK m. 106 Karar sonucu göstergesi: Bozma Bu kaynak, ihbar edilen soruyu doğrultusunda çok fazla bilgi sunamaktadır.\n\nVerilen kaynaklarda bu sorunun cevabı yoktur.",
+      "f1": 0.46632124352331605,
+      "rouge_l": 0.45595854922279794,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.6785714285714286
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2447 E., 2015/1359 K. sayılı Yargıtay HGK kararında “Kira Sözleşmesi; İki Haklı İhtar Nedeniyle ",
+      "generated": "Kaynağa göre: Bu metinden hareketle ilgili müsbet bilgi şu şekildedir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2447 E., 2015/1359 K.\nHukuk alanı: Borçlar Hukuku\nKonu başlıkları: Kira Sözleşmesi; İki Haklı İhtar Nedeniyle Tahliye\nİlgili mevzuat atıfları: 6100 s. HMK m. 207 ve 6098 s. TBK m. 352/2\nUyuşmazlık özeti: Kira sözleşmesinin süre hanesindeki onanmamış tahrifatın geçersiz sayılarak sözleşmenin bir yıl süreli olduğunun kabulüyle açılan tahliye da",
+      "f1": 0.7289719626168224,
+      "rouge_l": 0.7289719626168224,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8831168831168831
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/240 E., 2015/1674 K. sayılı Yargıtay HGK kararında “Menfi Tespit Davası; Bonodaki İmzanın Sahtel",
+      "generated": "Kaynağa göre: Bu metinden hareketle şu bilgi elde edilebilir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2014/240 E., 2015/1674 K.\nHukuk alanı: İcra ve İflas Hukuku\nKonu başlıkları: Menfi Tespit Davası; Bonodaki İmzanın Sahteliği İddiası\nİlgili mevzuat atıfları: 2004 s. İİK m. 72\nUyuşmazlık özeti: İmza incelemesine ilişkin alınan bilirkişi raporuna yapılan itirazlar ve dosyaya sunulan diğer deliller dikkate alındığında, mevcut raporun hükme esas alınacak yete",
+      "f1": 0.7112970711297071,
+      "rouge_l": 0.7112970711297071,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8860759493670886
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2015/699 E., 2015/2160 K. sayılı Yargıtay HGK kararında “Toplu İş Sözleşmesi; Ücret Alacağı” uyuşmazl",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'Toplu İş Sözleşmesi; Ücret Alacağı' konusunu açıklarken şunları göz önünde bulundurmalıyız: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2015/699 E., 2015/2160 K.\nHukuk alanı: İş Hukuku\nKonu başlıkları: Toplu İş Sözleşmesi; Ücret Alacağı\nİlgili mevzuat atıfları: 6356 s. Sendikalar ve Toplu İş Sözleşmesi Kanunu\nUyuşmazlık özeti: Toplu iş sözleşmesi uyarınca işçi ücretinden yapılan spor aidatı kesintisini karşılamak amacıyla a",
+      "f1": 0.7200000000000001,
+      "rouge_l": 0.7040000000000001,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8589743589743589
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2239 E., 2015/1334 K. sayılı Yargıtay HGK kararında “Kamulaştırılan Taşınmazın Tescili” uyuşmazl",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'Kamulaştırılan Taşınmazın Tescili' konusunu açıklarken şunları göz önünde bulundurmalıyız: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2239 E., 2015/1334 K.\nHukuk alanı: Kamulaştırma Hukuku\nKonu başlıkları: Kamulaştırılan Taşınmazın Tescili\nİlgili mevzuat atıfları: 2942 s. Kamulaştırma Kanunu m. 17, Geçici m. 7\nUyuşmazlık özeti: Kamulaştırma tebligatı usulsüz olsa dahi, bedel artırım davası açmakla işlemden haberdar ol",
+      "f1": 0.6545454545454547,
+      "rouge_l": 0.6545454545454547,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8648648648648649
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/1557 E., 2015/2021 K. sayılı Yargıtay HGK kararında “İştirak Nafakasının Artırılması” uyuşmazlığ",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'İştirak Nafakasının Artırılması' konusunu açıklarken şunlar söylenebilir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/1557 E., 2015/2021 K.\nHukuk alanı: Aile Hukuku\nKonu başlıkları: İştirak Nafakasının Artırılması\nİlgili mevzuat atıfları: 4721 s. Türk Medeni Kanunu m. 4, m. 182, m. 330, m. 331\nUyuşmazlık özeti: Nafaka miktarının yeniden belirlenmesinde tarafların gerçekleşen sosyal ve ekonomik durumları, ekonomik göste",
+      "f1": 0.6818181818181818,
+      "rouge_l": 0.6818181818181818,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9027777777777778
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2366 E., 2015/1533 K. sayılı Yargıtay HGK kararında “Vade Farkı Alacağı; İtirazın İptali Davası;",
+      "generated": "Kaynağa göre: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2366 E., 2015/1533 K.\nHukuk alanı: Ticaret Hukuku\nKonu başlıkları: Vade Farkı Alacağı; İtirazın İptali Davası; YİBK 27.06.2003 T. 2001/1 E. 2003/1 K.\nİlgili mevzuat atıfları: 2004 s. İİK m. 67\nUyuşmazlık özeti: Taraflar arasında vade farkı uygulamasına ilişkin teamülün varlığının tespiti için eksik inceleme ile hüküm kurulup kurulamayacağı.\nKarar sonucu göstergesi: Bozma\n\nBu kaynak, kesin bir karar",
+      "f1": 0.7663551401869159,
+      "rouge_l": 0.7289719626168224,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8767123287671232
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2024/555 E., 2024/410 K. sayılı Yargıtay HGK kararında “Temyiz Usulü; Direnme Kararının Hukuk Genel K",
+      "generated": "Kaynağa göre: Bu metinden hareketle şu bilgi elde edilebilir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2024/555 E., 2024/410 K.\nHukuk alanı: Medeni Usul Hukuku\nKonu başlıkları: Temyiz Usulü; Direnme Kararının Hukuk Genel Kurulunca Bozulması\nİlgili mevzuat atıfları: 6100 s. HMK m. 373\nUyuşmazlık özeti: İlk derece mahkemesinin, Hukuk Genel Kurulu bozma ilamına uyarak verdiği yeni hükme yönelik temyiz itirazlarını inceleme görevinin ilgili Özel Daireye ait old",
+      "f1": 0.7499999999999999,
+      "rouge_l": 0.7499999999999999,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8285714285714286
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2160 E., 2015/1347 K. sayılı Yargıtay HGK kararında “Kurum İşleminin İptali ve Menfi Tespit” uyu",
+      "generated": "Kaynağa göre: Bu metinden hareketle 'Kurum İşleminin İptali ve Menfi Tespit' konusunu açıklarken şunlar söylenebilir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2160 E., 2015/1347 K.\nHukuk alanı: Sosyal Güvenlik Hukuku\nKonu başlıkları: Kurum İşleminin İptali ve Menfi Tespit\nKarar sonucu göstergesi: Gönderme\n\nKaynak: YARGITAY_HGK_RETRIEVAL_LOW_RISK_ONLY - BELGE 1341 - Hukuk Genel Kurulu 2013/2160 E., 2015/1347 K. - Sosyal Güvenlik Hukuku - yargitay_1341_s",
+      "f1": 0.5658536585365853,
+      "rouge_l": 0.5463414634146341,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6808510638297872
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2013/2321 E., 2015/1354 K. sayılı Yargıtay HGK kararında “Boşanma; Evlilik Birliğinin Temelinden Sars",
+      "generated": "Kaynağa göre: Bu kaynak, kesin bir karar sonucu göstergesini içermemektedir. Kaynak metindeki esas içerik şudur: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı\nEmsal karar: Hukuk Genel Kurulu 2013/2321 E., 2015/1354 K.\nHukuk alanı: Medeni Hukuk\nKonu başlıkları: Boşanma; Evlilik Birliğinin Temelinden Sarsılması\nİlgili mevzuat atıfları: 4721 s. Türk Medeni Kanunu m. 166/1\nUyuşmazlık özeti: Davalı kocanın birlik görevlerini yerine getirmemesi nedeniyle ortak hayatın temelinden sarsıldığı ve birliğ",
+      "f1": 0.7096774193548386,
+      "rouge_l": 0.7004608294930875,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8533333333333334
+    },
+    {
+      "question": "Hukuk Genel Kurulu 2014/223 E., 2015/2025 K. sayılı Yargıtay HGK kararında “Kira Sözleşmesi; Muacceliyet Şartı ve Temerr",
+      "generated": "Bu kaynaklar doğrultusunda 'Hukuk Genel Kurulu 2014/223 E., 2015/2025 K. | Kira Sözleşmesi; Muacceliyet Şartı ve Temerrüt Nedeniyle Tahliye' konusunda verilen kesin hüküm hakkında following eklediğim bilgi geçerlidir: Kaynak türü: Yargıtay Hukuk Genel Kurulu kararı Emsal karar: Hukuk Genel Kurulu 2014/223 E., 2015/2025 K. Hukuk alanı: Borçlar Hukuku Konu başlıkları: Kira Sözleşmesi; Muacceliyet Şartı ve Temerrüt Nedeniyle Tahliye İlgili mevzuat atıfları: 6098 s. TBK m. 346; 6353 s. Kanun m. 53 U",
+      "f1": 0.6448598130841122,
+      "rouge_l": 0.5607476635514018,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.828125
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku alanında “Gerçek muamele duruma dayanmakla birlikte” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Gerçek bir muamele veya duruma dayanmakla birlikte bu muamele veya durumu mahiyet veya miktar itibariyle gerçeğe aykırı şekilde yansıtan belge, muhteviyatı itibariyle yanıltıcı belgedir.\n\nKaynak: ORICON - Ticaret Hukuku - oricon_ticaret_000053",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8148148148148148
+    },
+    {
+      "question": "ORICON kaynağına göre Yabancılar ve Vatandaşlık Hukuku alanında “Türkçe bilmeyen taraf varsa” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Türkçe bilmeyen bir taraf varsa, yeminli tercüman kullanılması gerekmektedir. Yasal önalım hakkının temel amacı, payların yabancı bir kişiye satılmasını sınırlamak ve mümkünse payların aynı kişi veya kişilerde toplanmasını sağlamaktır.\n\nKaynak: ORICON - Yabancılar ve Vatandaşlık Hukuku - oricon_yabancilar_000051",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8
+    },
+    {
+      "question": "ORICON kaynağına göre Ceza Muhakemesi Hukuku; İdare ve İdari Yargılama Hukuku alanında “HAGB kararlarının hukuk idare ma",
+      "generated": "Kaynağa göre: HAGB kararlarının hukuk ve idare mahkemeleri üzerinde doğrudan bir bağlayıcılığı yoktur, çünkü bu kararlar hukuki bir sonuç doğurmaz. HAGB kararlarının hukuki sonuç doğurmaması, bu kararların ceza hukuku bağlamında verilmiş olması ve dolayısıyla idare ve hukuk mahkemeleri için doğrudan yargısal bağlayıcılık taşımaması anlamına gelir.\n\nKaynak: ORICON - Ceza Muhakemesi Hukuku; İdare ve İdari Yargılama Hukuku - oricon_ceza_muhakemesi_idare_000001",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8292682926829268
+    },
+    {
+      "question": "ORICON kaynağına göre İcra ve İflas Hukuku; İdare ve İdari Yargılama Hukuku alanında “Sıra cetveline itiraz davası açma”",
+      "generated": "Kaynağa göre: İflas idaresinin sıra cetvelini düzenlerken uyması gereken kurallar, iflas hukuku kurallarına uymasıdır; aksi takdirde sıra cetveline karşı şikayet yoluna başvurulabilir.\n\nBu kaynak, tespit edilen ilgili içerik olarak çok az bilgi içeriyor; bu nedenle sadece kaynak sahibi olan 'hukuk' kullanıcısından beklenebilecek nitelikte sınırlı bir açıklama sunulmuştur. Bu kaynak, soruyla ilgili olarak 'İcra ve İflas Hukuku; İdare ve İdari Yargılama Hukuku' konusundaki esasları kapsamaktadır.",
+      "f1": 0.3793103448275862,
+      "rouge_l": 0.3620689655172414,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.5370370370370371
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; İdare ve İdari Yargılama Hukuku; Vergi Hukuku alanında “Tahsis devir gerçekleştiği",
+      "generated": "Bu kaynak parçasında exakt olarak 'Tahsis devir gerçekleştiğinde' konusuna ilişkin olarak herhangi bir bilgi mevcut değil. Kaynak içeriğinin tamamı şudur: Ticaret hukuku danışmanlığı, işletmelerin ticaret faaliyetlerini sorunsuz bir şekilde sürdürmelerine yardımcı olarak ticari riskleri minimize etmelerine katkıda bulunur. Bilişim hukuku danışmanları, işletmelere dijital varlıkların korunması, veri gizliliği ve güvenliğinin sağlanması, elektronik ticaret ve çevrimiçi işlemler için uygun yasal çe",
+      "f1": 0.18518518518518517,
+      "rouge_l": 0.14814814814814814,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6491228070175439
+    },
+    {
+      "question": "ORICON kaynağına göre Tüketici Hukuku alanında “Cayma hakkının hukuka uygun kullanılabilmesi” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Cayma hakkının hukuka uygun olarak kullanılabilmesi için bildirimin, cayma hakkı süresi içinde satıcı veya sağlayıcıya yazılı olarak veya kalıcı veri saklayıcısı ile yöneltilmiş olması yeterlidir.\n\nKaynak: ORICON - Tüketici Hukuku - oricon_tuketici_000002",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7586206896551724
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; İcra ve İflas Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Dava konusu",
+      "generated": "Bu kaynak parçasını kısa ve kaynaklı şekilde özetleme gereği, 'ORICON kaynağına göre Ticaret Hukuku; İcra ve İflas Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Dava konusu taşınmaz üzerinde mülkiyet” nasıl açıklanır?' başlıklı içerik şudur: Bu kaynak parçası, 'hukuk' konusunu kapsamaktadır. Kaynak türü: Karar metni. Bu kaynak, soruyu doğrultusunda çok fazla bilgi içermemektedir. Verilen kaynaklarda bu sorunun cevabı bulunmamaktadır.",
+      "f1": 0.4444444444444445,
+      "rouge_l": 0.3232323232323232,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.4117647058823529
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; Vergi Hukuku alanında “Avukatların müvekkillerine dürüstlük ilkesinin gereklilikle",
+      "generated": "Kaynağa göre: Avukatların müvekkillerine karşı dürüstlük ilkesinin gereklilikleri, müvekkillerine her zaman gerçekçi ve dürüst tavsiyelerde bulunmaları, mümkün sonuçlar ve riskler konusunda açık olmalarıdır.\n\nKaynak: ORICON - Ticaret Hukuku; Vergi Hukuku - oricon_ticaret_vergi_000002",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7777777777777778
+    },
+    {
+      "question": "ORICON kaynağına göre Ceza Muhakemesi Hukuku; Vergi Hukuku; Anayasa Hukuku ve Temel Haklar alanında “Şüphelinin savunma ",
+      "generated": "Kaynağa göre: Şüphelinin savunma haklarını etkin bir şekilde kullanabilmesi için, sessiz kalma hakkı ve bir avukat eşliğinde ifade verme hakkı gibi temel hakların her aşamada hatırlatılması gerekmektedir.\n\nKaynak: ORICON - Ceza Muhakemesi Hukuku; Vergi Hukuku; Anayasa Hukuku ve Temel Haklar - oricon_ceza_muhakemesi_vergi_anayasa_000002",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7352941176470589
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; İcra ve İflas Hukuku; İdare ve İdari Yargılama Hukuku alanında “Paylı mülkiyetin s",
+      "generated": "Kaynağa göre: Paylı mülkiyetin sona erme durumları, malın devri, malın yok olması, kamulaştırma ve cebri icra yoluyla satış gibi durumları içerir ve bu durumlar paydaşların iradesi dışında gerçekleşir.\n\nKaynak: ORICON - Ticaret Hukuku; İcra ve İflas Hukuku; İdare ve İdari Yargılama Hukuku - oricon_ticaret_icra_iflas_idare_000004",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8055555555555556
+    },
+    {
+      "question": "ORICON kaynağına göre İdare ve İdari Yargılama Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Acele kamulaştır",
+      "generated": "Kaynağa göre: Acele kamulaştırma kararının iptaline neden olabilecek bir durum, acele kamulaştırma kararına konu taşınmaza ilişkin 'riskli alan' kararının sonradan iptal edilmesidir. Bu durumda, dayanaksız kalan acele kamulaştırma kararı da iptal edilebilir.\n\nKaynak: ORICON - İdare ve İdari Yargılama Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler - oricon_idare_medeni_000032",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8048780487804879
+    },
+    {
+      "question": "ORICON kaynağına göre Ceza Hukuku alanında “6136 sayılı kanunun 4” nasıl açıklanır?",
+      "generated": "Kaynağa göre: 6136 sayılı kanunun 4. maddesinde, ateşli silahlarla mermileri satın alan, taşıyan veya bulunduranlar, niteliksiz ateşli silah bulunduranlar ve kurusıkı tabir edilen silahları öldürmeye elverişli hale getirenler gibi eylemler yer almaktadır.\n\nKaynak: ORICON - Ceza Hukuku - oricon_ceza_000012",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8285714285714286
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; İdare ve İdari Yargılama Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “",
+      "generated": "Kaynağa göre: Kamulaştırmasız el atma durumunda hak sahiplerinin başvurabileceği hukuki imkanlar hakkında bilgi, 'Kamulaştırmasız El Atma Davası' yazısından edinilebilir.\n\nKaynak: ORICON - Ticaret Hukuku; İdare ve İdari Yargılama Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler - oricon_ticaret_idare_medeni_000008",
+      "f1": 0.4666666666666667,
+      "rouge_l": 0.43333333333333335,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.65625
+    },
+    {
+      "question": "ORICON kaynağına göre İcra ve İflas Hukuku; Borçlar ve Sözleşmeler Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanın",
+      "generated": "Kaynağa göre: ORICON. İcra ve İflas Hukuku; Borçlar ve Sözleşmeler Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler. Bu kaynak, 'Tebliğ alan borçlu' konusunu içeren içerik bulunmamaktadır. Bu kaynak, istenen konu kapsamında çok fazla bilgi sağlamamaktadır.\n\nKaynak: ORICON - İcra ve İflas Hukuku; Borçlar ve Sözleşmeler Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler - lawchatbot_icra_ve_iflas_hukuku_borclar_ve_sozlesmeler_hukuku_medeni_0008\nDosya ID: lawchatbot_icra_ve_iflas_hukuku_borclar_ve_sozles",
+      "f1": 0.23529411764705882,
+      "rouge_l": 0.21719457013574658,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.4
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; Ceza Muhakemesi Hukuku alanında “HAGB kararları çerçevesinde değerlendirilen maddi",
+      "generated": "Kaynağa göre: HAGB kararları çerçevesinde değerlendirilen maddi vakalar ve toplanan deliller, ilgili mahkemelerde dikkate alınması gereken önemli unsurlar olup, maddi gerçekliklerin aydınlatılmasında kullanılabilir.\n\nKaynak: ORICON - Ticaret Hukuku; Ceza Muhakemesi Hukuku - oricon_ticaret_ceza_muhakemesi_000001",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8620689655172413
+    },
+    {
+      "question": "ORICON kaynağına göre İş ve Sosyal Güvenlik Hukuku alanında “Ecrimisil ihbarnamesinde ihbarnameye dayanak komisyon” nası",
+      "generated": "Kaynağa göre: Ecrimisil ihbarnamesinde ihbarnameye dayanak olan komisyon kararının tarih ve numarası, talep edilen toplam ecrimisil bedeli ve bu borcun ait olduğu dönem bilgileri gibi unsurların eksikliği sorun yaratabilir.\n\nKaynak: ORICON - İş ve Sosyal Güvenlik Hukuku - oricon_is_sgk_000030",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7428571428571429
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; Borçlar ve Sözleşmeler Hukuku alanında “Gemi maliki olmayan borçlu” nasıl açıklanı",
+      "generated": "Kaynağa göre: Ticaret Hukuku; Borçlar ve Sözleşmeler Hukuku. Gemi maliki olmayan borçlu, gemi ipoteğine konu borcu ödediğinde, gemi malikine rücu hakkı olursa gemi ipoteğinin lehtarı olur. Gemi maliki olmayan borçlu, alacağın bir kısmını öderse, gemi ipoteğinin alacaklı üzerinde kalan kısmı borçluya geçenden sıra itibarıyla önce gelir. Gemi maliki olmayan borçlu, ödeme sonucunda ipoteği iktisap ederse, alacaklıdan gemi sicilinin düzeltilmesi için gerekli belgeleri isteme hakkına sahiptir. Alacak",
+      "f1": 0.9895833333333334,
+      "rouge_l": 0.9375,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9354838709677419
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Önalım hakkı sahibi” nasıl açıkla",
+      "generated": "Bu kaynak parçasında exkurzyoncu içerik bulunmadığından, 'Önalım hakkı sahibi' konusunda özel olarak bir açıklama mevcut değil. Kaynak, başlık alanda yer alan 'Medeni Hukuk - Miras/Aile/Eşya/Kişiler' gibi başlıklardan daha genel kavramları kapsamaktadır. Bu kaynak parçası hakkında verilen kaynağa vecitation bilgisi: ORICON - Ticaret Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler - oricon_ticaret_medeni_000019. Kaynak içeriğinde 'Önalım hakkı sahibi' konusu doğrudanINCRA metinde ayrıntılı bir şek",
+      "f1": 0.2831858407079646,
+      "rouge_l": 0.24778761061946902,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.2631578947368421
+    },
+    {
+      "question": "ORICON kaynağına göre Borçlar ve Sözleşmeler Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Aile konutunun tap",
+      "generated": "Bu kaynak parçası, tam olarak sorunun çözümüne yeterli değildir. Sorudaki eksiklik, 'Borçlar ve Sözleşmeler Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler' konusundaki 'Aile konutunun tapuda malik eş' açıklamasını içermediği için bununla ilgili özel bir açıklama sunamaktadır. Kaynak İçeriği: Yargıtay kararlarında aile konutu, 'eşlerin müşterek yaşamlarını sürdürmeleri için ayrılan ve aynı konutta iki tarafın da yaşama hakkını güvenceye alan hukuksal kurum' olarak tanımlanmaktadır. Bu tanım, aile",
+      "f1": 0.2741116751269036,
+      "rouge_l": 0.18274111675126906,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6285714285714286
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; İdare ve İdari Yargılama Hukuku; Anayasa Hukuku ve Temel Haklar alanında “Kamu kül",
+      "generated": "Kaynağa göre: Kusursuz sorumluluk halleri, risk ilkesi, kamu külfetleri karşısında eşitlik ilkesi ve sosyal risk ilkesi çerçevesinde ele alınmaktadır.\n\nBu kaynak, sorduğunuz konuda daha fazla spesifik bilgi içermektedir. Bu kaynak kesiminden elde edilecek bilgi, şu şekilde açıklamasını sağlar: Kusursuz sorumluluk halleri, risk ilkesi, kamu külfetleri karşısında eşitlik ilkesi ve sosyal risk ilkesi çerçevesinde ele alınmaktadır.\n\nKaynak: ORICON - Anayasa Hukuku ve Temel Haklar - oricon_anayasa_00",
+      "f1": 0.3269230769230769,
+      "rouge_l": 0.2884615384615385,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.5
+    },
+    {
+      "question": "ORICON kaynağına göre İcra ve İflas Hukuku alanında “Bedel tespit komisyonunun belirlenmesi icrai” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Bedel tespit komisyonunun belirlenmesi gibi icrai nitelikte olmayan işlemlere karşı tek başına doğrudan dava açılamayacaktır.\n\nKaynak: ORICON - İcra ve İflas Hukuku - oricon_icra_iflas_000042",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.68
+    },
+    {
+      "question": "ORICON kaynağına göre İcra ve İflas Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Taşınmazla ilgili anlaşma b",
+      "generated": "Kaynağa göre: Taşınmazla ilgili anlaşma belgeleri için icra edilebilirlik şerhinin, taşınmazın bulunduğu yerdeki sulh hukuk mahkemesinden alınması gerektiği açıklanmıştır. Mahkemenin taşınmazla ilgili anlaşma belgeleri üzerindeki incelemesinde, anlaşmanın içeriğini, arabuluculuğa ve cebri icraya elverişli olup olmadığını ve taşınmazlara ilişkin kanunlarda yer alan sınırlamalara uyulup uyulmadığını denetlemesi gerektiği belirtilmiştir.\n\nKaynak: ORICON - İcra ve İflas Hukuku; Medeni Hukuk - Miras/",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8490566037735849
+    },
+    {
+      "question": "ORICON kaynağına göre Medeni Hukuk - Miras/Aile/Eşya/Kişiler; Anayasa Hukuku ve Temel Haklar alanında “Hukuka uygun olma",
+      "generated": "Kaynağa göre: Hukuka uygun olmaksızın verilen yıkım kararı, ilgilisinin anayasal koruma altındaki mülkiyet hakkına doğrudan müdahale anlamına gelir.\n\nKaynak: ORICON - Medeni Hukuk - Miras/Aile/Eşya/Kişiler; Anayasa Hukuku ve Temel Haklar - oricon_medeni_anayasa_000004",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8125
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; İcra ve İflas Hukuku alanında “Konkordato ilanından önce karşılıksızdır işlemi” na",
+      "generated": "Kaynağa göre: Konkordato ilanından önce karşılıksızdır işlemi yapılmış çekler için şikâyet süresi, konkordatonun reddine dair kararın yetkili hamile tebliğ edildiği tarihten itibaren başlar.\n\nKaynak: ORICON - Ticaret Hukuku; İcra ve İflas Hukuku - oricon_ticaret_icra_iflas_000026",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8125
+    },
+    {
+      "question": "ORICON kaynağına göre Vergi Hukuku alanında “Ücretler masraflar baştan açıkça belirlenmeli” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Ücretler ve masraflar baştan açıkça belirlenmeli ve herhangi bir anlaşmazlık durumunda müvekkil ile açık bir şekilde tartışılmalıdır.\n\nKaynak: ORICON - Vergi Hukuku - oricon_vergi_000007",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7272727272727273
+    },
+    {
+      "question": "ORICON kaynağına göre Borçlar ve Sözleşmeler Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler; Anayasa Hukuku ve Temel Hak",
+      "generated": "Kaynağa göre: İfade özgürlüğü hakkının sınırlandırılması, Anayasa Mahkemesi ve Avrupa İnsan Hakları Mahkemesi tarafından çeşitli kriterler kullanılarak değerlendirilmektedir. Anayasa Mahkemesi'ne göre ifade özgürlüğünün sınırlandırılması, bir kanuna dayanması, Anayasa'da belirtilen sebeplerden biri için yapılması, demokratik bir topluma uygunluğu ve ölçülülük kriterlerini sağlamalıdır.\n\nKaynağa göre ilgili konular: Türkiye Cumhuriyeti Anayasası + Hukuk Muhakemeleri Kanunu / Medenî Usul. Bu kayna",
+      "f1": 0.205607476635514,
+      "rouge_l": 0.16822429906542058,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8148148148148148
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; Borçlar ve Sözleşmeler Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Ge",
+      "generated": "Bu kaynak parçasında exakt olarak 'Gemi ipoteğinin devam etmesi' konusu bulunmadığından, doğrudan bir açıklama alamıyoruz. Ancak, kaynak üzerinden elde edilebilecek bilgi ile ilgili bir açıklama şudur: Türk Medenî Kanunu / Medenî Hukuk + Türk Borçlar Kanunu / Borçlar Hukuku + Hukuk Muhakemeleri Kanunu / Medenî Usul. Hukuka aykırı mülkiyet ihlallerine karşı tazminat davası açılabilir. Boşanma davasında mal paylaşımı, Türk Medeni Kanunu'na göre yapılır. Evlilik süresince edinilmiş mallar, genellik",
+      "f1": 0.18571428571428572,
+      "rouge_l": 0.14285714285714285,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.7432432432432432
+    },
+    {
+      "question": "ORICON kaynağına göre Borçlar ve Sözleşmeler Hukuku alanında “Borca kısmi itirazda” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Borca kısmi itirazda, borçlu itirazını açık ve anlaşılır bir şekilde ifade etmelidir; belirsiz ifadeler dikkate alınmaz.\n\nKaynak: ORICON - Borçlar ve Sözleşmeler Hukuku - oricon_borclar_000155",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "question": "ORICON kaynağına göre Ceza Muhakemesi Hukuku alanında “Zorunlu müdafilik halleri dışında” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Zorunlu müdafilik halleri dışında, sanık veya şüpheli müdafiden yararlanmak için ihtiyari olarak talep edebilir. Bu durumda, talep edilse de müdafi görevlendirilmesi zorunlu müdafilik olarak kabul edilir.\n\nKaynak: ORICON - Ceza Muhakemesi Hukuku - oricon_ceza_muhakemesi_000022",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7666666666666667
+    },
+    {
+      "question": "ORICON kaynağına göre İcra ve İflas Hukuku; Borçlar ve Sözleşmeler Hukuku alanında “Konkordato talebinde bulunabilecek k",
+      "generated": "Kaynağa göre: Konkordato talebinde bulunabilecek kişiler, iflasa tabi olup olmamasından bağımsız olarak herhangi bir borçlu ve aleyhinde iflas kararı verilen tasfiye aşamasındaki kişiler ile borçlu hakkında iflas talebinde bulunma hakkına sahip alacaklılardır. Konkordato talebinin kabulü için mahkemeye sunulması gereken belgeler arasında konkordato ön projesi, borçlunun malvarlığına dair belgeler, alacaklıların alacak miktarlarını içeren liste, alacaklıların tahsil edebileceği alacak tutarları i",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.9130434782608695
+    },
+    {
+      "question": "ORICON kaynağına göre İdare ve İdari Yargılama Hukuku; Anayasa Hukuku ve Temel Haklar alanında “Habeas Corpus Yasası” na",
+      "generated": "Kaynağa göre: Habeas Corpus Yasası, 1679 yılında yürürlüğe girmiştir ve idarenin kişiler üzerindeki keyfi yetkilerini sınırlandırarak kişisel hürriyetin idare tarafından keyfi olarak kısıtlanmasını önler; bu yasa, kişisel özgürlüklere getirilen sınırlamaların hukuki, gerekli ve ölçülü olmasını şart koşar.\n\nKaynak: ORICON - İdare ve İdari Yargılama Hukuku; Anayasa Hukuku ve Temel Haklar - oricon_idare_anayasa_000001",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8666666666666667
+    },
+    {
+      "question": "ORICON kaynağına göre İdare ve İdari Yargılama Hukuku alanında “Hukuki imkansızlık durumuna örnek imar” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Hukuki imkansızlık durumuna örnek olarak imar mevzuatının o arsa üzerinde inşaat yapılmasını engelliyor olması verilebilir.\n\nKaynak: ORICON - İdare ve İdari Yargılama Hukuku - oricon_idare_000041",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6538461538461539
+    },
+    {
+      "question": "ORICON kaynağına göre Tüketici Hukuku; Ticaret Hukuku alanında “Çekte cayma hakkının kullanılması” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Çekte cayma hakkının kullanılması, ibraz süresi geçtikten sonra geçerlidir. İbraz süresi geçmiş bir çek için muhatap, çekte cayma hakkı kullanılmamışsa, çeki ödeyebilir. Çekte cayma hakkı kullanıldığında, bu durum ibraz süresi geçtikten sonra hüküm ifade eder.\n\nKaynak: ORICON - Tüketici Hukuku; Ticaret Hukuku - oricon_tuketici_ticaret_000003",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7647058823529411
+    },
+    {
+      "question": "ORICON kaynağına göre Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Resmi vasiyetnamenin okunmadan imzalanmadan düzen",
+      "generated": "Kaynağa göre: Resmi vasiyetnamenin okunmadan ve imzalanmadan düzenlenmesi sürecinde, vasiyet edenin resmi memura ilettiği beyanlar, vasiyetnamenin oluşturulmasında temel bir rol oynamaktadır. Resmi memurun, vasiyetnamenin metnini tanıkların huzurunda okuması, vasiyetnamenin şeklen geçerli olabilmesi için zorunludur. Vasiyet edenin, okunan metnin son arzularına uygun olduğunu beyan etmesi, imza yerini tutarak vasiyetnamenin geçerliliğini sağlamaktadır. Tanıkların şerhi, okunmadan ve imzalanmadan ",
+      "f1": 0.632,
+      "rouge_l": 0.632,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9433962264150944
+    },
+    {
+      "question": "ORICON kaynağına göre İdare ve İdari Yargılama Hukuku; Borçlar ve Sözleşmeler Hukuku alanında “İvedi yargılama usulü” na",
+      "generated": "Kaynağa göre: Vergi davalarında yürütmenin durdurulması hakkında daha fazla bilgi, 'Vergi Davalarının Konusu ve Kapsamı' ve 'Vergi Yargılaması Usulü' başlıklı yazılardan edinilebilir.\n\nBu kaynak, istenen açıklamayı içermemektedir. Bu nedenle verilen kaynaklar içinde 'İdare ve İdari Yargılama Hukuku; Borçlar ve Sözleşmeler Hukuku' konusunda \"İvedi yargılama usulü\" ile ilgili olarak exakt olarak 'verilen kaynaklar' doğrultusunda ortaya konulacak şekilde herhangi bir bilgi mevcut değil. Bu durum, k",
+      "f1": 0.3252032520325203,
+      "rouge_l": 0.2601626016260163,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.4482758620689655
+    },
+    {
+      "question": "ORICON kaynağına göre İcra ve İflas Hukuku; Vergi Hukuku alanında “Avukat vasıtasıyla davanın takip edilmesi” nasıl açık",
+      "generated": "Kaynağa göre: Avukat vasıtasıyla davanın takip edilmesi, hak kaybına uğranılmaması açısından son derece güvenli bir çözüm olacaktır. Davaların avukat vasıtasıyla takip edilmesi, hak kaybına uğranılmaması açısından son derece güvenli bir çözüm sunar.\n\nKaynak: ORICON - İcra ve İflas Hukuku; Vergi Hukuku - oricon_icra_iflas_vergi_000002",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8214285714285714
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; İdare ve İdari Yargılama Hukuku alanında “Riskli yapı tespitini Çevre” nasıl açıkl",
+      "generated": "Kaynağa göre: Riskli yapı tespitini Çevre, Şehircilik ve İklim Değişikliği Bakanlığı, belediyeler, il özel idareleri veya Bakanlıkça lisanslandırılan kurum ve kuruluşlar gerçekleştirebilir.\n\nBu kaynak, belirtilen konuda daha fazla detaylı bilgi sunmakta yer kalmamaktadır.",
+      "f1": 0.6956521739130436,
+      "rouge_l": 0.6956521739130436,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; İcra ve İflas Hukuku; Borçlar ve Sözleşmeler Hukuku alanında “Hacze adi iştirak et",
+      "generated": "Kaynağa göre: Hacze adi iştirak etmek isteyen alacaklının, borçluya karşı takip gerçekleştirmiş olması ve bu takibin kesinleşmiş olması gerekmektedir.\n\nKaynak: ORICON - Ticaret Hukuku; Borçlar ve Sözleşmeler Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler - oricon_ticaret_borclar_medeni_000017",
+      "f1": 0.7941176470588235,
+      "rouge_l": 0.7941176470588235,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6774193548387096
+    },
+    {
+      "question": "ORICON kaynağına göre Anayasa Hukuku ve Temel Haklar alanında “temel hak ve özgürlükler” nasıl açıklanır?",
+      "generated": "Kaynağa göre: İfade özgürlüğü hakkının sınırlandırılması, Anayasa Mahkemesi ve Avrupa İnsan Hakları Mahkemesi tarafından çeşitli kriterler kullanılarak değerlendirilmektedir. Anayasa Mahkemesi'ne göre ifade özgürlüğünün sınırlandırılması, bir kanuna dayanması, Anayasa'da belirtilen sebeplerden biri için yapılması, demokratik bir topluma uygunluğu ve ölçülülük kriterlerini sağlamalıdır.\n\nBu kaynak, kesin olarak 'Anayasa Hukuku ve Temel Haklar' konusunu kapsamaktadır. Cevap, kaynak context'i içind",
+      "f1": 0.21739130434782608,
+      "rouge_l": 0.17391304347826086,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.7272727272727273
+    },
+    {
+      "question": "ORICON kaynağına göre Ceza Muhakemesi Hukuku; Vergi Hukuku alanında “Şüphelinin avukat tutma hakkı” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Şüphelinin avukat tutma hakkı, mali imkânı yoksa baro tarafından ücretsiz bir avukat görevlendirilmesi gerektiğini belirtmektedir.\n\nKaynak: ORICON - Ceza Muhakemesi Hukuku; Vergi Hukuku - oricon_ceza_muhakemesi_vergi_000008",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6521739130434783
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku alanında “Af beyanı örtülü” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Af beyanı örtülü, açık, yazılı veya sözlü olarak gerçekleşebilir ve yalnızca eşin kendisi tarafından kullanılabilir; temsilci aracılığıyla af söz konusu olamaz.\n\nKaynak: ORICON - Ticaret Hukuku - oricon_ticaret_000423",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8148148148148148
+    },
+    {
+      "question": "ORICON kaynağına göre Yabancılar ve Vatandaşlık Hukuku alanında “Olağanüstü durumlar ne kastedildiği kanunda” nasıl açık",
+      "generated": "Bu kaynak parçasını kısa ve kaynaklı şekilde özetlecek olursak: Kaynak sahibi: ORICON - Yabancılar ve Vatandaşlık Hukuku - oricon_yabancilar_000024. Bu kaynak, 'Olağanüstü durumlar ne kastedildiği kanunda' konusunu şu şekilde açıklamaktadır: Olağanüstü durumlar ile ne kastedildiği kanunda açıklanmamıştır; bu nedenle somut olayın özellikleri dikkate alınarak değerlendirme yapılacaktır.\n\nKaynak: ORICON - Yabancılar ve Vatandaşlık Hukuku - oricon_yabancilar_000024",
+      "f1": 0.6052631578947368,
+      "rouge_l": 0.6052631578947368,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.5454545454545454
+    },
+    {
+      "question": "ORICON kaynağına göre İcra ve İflas Hukuku; İdare ve İdari Yargılama Hukuku alanında “İflas idaresinin sıra cetvelini dü",
+      "generated": "Kaynağa göre: İflas idaresinin sıra cetvelini düzenlerken uyması gereken kurallar, iflas hukuku kurallarına uymasıdır; aksi takdirde sıra cetveline karşı şikayet yoluna başvurulabilir.\n\nKaynak: ORICON - İcra ve İflas Hukuku; İdare ve İdari Yargılama Hukuku - oricon_icra_iflas_idare_000006",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7666666666666667
+    },
+    {
+      "question": "ORICON kaynağına göre İdare ve İdari Yargılama Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Taşınmaz zilyetl",
+      "generated": "Kaynağa göre: Taşınmaz zilyetliğine tecavüzün tespit edilmesi durumunda, yetkili idari makam tarafından bu fiillerin önlenmesi kararı verilecektir.\n\nKaynak: ORICON - İdare ve İdari Yargılama Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler - oricon_idare_medeni_000080",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.71875
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; İdare ve İdari Yargılama Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “",
+      "generated": "Kaynağa göre: Gerçekte hak sahibi olmayan birine tapu tahsis belgesi verilmesi durumunda, idarece tapu veya tahsis belgesinin iptali gündeme gelebilir.\n\nKaynak: ORICON - Ticaret Hukuku; İdare ve İdari Yargılama Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler - oricon_ticaret_idare_medeni_000003",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7647058823529411
+    },
+    {
+      "question": "ORICON kaynağına göre İcra ve İflas Hukuku; Borçlar ve Sözleşmeler Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanın",
+      "generated": "Kaynağa göre: Elbirliği mülkiyetine tabi bir taşınmazın cebri icra yoluyla satışı için, ortaklardan birinin borçlusu olması ve borcun alacaklısının taşınmazın satışını talep etmesi gerekmektedir.\n\nKaynak: ORICON - Ticaret Hukuku; İcra ve İflas Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler - oricon_ticaret_icra_iflas_medeni_000004",
+      "f1": 0.9285714285714286,
+      "rouge_l": 0.9047619047619047,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8108108108108109
+    },
+    {
+      "question": "ORICON kaynağına göre İş ve Sosyal Güvenlik Hukuku alanında “Ecrimisil bedelinin artırılmasına” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Ecrimisil bedelinin artırılmasına karşı, gerek mevzuat gerekse yerleşik içtihatlar uyarınca ecrimisil ihbarnamesinin iptali talebiyle dava yoluna başvurulabilir.\n\nKaynak: ORICON - İş ve Sosyal Güvenlik Hukuku - oricon_is_sgk_000031",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7407407407407407
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; Borçlar ve Sözleşmeler Hukuku alanında “Borçlunun aciz durumu” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Borçlunun aciz durumu, davanın açıldığı tarih itibariyle borçlarını ödemekten aciz olmasıyla veya borçlu hakkında aciz vesikası alınmamakla birlikte, borçlunun haczi kabil malının bulunmadığının tespit edilmesiyle gerçekleşmiş sayılır.\n\nKaynak: ORICON - Ticaret Hukuku; Borçlar ve Sözleşmeler Hukuku - oricon_ticaret_borclar_000032",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8529411764705882
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Elbirliği mülkiyetinin sona erme ",
+      "generated": "Bu kaynak parçasında işlenen içeriğe göre, 'Ticaret Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler' konusunda verilen kaynağa göre esaslı içerik şudur: Elbirliği mülkiyetinin sona erme durumları, malın devri, topluluğun dağılması ve paylı mülkiyete geçilmesi gibi koşullarda gerçekleşir. Paylı mülkiyetin özgü bir sonlanma şekli olan paylaşma veya taksim, tüm paydaşların paylaşmaya rıza göstermesi durumunda dava açmadan malın paylaşımı ile gerçekleşir.\n\nKaynak: ORICON - Ticaret Hukuku; Medeni Huku",
+      "f1": 0.8429752066115702,
+      "rouge_l": 0.8429752066115702,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "question": "ORICON kaynağına göre Borçlar ve Sözleşmeler Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “menfi tespit davas",
+      "generated": "Bu kaynak parçasını kısa ve kaynaklı şekilde özetlemek gerekirse: Türk Medenî Kanunu / Medenî Hukuk + Türk Borçlar Kanunu / Borçlar Hukuku + Hukuk Muhakemeleri Kanunu / Medenî Usul. Bu kaynak, sorudaki esaslı konuları şu şekilde özetlemektedir: miras, mirasçılık, miras bırakan, mirasçılardan feragat, miras sözleşmesi, mirasın devri, mirasın reddi, mirasın tasfiyesi, mirasın tescili, mirasın takip edilmesi, mirasın terkin edilmesi, mirasın devredilmesi, mirasın devralınması, mirasın reddedilmesi,",
+      "f1": 0.14414414414414414,
+      "rouge_l": 0.1081081081081081,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.4
+    },
+    {
+      "question": "ORICON kaynağına göre İcra ve İflas Hukuku alanında “Kesinleşmeden icraya konulamayacak mahkeme kararları” nasıl açıklan",
+      "generated": "Kaynağa göre: Kesinleşmeden icraya konulamayacak mahkeme kararları hakkında daha fazla bilgi, 'Kesinleşmeden İcraya Konulamayacak Mahkeme Kararları' başlıklı makaleden edinilebilir.\n\nBu kaynak, belirtilen konuda çok fazla detay sunmadığından, tamamlamanın gerekip gerekmediği değerlendirilmelidir.",
+      "f1": 0.6885245901639345,
+      "rouge_l": 0.6885245901639345,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.5185185185185185
+    },
+    {
+      "question": "ORICON kaynağına göre İcra ve İflas Hukuku; Medeni Hukuk - Miras/Aile/Eşya/Kişiler alanında “Rehin hakkı sahibi” nasıl a",
+      "generated": "Kaynağa göre: Rehin, bir borcun teminatı olarak alacaklı lehine verilen bir mal veya hak üzerindeki sınırlı bir hak. Bu açıklama, 'ORICON - Genel hukuk / sınıflandırma bekliyor - oricon_genel_001912' kaynak metnindeki \"Fikir ve Sanat Eserleri Kanunu (FSEK) kapsamında eser sahibine tanınan haklar, mali ve manevi haklar olarak ikiye ayrılmakta ve bu hakların ihlal edilmesi durumunda eser sahibinin başvurabileceği hukuki yollar bulunmaktadır.\" ve \"mirastan feragat, mirasbırakan ile mirasçı arasında",
+      "f1": 0.16352201257861637,
+      "rouge_l": 0.10062893081761005,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7848101265822784
+    },
+    {
+      "question": "ORICON kaynağına göre Medeni Hukuk - Miras/Aile/Eşya/Kişiler; Anayasa Hukuku ve Temel Haklar alanında “Eş nedeniyle tayi",
+      "generated": "Kaynağa göre: Eş nedeniyle tayin talebinin reddi kararı, ailenin korunması hakkı ile çelişebileceği için çoğu zaman anayasaya aykırı olabilmektedir ve şartları varsa mahkeme kararıyla iptal edilebilmektedir.\n\nKaynak: ORICON - Medeni Hukuk - Miras/Aile/Eşya/Kişiler; Anayasa Hukuku ve Temel Haklar - oricon_medeni_anayasa_000007",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.7692307692307693
+    },
+    {
+      "question": "ORICON kaynağına göre Ticaret Hukuku; İcra ve İflas Hukuku alanında “Gemi ipoteği isteme hakkı” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Gemi ipoteği isteme hakkı, gemi yapım-onarım işinin tamamlanmasını takip eden üç ay içinde tescil yapılmadığı takdirde düşer.\n\nKaynak: ORICON - Ticaret Hukuku; İcra ve İflas Hukuku - oricon_ticaret_icra_iflas_000005",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8571428571428571
+    },
+    {
+      "question": "ORICON kaynağına göre Vergi Hukuku alanında “Hukuki iş işlemler” nasıl açıklanır?",
+      "generated": "Kaynağa göre: Hukuki iş ve işlemler için uzman bir avukatla iletişime geçilmesi, hak kayıplarının önlenmesi ve sürecin sağlıklı bir şekilde yürütülmesi adına önemlidir.\n\nKaynak: ORICON - Vergi Hukuku - oricon_vergi_000041",
+      "f1": 1.0,
+      "rouge_l": 1.0,
+      "em": 1.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8461538461538461
+    },
+    {
+      "question": "KAYIT 0768 kaydında Adil yargılanma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0768 | Karar sonucu: İhlal | Temel hak konusu: Adil yargılanma hakkı | Uyuşmazlık alanı: İş ve sosyal güvenlik | Ayırt edici kavramlar: gerekçeli karar, temyiz, duruşma, yargılama, mahkeme. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir. Başvurucu tarihinde meydana gelen iş kazasından doğan zararın tazmini istemiyle tarihinde işveren aleyhine tazminat davası açmıştır ankara mahkemesinin sayılı dav",
+      "f1": 0.7574468085106383,
+      "rouge_l": 0.7574468085106383,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9753086419753086
+    },
+    {
+      "question": "KAYIT 0199 kaydında Mülkiyet hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0199 | Karar sonucu: İhlal | Temel hak konusu: Mülkiyet hakkı | Uyuşmazlık alanı: Ceza yargılaması, Mülkiyet / kamulaştırma / imar, Vergi / idari para cezası / gümrük | Ayırt edici kavramlar: mülkiyet, kamulaştır, taşınmaz, vergi. Başvuru formu ve eklerine göre olaylar özetle şöyledir. Başvurucu muşun merkez ilçesine bağlı sütlüce köyünde bulunan parsel sayılı yüzölçümlü arsa niteliğindeki taşınmazın malikidir. Başvurucu bu taşınmazın üzerinde iki dükkan üç mesken ve bir bodr",
+      "f1": 0.5443037974683544,
+      "rouge_l": 0.5443037974683544,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9871794871794872
+    },
+    {
+      "question": "KAYIT 0506 kaydında Yaşam hakkı / kötü muamele yasağı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0506 | Karar sonucu: İhlal | Temel hak konusu: Yaşam hakkı / kötü muamele yasağı | Uyuşmazlık alanı: İş ve sosyal güvenlik, Medya / ifade | Ayırt edici kavramlar: ölüm, malul. A uyuşmazlığın arka planı başvuru formu ve eklerine göre olaylar özetle şöyledir. Başvurucu vakıflar bankası türk anonim ortaklığında banka çalıştığı süre zarfında tarihli ve sayılı sosyal sigortalar geçici maddesi uyarınca kurulmuş bulunan t vakıflar bankası tao memur ve hizmetlileri emekli sağlık yard",
+      "f1": 0.5958702064896756,
+      "rouge_l": 0.5958702064896756,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9456521739130435
+    },
+    {
+      "question": "KAYIT 0368 kaydında Yaşam hakkı / kötü muamele yasağı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0368 | Karar sonucu: İhlal | Temel hak konusu: Yaşam hakkı / kötü muamele yasağı | Uyuşmazlık alanı: Ceza yargılaması, İdare hukuku / tam yargı, Askerî/idari uyuşmazlık | Ayırt edici kavramlar: Türk Silahlı Kuvvetleri. Başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir. Başvurucu hava kuvvetleri komutanlığında astsubay statüsünde görev yapmakta iken ahlak dışı davranışlarda bulunduğuna dair isimsiz bir eposta gönderilmesi üzerine. Başvurucu hakkında idari tahkikat ",
+      "f1": 0.569620253164557,
+      "rouge_l": 0.5569620253164558,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9404761904761905
+    },
+    {
+      "question": "KAYIT 0128 kaydında Adil yargılanma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0128 | Karar sonucu: İhlal | Temel hak konusu: Adil yargılanma hakkı | Uyuşmazlık alanı: Ceza yargılaması, İdare hukuku / tam yargı, İş ve sosyal güvenlik | Ayırt edici kavramlar: temyiz, yargılama, mahkeme, dava. Olaylar: başvuru dilekçesi ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir hatip olarak görev yapmakta iken hakkında yapılan bir ihbar üzerine başlatılan soruşturma sonucu başvurucunun görevine son verilmiş ve aynı zaman",
+      "f1": 0.5970149253731344,
+      "rouge_l": 0.573134328358209,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9560439560439561
+    },
+    {
+      "question": "KAYIT 0840 kaydında Kişi özgürlüğü ve güvenliği hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynaklarına göre olaylar özetle şöyledir. Başvurucu şirketler farklı sektörlere ilişkin malzeme üretimi yapan faaliyetinde bulunan ülke genelinde toptan kurumsal ve bayi kanallarıyla pazarlama yapan çeşitli idari birimlerden alınan ruhsat ve çalışma izin belgelerine istinaden atış poligonları ve silah tamir bakım kaplama boyama atölyeleri işleten firmalardandır dünyadaki farklı silah markalarının yetkili teknik servis hizmetini veren başvurucul\n\nKaynak: TRAIN.CSV AYM Karar Özeti - KAYIT 0840 - ",
+      "f1": 0.48916408668730654,
+      "rouge_l": 0.41486068111455104,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8082191780821918
+    },
+    {
+      "question": "KAYIT 0736 kaydında Mülkiyet hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0736 | Karar sonucu: İhlal | Temel hak konusu: Mülkiyet hakkı | Uyuşmazlık alanı: Ceza yargılaması, İdare hukuku / tam yargı, Mülkiyet / kamulaştırma / imar | Ayırt edici kavramlar: mülkiyet, taşınmaz, tapu, gecekondu, vergi. Başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir batmanın kozluk ilçesine bağlı yukarı güneşli mahallesinde bulunan ada parsel sayılı taşınmaz tapuda kargir ev ve avlusu niteliğiyle. Başvurucu adına kayıtlıdır bu taşınmaz üzerinde başvurucuy",
+      "f1": 0.5621301775147929,
+      "rouge_l": 0.5621301775147929,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9655172413793104
+    },
+    {
+      "question": "KAYIT 0456 kaydında Eğitim hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0456 | Karar sonucu: İhlal | Temel hak konusu: Eğitim hakkı | Uyuşmazlık alanı: Ceza yargılaması, İdare hukuku / tam yargı, Askerî/idari uyuşmazlık | Ayırt edici kavramlar: eğitim, üniversite. Başvuru formu ve eklerine göre olaylar özetle şöyledir. Başvurucular nuray çınar ve mehmet çınar evlidir başvuruculardan mehmet çınar. Başvurucu türk silahlı kuvvetleri Türk Silahlı Kuvvetleri emrinde ve hakkari yüksekova jandarma özel harekat bölük komutanlığında jandarma uzman çavuş o",
+      "f1": 0.5634674922600619,
+      "rouge_l": 0.5634674922600619,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9506172839506173
+    },
+    {
+      "question": "KAYIT 0574 kaydında Yaşam hakkı / kötü muamele yasağı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0574 | Karar sonucu: İhlal olmadığı | Temel hak konusu: Yaşam hakkı / kötü muamele yasağı | Uyuşmazlık alanı: Ceza yargılaması, İş ve sosyal güvenlik, Ceza infaz / cezaevi | Ayırt edici kavramlar: yaşam hakkı, ölüm, kötü muamele. Olaylar: başvuru formu ve eklerine göre bakanlık görüşünde sunulan ve ulusal yargı ağı bilişim sistemi UYAP vasıtasıyla erişilen bilgi ve belgeler çerçevesinde ilgili olaylar özetle şöyledir başvurucunun cezaevinde tutulma süreci. Başvurucu adana ağı",
+      "f1": 0.5853658536585366,
+      "rouge_l": 0.5731707317073171,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9204545454545454
+    },
+    {
+      "question": "KAYIT 0746 kaydında İfade ve basın özgürlüğü bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0746 | Karar sonucu: İhlal olmadığı | Temel hak konusu: İfade ve basın özgürlüğü | Uyuşmazlık alanı: Ceza yargılaması, Mülkiyet / kamulaştırma / imar, Medya / ifade | Ayırt edici kavramlar: basın, gazete, haber, hakaret. Olaylar: başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir gazeteci olan. Başvurucu tarafından yazılan yurt gazetesinin tarihli nüshasının sayfasında ve adlı sitesinde ak terfi dedikleri bu olmalı başlığıyla bir yazı yayımlanmıştır anılan yazının ",
+      "f1": 0.5542857142857143,
+      "rouge_l": 0.5314285714285715,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9425287356321839
+    },
+    {
+      "question": "KAYIT 0055 kaydında İfade ve basın özgürlüğü bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynaklı olarak söylenebilecek bilgi çok basit değil; kaynak kesin resmî karar metni değil; temel olarak olaylar özetle şöyledir. Başvurucu tarihinde işçi olarak çalıştığı şirketin iş akdinin davalı işveren tarafından haksız olarak feshedildiğini ileri sürmüş çalıştığı döneme ait eksik ödenen ve haksız fesihten doğan işçilik alacaklarının ödenmesini talep etmiştir. Bu olayda karar sonucu İhlaldir. Bu durum, temel hak konusu İfade ve basın özgürlüğü ile uyuşmazlık alanlarında, İş ve sosyal güvenl",
+      "f1": 0.29467084639498436,
+      "rouge_l": 0.18808777429467086,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.6623376623376623
+    },
+    {
+      "question": "KAYIT 0151 kaydında Adil yargılanma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0151 | Karar sonucu: İhlal | Temel hak konusu: Adil yargılanma hakkı | Uyuşmazlık alanı: Ceza yargılaması, İdare hukuku / tam yargı, Vergi / idari para cezası / gümrük | Ayırt edici kavramlar: adil yargılanma, savunma, mahkeme, dava. Başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir hatay emniyet müdürlüğünce sürücü belgesi olmaksızın araç kullanan sürücünün aynı zamanda araç sahibi olmaması nedeniyle aracı kiralayan firma sahibine başvurucuya de tl idari para cez",
+      "f1": 0.5508982035928144,
+      "rouge_l": 0.5508982035928144,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9873417721518988
+    },
+    {
+      "question": "KAYIT 0081 kaydında İfade ve basın özgürlüğü bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0081 | Karar sonucu: İhlal olmadığı | Temel hak konusu: İfade ve basın özgürlüğü | Uyuşmazlık alanı: Ceza yargılaması, Askerî/idari uyuşmazlık, Ceza infaz / cezaevi | Ayırt edici kavramlar: haber, hakaret. Olaylar: başvuru dilekçesi ve ekleri ile başvuruya konu dosya içeriğinden tespit edilen ilgili olaylar özetle şöyledir diyarbakır kapatılan devlet güvenlik mahkemesinin tarihli ve sayılı kararı ile egemenliği altında bulunan topraklardan bir kısmını devlet idaresinden ayırm",
+      "f1": 0.5714285714285715,
+      "rouge_l": 0.5535714285714286,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9411764705882353
+    },
+    {
+      "question": "KAYIT 0745 kaydında Toplantı ve örgütlenme özgürlüğü bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0745 | Karar sonucu: İhlal | Temel hak konusu: Toplantı ve örgütlenme özgürlüğü | Uyuşmazlık alanı: Ceza yargılaması, İş ve sosyal güvenlik, Medya / ifade | Ayırt edici kavramlar: toplantı, örgütlenme, sendika, grev. Olaylar: başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir. Başvurucu başvuru tarihi itibarıyla silahlı terör örgütüne üye olma suçunu işlediği iddiasıyla kocaeli nolu f tipi yüksek güvenlikli ceza kurumunda tutuklu olarak bulunmaktadır posta yoluyla ",
+      "f1": 0.2349397590361446,
+      "rouge_l": 0.21686746987951808,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.925
+    },
+    {
+      "question": "KAYIT 0095 kaydında Kişi özgürlüğü ve güvenliği hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynaklarına göre olaylar özetle şöyledir: KAYIT 0095 | Karar sonucu: İhlal | Temel hak konusu: Kişi özgürlüğü ve güvenliği hakkı | Uyuşmazlık alanı: Ceza yargılaması | Ayırt edici kavramlar: gözaltı, tahliye. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir başvurucular cumhuriyet başsavcılığınca CMK maddesi ile yetkili yürütülmekte olan soruşturma kapsamında tarihinde gözaltına alınmışlardır ağır ceza mahkemesince CM",
+      "f1": 0.5723270440251571,
+      "rouge_l": 0.5660377358490565,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9594594594594594
+    },
+    {
+      "question": "KAYIT 0673 kaydında İfade ve basın özgürlüğü bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0673 | Karar sonucu: İhlal | Temel hak konusu: İfade ve basın özgürlüğü | Uyuşmazlık alanı: Ceza yargılaması, İdare hukuku / tam yargı, Mülkiyet / kamulaştırma / imar | Ayırt edici kavramlar: toplantı, gösteri, sendika. Başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir. Başvurucu başvuru tarihinde devletin egemenliği altında bulunan topraklardan bir kısmını devlet idaresinden ayırmaya çalışmak suçundan hükümlü olarak alanya tipi kapalı ceza kurumunda kurumu bulunm",
+      "f1": 0.5615141955835963,
+      "rouge_l": 0.5425867507886435,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9438202247191011
+    },
+    {
+      "question": "KAYIT 0083 kaydında Adil yargılanma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0083 | Karar sonucu: İhlal | Temel hak konusu: Adil yargılanma hakkı | Uyuşmazlık alanı: Ceza yargılaması, İdare hukuku / tam yargı, Mülkiyet / kamulaştırma / imar | Ayırt edici kavramlar: savunma, yargılama, mahkeme, dava. Olaylar: başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir. Başvurucu sarıyer adliyesinde yazı işleri müdürü olarak görev yaptığı dönemle ilgili olarak işlediği iddia edilen fiiller sebebiyle meslekten çıkarma disiplin cezası ile cezalandırılmı",
+      "f1": 0.5723270440251572,
+      "rouge_l": 0.5723270440251572,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9634146341463414
+    },
+    {
+      "question": "KAYIT 0872 kaydında Eğitim hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0872 | Karar sonucu: İhlal | Temel hak konusu: Eğitim hakkı | Uyuşmazlık alanı: Ceza yargılaması, Vergi / idari para cezası / gümrük, Medya / ifade | Ayırt edici kavramlar: eğitim, okul, sınav. Başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir başvurucular millî eğitim bakanlığına bağlı kadrolu öğretmen olup olay tarihinde başvuruculardan mehmet güçlü aynı zamanda eğitim merkezi müdürlüğü ramazan erdem de okul müdürlüğü görevini yürütmektedir olay tarihinde yürürl",
+      "f1": 0.23926380368098157,
+      "rouge_l": 0.20858895705521477,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9529411764705882
+    },
+    {
+      "question": "KAYIT 0834 kaydında Özel hayat, aile hayatı ve kişisel veri bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre olaylar özetle şöyledir. Başvurucu yılında hava kuvvetleri komutanlığında astsubay olarak göreve başlamıştır yılında evlenmiştir ve bir çocuğu vardır hava kuvvetleri komutanlığına gelen isimsiz bir ihbar üzerine bazı askeri personel hakkında hava kuvvetleri komutanlığı daire başkanlığı tarafından karşı koyma zafiyeti konusunda idari tahkikat başlatılmıştır hava kuvvetleri komutanlığı tarafından Anayasa Mahkem\n\nKaynak: TRAIN_LOW_RISK_ONLY - KAYIT 0834 - İhlal - Özel hayat, aile hayat",
+      "f1": 0.5180722891566264,
+      "rouge_l": 0.37951807228915657,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8513513513513513
+    },
+    {
+      "question": "KAYIT 0079 kaydında Mülkiyet hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0079 | Karar sonucu: İhlal | Temel hak konusu: Mülkiyet hakkı | Uyuşmazlık alanı: Mülkiyet / kamulaştırma / imar | Ayırt edici kavramlar: mülkiyet, taşınmaz, tapu. Olaylar: başvuru formu ve ekleri ile dava dosyasında yer aldığı şekliyle ilgili olaylar özetle şöyledir. Başvurucu sahibi olduğu gebze ilçesi osman yılmaz mahallesi ada numaralı parsele gebze belediyesi tarafından park yapılmak amacıyla kamulaştırılmaksızın el atılması nedeniyle tarihinde gebze asliye hukuk mahkeme",
+      "f1": 0.2195845697329377,
+      "rouge_l": 0.17210682492581603,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9743589743589743
+    },
+    {
+      "question": "KAYIT 0088 kaydında Özel hayat, aile hayatı ve kişisel veri bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre olaylar özetle şöyledir. Başvuru formu ve eklerine göre olaylar özetle şöyledir hava kuvvetleri komutanlığı emrinde astsubay statüsünde görev yaptığı dönemde kurum içinde bazı personelle ilgili olarak yürütülen idari soruşturmaya. Başvurucu da dâhil edilmiştir soruşturma kapsamında tarihinde başvurucunun ifadesi alınmış ve başvurucuya cinsel yaşamına ilişkin sorular sorulmuştur bu arada. Başvurucu tarihinde emekliye ayrılmıştır soruşturma neticesinde genelkurmay başkanlığı bünyesind",
+      "f1": 0.2847682119205298,
+      "rouge_l": 0.2251655629139073,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 1.0,
+      "faithfulness": 0.8823529411764706
+    },
+    {
+      "question": "KAYIT 0541 kaydında Toplantı ve örgütlenme özgürlüğü bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0541 | Karar sonucu: İhlal | Temel hak konusu: Toplantı ve örgütlenme özgürlüğü | Uyuşmazlık alanı: Ceza yargılaması, Medya / ifade | Ayırt edici kavramlar: toplantı, gösteri, dernek, sendika. Olaylar: başvuru formu ve eklerine göre olaylar özetle şöyledir. Başvurucu eğitim ve bilim emekçileri sendikası sen üyesi bir kamu görevlisidir sen yönetim kurulunun tarihli kararı ile ve mart tarihlerinde tüm ülke çapında grevi adı altında işe gelmeme eylemi yapılmasına karar verilmişt",
+      "f1": 0.25925925925925924,
+      "rouge_l": 0.2222222222222222,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9090909090909091
+    },
+    {
+      "question": "KAYIT 0065 kaydında Adil yargılanma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0065 | Karar sonucu: İhlal | Temel hak konusu: Adil yargılanma hakkı | Uyuşmazlık alanı: İş ve sosyal güvenlik | Ayırt edici kavramlar: temyiz, yargılama, mahkeme, dava. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir. Başvurucu tarihli dilekçesiyle işçi alacaklarının tahsili amacıyla alacak davası açmıştır bakırköy mahkemesi tarih ve sayılı kararıyla davayı reddetmiştir başvurucunun temyizi üzerin",
+      "f1": 0.30573248407643316,
+      "rouge_l": 0.2611464968152866,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9176470588235294
+    },
+    {
+      "question": "KAYIT 0227 kaydında Mülkiyet hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0227 | Karar sonucu: İhlal | Temel hak konusu: Mülkiyet hakkı | Uyuşmazlık alanı: Mülkiyet / kamulaştırma / imar | Ayırt edici kavramlar: mülkiyet, taşınmaz, tapu. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir. Başvurucu tarihinde kızıltepe asliye hukuk mahkemesinde mp aleyhine açtığı tapu iptali ve tescil davasında kızıltepe ilçesi aşağı azıklı köyünde bulunan bir kısım taşınmazların muvazaalı o",
+      "f1": 0.2829581993569132,
+      "rouge_l": 0.22508038585209003,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9615384615384616
+    },
+    {
+      "question": "KAYIT 0578 kaydında Adil yargılanma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0578 | Karar sonucu: İhlal | Temel hak konusu: Adil yargılanma hakkı | Uyuşmazlık alanı: İş ve sosyal güvenlik | Ayırt edici kavramlar: temyiz, yargılama, mahkeme, dava. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir. Başvurucu tarihinde hizmet sürelerinin tespiti istemiyle dava açmıştır afyonkarahisar mahkemesinin sayılı dosyasına kaydedilen dava tarihinde aynı mahkemenin sayılı dosyasında görüle",
+      "f1": 0.6344827586206897,
+      "rouge_l": 0.6206896551724138,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8641975308641975
+    },
+    {
+      "question": "KAYIT 0797 kaydında Yaşam hakkı / kötü muamele yasağı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0797 | Karar sonucu: İhlal | Temel hak konusu: Yaşam hakkı / kötü muamele yasağı | Uyuşmazlık alanı: Belirsiz / karma uyuşmazlık | Ayırt edici kavramlar: ölüm, öldür, işkence, GATA. Olaylar: başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir. Başvurucu doğumlu. Başvurucu tarihinde kasımpaşa askerî hastanesi emniyet hizmet birlik komutanlığında askerlik hizmetine başlamıştır. Başvurucu zorunlu askerlik vazifesini er olarak yaptığı sırada şubat başında üstleri tarafı",
+      "f1": 0.2360248447204969,
+      "rouge_l": 0.21118012422360244,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9390243902439024
+    },
+    {
+      "question": "KAYIT 0540 kaydında Mülkiyet hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0540 | Karar sonucu: İhlal | Temel hak konusu: Mülkiyet hakkı | Uyuşmazlık alanı: Mülkiyet / kamulaştırma / imar | Ayırt edici kavramlar: mülkiyet, taşınmaz, tapu. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir. Başvurucu tarihinde kızıltepe asliye hukuk mahkemesinde mp aleyhine açtığı tapu iptali ve tescil davasında kızıltepe ilçesi aşağı azıklı köyünde bulunan bir kısım taşınmazların muvazaalı o",
+      "f1": 0.2507836990595611,
+      "rouge_l": 0.213166144200627,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9615384615384616
+    },
+    {
+      "question": "KAYIT 0474 kaydında Seçme, seçilme ve siyasi faaliyette bulunma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0474 | Karar sonucu: İhlal | Temel hak konusu: Seçme, seçilme ve siyasi faaliyette bulunma hakkı | Uyuşmazlık alanı: Askerî/idari uyuşmazlık | Ayırt edici kavramlar: seçme, seçilme. Olaylar: başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir. Başvurucu yılında almanyanın şehrinde doğmuş ve doğum kayıt belgesine uygun şekilde ismi aslan toprak olarak alman nüfus kütüğüne kaydedilmiştir. Başvurucu doğumundan sonra kaydının türk nüfus kütüğüne de işlenmesi amacıyla eb",
+      "f1": 0.54375,
+      "rouge_l": 0.54375,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9722222222222222
+    },
+    {
+      "question": "KAYIT 0352 kaydında Mülkiyet hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0352 | Karar sonucu: İhlal | Temel hak konusu: Mülkiyet hakkı | Uyuşmazlık alanı: Mülkiyet / kamulaştırma / imar | Ayırt edici kavramlar: mülkiyet, taşınmaz, tapu. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir davacının babası mehmet sait da aralarında bulunduğu davacılar tarafından gönen asliye hukuk mahkemesi nezdinde tarihinde açılan el atmanın önlenmesi davası mahkemenin sırasına kaydedilerek",
+      "f1": 0.2289156626506024,
+      "rouge_l": 0.20481927710843373,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9012345679012346
+    },
+    {
+      "question": "KAYIT 0235 kaydında Adil yargılanma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0235 | Karar sonucu: İhlal | Temel hak konusu: Adil yargılanma hakkı | Uyuşmazlık alanı: Medya / ifade | Ayırt edici kavramlar: temyiz, istinaf, yargılama, mahkeme, dava. Başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir tasarruf mevduatı sigorta fonuna devredilen egebankın banka genel müdürü ve yönetim kurulu üyesi olarak görev yapan. Başvurucu hakkında kanuna aykırı karar ve işlemleriyle bankayı zarara uğrattığı gerekçesi ile tarihinde şahsi iflas davası açılmış",
+      "f1": 0.3184713375796178,
+      "rouge_l": 0.2802547770700637,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9195402298850575
+    },
+    {
+      "question": "KAYIT 0855 kaydında Adil yargılanma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0855 | Karar sonucu: İhlal | Temel hak konusu: Adil yargılanma hakkı | Uyuşmazlık alanı: İş ve sosyal güvenlik | Ayırt edici kavramlar: gerekçeli karar, temyiz, duruşma, yargılama, mahkeme. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir. Başvurucu tarihinde meydana gelen iş kazasından doğan zararın tazmini istemiyle tarihinde işveren aleyhine tazminat davası açmıştır ankara mahkemesinin sayılı dav",
+      "f1": 0.2616822429906542,
+      "rouge_l": 0.19937694704049844,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9629629629629629
+    },
+    {
+      "question": "KAYIT 0340 kaydında Mülkiyet hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0340 | Karar sonucu: İhlal | Temel hak konusu: Mülkiyet hakkı | Uyuşmazlık alanı: Mülkiyet / kamulaştırma / imar | Ayırt edici kavramlar: mülkiyet, taşınmaz, tapu. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir. Başvurucu aleyhine tarihinde marmaris asliye hukuk mahkemesinin esasıyla tapu iptal ve tescil davası açılmıştır belirtilen dosya marmaris asliye hukuk mahkemesinin sayılı dosyası ile birle",
+      "f1": 0.23197492163009403,
+      "rouge_l": 0.18808777429467083,
+      "em": 0.0,
+      "recall_10": 0.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9565217391304348
+    },
+    {
+      "question": "KAYIT 0129 kaydında Kişi özgürlüğü ve güvenliği hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynaklı olarak bölünmüş veriler doğrultusunda sorunun çözümü şu şekilde gerçekleştirilmiştir: KAYIT 0129 | Karar sonucu: İhlal | Temel hak konusu: Kişi özgürlüğü ve güvenliği hakkı | Uyuşmazlık alanı: Ceza yargılaması, Askerî/idari uyuşmazlık, Mülkiyet / kamulaştırma / imar | Ayırt edici kavramlar: tutukluluk, tutuklama, tutuklu, gözaltı, yakalama. Olaylar: başvuru formu ve eklerine göre ilgili olaylar özetle şöyledir. Başvurucu cumhuriyet başsavcılığının sayılı soruşturması kapsamında silahlı ",
+      "f1": 0.2476190476190476,
+      "rouge_l": 0.2476190476190476,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.8809523809523809
+    },
+    {
+      "question": "KAYIT 0225 kaydında Adil yargılanma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0225 | Karar sonucu: İhlal | Temel hak konusu: Adil yargılanma hakkı | Uyuşmazlık alanı: Belirsiz / karma uyuşmazlık | Ayırt edici kavramlar: temyiz, yargılama, mahkeme, dava. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir ss kaynak konut yapı kooperatifi kooperatifin eski yöneticileri olan başvurucular aleyhine tarihinde asliye ticaret mahkemesinin sayılı dosyasında üyelik ve başkanlık görevlerin",
+      "f1": 0.5889967637540453,
+      "rouge_l": 0.576051779935275,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9404761904761905
+    },
+    {
+      "question": "KAYIT 0549 kaydında Adil yargılanma hakkı bakımından karar sonucu ve olayın özü nedir?",
+      "generated": "Kaynağa göre: KAYIT 0549 | Karar sonucu: İhlal | Temel hak konusu: Adil yargılanma hakkı | Uyuşmazlık alanı: Ceza yargılaması, Mahkeme / yargı process | Ayırt edici kavramlar: temyiz, yargılama, mahkeme, dava. Olaylar: başvuru formu ve ekleri ile başvuruya konu yargılama dosyası içeriğinden tespit edilen ilgili olaylar özetle şöyledir. Başvurucu tarihinde meydana gelen trafik kazası sonucu yaralanmıştır. Başvurucu tarihinde aracın maliki ve sürücüsü ile aracı trafik sigortası ile sigortalayan ka",
+      "f1": 0.6170212765957446,
+      "rouge_l": 0.6170212765957446,
+      "em": 0.0,
+      "recall_10": 1.0,
+      "citation_accuracy": 0.0,
+      "faithfulness": 0.9620253164556962
+    }
+  ]
+}

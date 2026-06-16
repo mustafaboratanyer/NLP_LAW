@@ -1,0 +1,37 @@
+{
+  "retrieval_ablation": null,
+  "llm_ablation": {
+    "benchmark": "gold_benchmark.json",
+    "num_queries": 240,
+    "retrieval_fixed": "Hybrid BM25 + LaBSE + Article Boost",
+    "base_rag": {
+      "system": "Hybrid + Article Boost + Base Qwen",
+      "em": 0.0,
+      "f1": 0.4349673518431112,
+      "rouge_l": 0.36414370291913306,
+      "faithfulness": 0.5445182665181948,
+      "citation_accuracy": 0.3125,
+      "r_score": 0.8314434523809524,
+      "a_score": 0.26637035158741473,
+      "g_score": 0.4285091332590974,
+      "final_score": 0.5046806322830736
+    },
+    "fine_tuned_rag": {
+      "system": "Hybrid + Article Boost + LoRA Qwen",
+      "em": 0.2708333333333333,
+      "f1": 0.6730905023850923,
+      "rouge_l": 0.653314783074624,
+      "faithfulness": 0.8034836915737579,
+      "citation_accuracy": 0.4875,
+      "r_score": 0.8314434523809524,
+      "a_score": 0.5324128729310166,
+      "g_score": 0.6454918457868789,
+      "final_score": 0.6653433189524597
+    }
+  },
+  "notes": {
+    "embedding_finetuning": "Not completed due to time/GPU constraints.",
+    "reranker_finetuning": "Not completed due to time/GPU constraints.",
+    "llm_finetuning": "Completed using QLoRA/LoRA continuation from existing checkpoint; r=8, alpha=16, effective batch size=4, +600 steps."
+  }
+}

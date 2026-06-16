@@ -1,0 +1,226 @@
+﻿# Turkish Legal RAG
+
+This repository contains the code and notebooks for the CENG493 term project:
+**Improving Turkish Legal Question Answering with an Optimized RAG Pipeline**.
+
+The system answers Turkish legal questions using a Retrieval-Augmented Generation
+pipeline:
+
+```text
+Question -> Dense Retrieval -> BM25 Hybrid Retrieval -> LLM -> Grounded Answer
+```
+
+The final default retrieval setup is **BGE-M3 dense retrieval + BM25 hybrid
+retrieval**. Query expansion is disabled by default and is only available as an
+optional debug/ablation flag.
+
+## Repository Structure
+
+```text
+scripts/      Core preprocessing, indexing, retrieval, evaluation, and RAG scripts
+notebooks/    Kaggle notebooks for demo and experiments
+docs/         Technical notes and report draft
+configs/      Small reproducibility configs
+examples/     Tiny custom-data examples for instructor testing
+results/      Small metric summaries
+```
+
+Large data/model artifacts are intentionally not committed to GitHub. They should
+be supplied through the Kaggle dataset or Hugging Face:
+
+- `retrieval_corpus.json`
+- `retrieval_chunks.json`
+- `faiss_bge_m3.index`
+- `metadata_bge_m3.json`
+- `index_config_bge_m3.json`
+- LoRA adapter files such as `adapter_model.safetensors`
+
+## Main Notebooks
+
+- `notebooks/rag_demo_kaggle.ipynb`: loads the final RAG pipeline on Kaggle and
+  runs Turkish legal QA.
+- `notebooks/custom_data_rag_kaggle.ipynb`: builds a new corpus/index from custom
+  documents provided by the evaluator.
+- `notebooks/retrieval_grid_search_kaggle.ipynb`: evaluates dense/BM25 hybrid
+  retrieval configurations.
+- `notebooks/reranker_finetune_kaggle_law.ipynb`: reranker fine-tuning experiment.
+- `notebooks/embedding_finetune_kaggle.ipynb`: embedding fine-tuning experiment.
+
+## Local Demo UI
+
+The Streamlit UI in `app.py` initializes one `LegalRAG` instance and reuses the
+same retriever and language model for every question. It supports:
+
+- Fine-tuned RAG with the bundled LoRA adapter
+- Base RAG by temporarily disabling that adapter
+- Side-by-side Base/Fine-tuned comparison over the exact same retrieved sources
+- Answer and source display with hybrid, dense, and BM25 scores
+
+### Running on another Windows computer
+
+Copy or clone the repository to the evaluation computer, then run:
+
+```powershell
+.\setup_demo.ps1
+.\start_demo.ps1
+```
+
+`setup_demo.ps1` installs Python dependencies, downloads the quantized Qwen2.5
+base model with Ollama, and creates the local fine-tuned model from the GGUF
+LoRA adapter included under `ollama/`.
+
+Uploaded documents and generated custom FAISS indexes are created on the
+computer running the interface. By default they are stored under:
+
+```text
+%PUBLIC%\NLP_LAW\custom
+```
+
+This location can be changed with `RAG_LOCAL_STORAGE` or `RAG_CUSTOM_ROOT`.
+
+Place the external retrieval artifacts in these default locations:
+
+```text
+data/processed/retrieval_corpus.json
+data/index/faiss_bge_m3.index
+data/index/metadata_bge_m3.json
+data/index/index_config_bge_m3.json
+```
+
+Then install the dependencies and start the UI:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+The paths can also be changed from the UI sidebar or with:
+
+```text
+RAG_INDEX_PATH
+RAG_METADATA_PATH
+RAG_CONFIG_PATH
+RAG_CORPUS_PATH
+RAG_ADAPTER_PATH
+```
+
+For practical 7B inference, use an NVIDIA GPU and 4-bit loading. CPU inference
+falls back to full precision and will generally be too slow for a live demo.
+
+On low-VRAM Windows laptops, the UI defaults to the local Ollama backend. It
+expects these local model names:
+
+```text
+qwen2.5:7b-instruct-q4_K_M
+nlp-law-finetuned
+```
+
+The fine-tuned Ollama model uses the converted GGUF adapter defined in
+`ollama/Modelfile.finetuned`. Ollama keeps the active model in memory between
+questions; the retriever remains cached by Streamlit.
+
+## Final Retrieval Configuration
+
+The best benchmark retrieval configuration is:
+
+```text
+embedding_model = BAAI/bge-m3
+retrieval = dense FAISS + BM25 hybrid
+alpha = 0.70
+dense_candidates = 300
+bm25_candidates = 100
+preliminary_top_k = 50
+query_expansion = false
+```
+
+## Evaluation
+
+Retrieval was evaluated using `qa_benchmark_gold.csv`. From 290 rows, 244 examples
+were resolved to the current corpus.
+
+Best retrieval result:
+
+```text
+Recall@5   = 0.6311
+Recall@10  = 0.6762
+Top-1 Acc. = 0.4795
+MRR        = 0.5456
+nDCG@10    = 0.5772
+```
+
+End-to-end RAG evaluation should be run on the same gold benchmark for both:
+
+- Base RAG: base Qwen model + same retrieval
+- Fine-tuned RAG: LoRA Qwen model + same retrieval
+
+This comparison is run from the Kaggle demo/evaluation notebook.
+
+## Custom Document Evaluation
+
+The instructor can provide a custom document collection using one of these forms:
+
+- `custom_documents.json`
+- `custom_documents.jsonl`
+- `custom_documents.csv`
+- a `custom_docs/` directory containing `.txt`, `.md`, or `.pdf` files
+
+Use:
+
+```text
+notebooks/custom_data_rag_kaggle.ipynb
+```
+
+The notebook converts the custom collection into a retrieval corpus, builds a
+new FAISS index, and runs the same RAG pipeline on the supplied documents.
+
+The Streamlit UI also exposes this workflow directly:
+
+1. Open the `Custom Dokümanlar` tab.
+2. Upload one or more JSON, JSONL, CSV, TXT, MD, or PDF files.
+3. Select `Custom corpus ve index oluştur`.
+4. Ask questions from the `Soru-Cevap` tab using the generated custom index.
+
+The `Benchmark` tab accepts CSV, JSON, or JSONL files. Question fields may be
+named `question`, `soru`, or `query`. Optional reference-answer fields enable
+EM/F1/ROUGE-L evaluation, while optional document IDs enable Hit@5 and MRR@5.
+Fine-tuned-only evaluation is the default; Base/Fine-tuned comparison can be
+enabled and uses identical retrieved contexts for both models.
+
+## Typical Kaggle Workflow
+
+1. Add the project Kaggle dataset containing the retrieval corpus and FAISS index files. The LoRA adapter is included in this repository under `models/`.
+2. Open `notebooks/rag_demo_kaggle.ipynb`.
+3. Run setup/copy cells.
+4. Load retriever and LLM.
+5. Run the gold benchmark evaluation cell.
+6. Repeat with `adapter_path=None` for Base RAG.
+
+## Notes
+
+This project is for academic research and is not legal advice. The system should
+only answer from retrieved sources and should cite the relevant law/article when
+possible.
+
+## Included Fine-Tuned Model
+
+The repository includes the LoRA adapter used for the fine-tuned RAG system:
+
+```text
+models/qwen_7b_lora_v2/final_600/
+```
+
+The adapter was trained on top of:
+
+```text
+Qwen/Qwen2.5-7B-Instruct
+```
+
+During inference, the base model is downloaded from Hugging Face and the local
+LoRA adapter is loaded with PEFT. For Base RAG evaluation, use the same retriever
+and set `adapter_path=None`. For Fine-tuned RAG evaluation, set:
+
+```python
+adapter_path = "models/qwen_7b_lora_v2/final_600"
+```
+
+
